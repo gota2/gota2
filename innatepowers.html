@@ -54,7 +54,7 @@
 }
 
 #PatchNotes {
-	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg");
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/687/featured.jpg");
 	background-size: 100%;
 	background-repeat: repeat;
 	width: 100%;
@@ -65,7 +65,7 @@
 }
 
 #PatchNotes .bg-top {
-	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg");
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/687/featured.jpg");
 	background-size: 100%;
 	background-position: top;
 	background-repeat: repeat;
@@ -147,6 +147,7 @@ body
     margin: 0;
     text-align: left;
     color: #999999;
+    
 }
 
 *
@@ -1629,8 +1630,10 @@ a {
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_HeroReworkContainer_1wx4D {
     width: 100%;
     gap: 24px;
-    padding: 0px 3vw;
-    display: grid;
+    padding-left: 310px;
+    padding-right: 310px;
+    display: column;
+    
     grid-template-columns: 1fr 1fr 1fr
 }
 
@@ -1664,7 +1667,7 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: calc(20px + 1vw);
+    margin-top: calc(0px + 0vw);
     opacity: .9;
     text-shadow: 0px 4px 16px rgba(0,0,0,.3607843137)
 }
@@ -1718,9 +1721,9 @@ a {
     margin: -2vw auto
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 6000px) {
     .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_HeroRework_3GQWj .new_frontiers_HeroImageContainer_3if2p .new_frontiers_HeroReworkPortrait_2mfy8 {
-        width:55%;
+        width:30%;
         margin: 0px auto
     }
 }
@@ -1747,8 +1750,16 @@ a {
 }
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_HeroRework_3GQWj.new_frontiers_Muerta_3ZKGi {
-    background-image: linear-gradient(to bottom, rgba(24, 64, 64, 0.5), rgba(22, 53, 55, 0.5));
-    border-top: 4px solid rgba(83,179,160,.431372549)
+     width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-bottom: 0px;
+   
+    margin-bottom: 30px;
+   
+  
 }
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_HeroRework_3GQWj.new_frontiers_Clinkz_1ACxu {
@@ -2908,6 +2919,7 @@ a {
     letter-spacing: 2px;
     margin-bottom: 12px;
     font-size: clamp(18px,2vw,22px)
+        
 }
 
 .new_frontiers_MapFeatureTooltipContainer_3_ynY .new_frontiers_MapFeatureTooltip_2N4jM .new_frontiers_Text_mAKiu .new_frontiers_Description_a6GNe {
@@ -2928,6 +2940,549 @@ a {
     -webkit-text-fill-color: rgba(0,0,0,0);
     line-height: 1.2;
     padding: 0px 24px;
+        }
+
+        .patchnotespage_PatchNotesPage_HCTcn {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: repeat-y;
+    background-color: #151618;
+    background-position: center;
+    clear: both
+}
+        
+
+.patchnotespage_PatchNotesPage_HCTcn .patchnotespage_Header_2uAz0 {
+    width: 100%;
+    background-color: #000;
+    margin-top: 140px;
+    padding: 30px 0px;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative
+}
+
+.patchnotespage_PatchNotesPage_HCTcn .patchnotespage_Header_2uAz0 .patchnotespage_Label_2khts {
+    width: 900px;
+    color: #ed3b1c;
+    font-size: 32px;
+    letter-spacing: 4px
+}
+
+.patchnotespage_PatchNotesPage_HCTcn .patchnotespage_Header_2uAz0 .patchnotespage_NotesTitle_oyfUT {
+    width: 900px;
+    color: #ed3b1c;
+    font-size: 72px;
+    font-weight: bold;
+    letter-spacing: 8px
+}
+
+.patchnotespage_PatchNotesPage_HCTcn .patchnotespage_Header_2uAz0 .patchnotespage_SelectorContainer_1qUkQ {
+    position: absolute;
+    width: 900px;
+    height: 100px;
+    top: 60px;
+    margin: 0 auto
+}
+
+.patchnotespage_PatchNotesPage_HCTcn .patchnotespage_Header_2uAz0 .patchnotespage_SelectorContainer_1qUkQ .patchnotespage_Selector_3e0NM {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.patchnotespage_PatchNotesPage_HCTcn .patchnotespage_Body_11CXi {
+    width: 100%;
+    max-width: 900px;
+    padding-top: 32px;
+    min-height: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.patchnotespage_PatchNotesPage_HCTcn .patchnotespage_Body_11CXi .patchnotespage_ExternalSite_2MqcV {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #cbcbcb;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    margin: 20px 0px;
+    margin-bottom: 40px
+}
+
+.patchnotespage_PatchNotesPage_HCTcn .patchnotespage_Body_11CXi .patchnotespage_ExternalSite_2MqcV:hover {
+    color: #fff
+}
+
+.patchnotespage_UpdatesSection_3n8oL {
+    width: 100%;
+    display: none
+}
+
+.patchnotespage_UpdatesSection_3n8oL.patchnotespage_IsShown_rKsLh {
+    display: block
+}
+
+.patchnotespage_UpdatesSection_3n8oL .patchnotespage_PatchNotesHeaderLabel_1WjLC {
+    background: linear-gradient(to right, #833312, rgba(131, 51, 18, 0));
+    border-left: 2px solid #ff5005;
+    font-size: clamp(20px, 2vw, 30px);
+    font-weight: 600;
+    font-family: "Reaver", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 30px #000;
+    padding: 12px 20px
+}
+
+.patchnotespage_UpdatesSection_3n8oL .patchnotespage_PatchNotesList_2bYtA {
+    width: 100%;
+    border-left: 2px solid rgba(255, 255, 255, .062745098);
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
+    box-shadow: 0px 0px 50px #000;
+    min-height: 0;
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column
+}
+
+        .skeleton_king {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-bottom: 0px;
+    border-left: 2px solid rgba(255, 255, 255, .062745098);
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, rgba(50, 0, 0, 0.38) 3.07%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: 0px 0px 50px #000
+}
+         .undying {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-bottom: 0px;
+    border-left: 2px solid rgba(255, 255, 255, .062745098);
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, rgba(10, 20, 0, 0.38) 3.07%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: 0px 0px 50px #000
+}
+        .enchantress {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-bottom: 0px;
+    border-left: 2px solid rgba(255, 255, 255, .062745098);
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, rgba(1, 40, 10, 0.38) 3.07%, rgba(0, 40, 0, 0) 100%);
+    box-shadow: 0px 0px 50px #000
+}
+          .general {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-bottom: 0px;
+    border-left: 2px solid rgba(255, 255, 255, .062745098);
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, rgba(100, 0, 0, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
+    box-shadow: 0px 0px 50px #000
+}
+.patchnotespage_PatchNoteHero_99z4V {
+    width: 100%;
+    
+    
+    
+    
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_HeroHeader_EYgE0 {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_HeroHeader_EYgE0 .patchnotespage_HeroImage_ym_hi {
+    width: 128px;
+    height: 72px;
+    box-shadow: 0px 0px 20px #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_HeroHeader_EYgE0 .patchnotespage_RightSection_Jyw3S {
+    flex-grow: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_HeroHeader_EYgE0 .patchnotespage_RightSection_Jyw3S .patchnotespage_HeroName_1nuWb {
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Reaver", serif
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_HeroHeader_EYgE0 .patchnotespage_RightSection_Jyw3S .patchnotespage_UpdateSubtitle_1zdBQ {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff715d;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_TalentNotes_2307Y {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_TalentNotes_2307Y .patchnotespage_TalentNoteHeader_3KTWV {
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_Notes_16viL {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_Notes_16viL .patchnotespage_AbilityNote_3W8ym {
+    width: 100%;
+    display: flex;
+    flex-direction: row
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_Notes_16viL .patchnotespage_AbilityNote_3W8ym:not(:last-child) {
+    padding-bottom: 20px
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_Notes_16viL .patchnotespage_AbilityNote_3W8ym .patchnotespage_AbilityIcon_2dkGQ {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_Notes_16viL .patchnotespage_AbilityNote_3W8ym .patchnotespage_RightSection_Jyw3S {
+    flex-grow: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.patchnotespage_PatchNoteHero_99z4V .patchnotespage_Notes_16viL .patchnotespage_AbilityNote_3W8ym .patchnotespage_RightSection_Jyw3S .patchnotespage_AbilityName_3evA1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Reaver", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+    margin-left: 20px
+}
+
+.patchnotespage_PatchNoteItem_32hr0 {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    padding-bottom: 0px;
+    margin-bottom: 20px
+}
+
+@media(max-width: 600px) {
+    .patchnotespage_PatchNoteItem_32hr0 {
+        padding: 0vw 2vw
+    }
+}
+
+.patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_ItemImage_2LRUz {
+    width: 72px;
+    height: 52px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 20px #000;
+    margin-right: 16px;
+    margin-bottom: 10px
+}
+
+.patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_RightSection_Jyw3S {
+    flex-grow: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_RightSection_Jyw3S .patchnotespage_ItemName_1MKhq {
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Reaver", serif
+}
+
+.patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_RightSection_Jyw3S .patchnotespage_ItemTitle_2kpOY {
+    text-transform: uppercase;
+    color: #ccc;
+    letter-spacing: 2px
+}
+
+.patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_RightSection_Jyw3S .patchnotespage_Notes_16viL {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px
+}
+
+.patchnotespage_PatchNoteNeutralCreep_2bwMh {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    padding-bottom: 0px;
+    margin-bottom: 20px
+}
+
+.patchnotespage_PatchNoteNeutralCreep_2bwMh .patchnotespage_NeutralCreepHeader_3bydU {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.patchnotespage_PatchNoteNeutralCreep_2bwMh .patchnotespage_NeutralCreepHeader_3bydU .patchnotespage_NeutralCreepImage_3EBUN {
+    width: 72px;
+    height: 52px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 20px #000;
+    margin-right: 16px;
+    margin-bottom: 10px
+}
+
+.patchnotespage_PatchNoteNeutralCreep_2bwMh .patchnotespage_NeutralCreepHeader_3bydU .patchnotespage_RightSection_Jyw3S {
+    flex-grow: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.patchnotespage_PatchNoteNeutralCreep_2bwMh .patchnotespage_NeutralCreepHeader_3bydU .patchnotespage_RightSection_Jyw3S .patchnotespage_NeutralCreepName_2SxiJ {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Reaver", serif
+}
+
+.patchnotespage_PatchNoteNeutralCreep_2bwMh .patchnotespage_NeutralCreepHeader_3bydU .patchnotespage_RightSection_Jyw3S .patchnotespage_NeutralCreepTitle__lG56 {
+    text-transform: uppercase;
+    color: #ccc;
+    letter-spacing: 2px
+}
+
+.patchnotespage_PatchNoteNeutralCreep_2bwMh .patchnotespage_NeutralCreepHeader_3bydU .patchnotespage_RightSection_Jyw3S .patchnotespage_Notes_16viL {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px
+}
+
+.patchnotespage_PatchNotesGeneral_159Kx {
+    margin-bottom: 24px
+}
+
+.patchnotespage_PatchNoteGeneric_3780o {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 18px
+}
+
+.patchnotespage_PatchNoteGeneric_3780o .patchnotespage_GenericName_1hRqi {
+    font-size: 32px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.patchnotespage_PatchNoteGeneric_3780o .patchnotespage_Notes_16viL {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px
+}
+
+.patchnotespage_NoteElement_1gbgx {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start
+}
+
+.patchnotespage_NoteElement_1gbgx .patchnotespage_Dot_1gcyD {
+    width: 3px;
+    height: 3px;
+    min-width: 5px;
+    min-height: 5px;
+    border-radius: 3px;
+    background-color: #999;
+    margin-right: 10px;
+    margin-top: 12px
+}
+
+.patchnotespage_NoteElement_1gbgx .patchnotespage_Dot_1gcyD.patchnotespage_IsHidden_t11N2 {
+    opacity: 0
+}
+
+.patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ {
+    font-family: "Radiance";
+    text-align: left;
+   font-size: 5px;
+    color: rgba(187,187,187,0.9333333333);
+   
+   
+    
+}
+
+.patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ .Bold {
+    color: #fff
+}
+
+span.New {
+    color: #36a15e
+}
+
+span.Reworked {
+    color: #d05307
+}
+
+span.Shard {
+    color: #0096FF
+        }
+        
+span.comment_undying {
+    color: #191970
+        }
+        
+        .cooldown_container {
+    display: flex;
+    flex-direction: row;
+   
+    top: 8px;
+    right: 0px
+}
+
+.cooldown_container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 12px
+}
+
+.new_cooldown {
+     font-size: 18px;
+    width: 16px;
+    height: 16px;
+    margin-top: 15px;
+    border-radius: 3px;
+    background-size: cover;
+    background-repeat: no-repeat
+    font-size: 16px,
+}
+        .new_manacost {
+     
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background: linear-gradient(#00A4DB, #007196);
+
+}
+        .new_healthcost {
+     
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background: linear-gradient(#ff455d, #920629)
+
+}
+        .cooldown_text {
+    margin-left: 8px;
+    color: #fff
+}
+        .patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ {
+    font-size: clamp(17px,1.5vw,19px);
+    color: #c9d2de;
+    line-height: 1.3;
+    font-weight: 200;
+}
+        
+       
+
+
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2970,7 +3525,7 @@ a {
   
     
   
-  <link href="https://www.dota2.com/public/css/dota_react/main.css?v=NeumHnu6r0gO&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
+  
  
   
     
@@ -3016,454 +3571,14 @@ a {
         <div id="Map" class="new_frontiers_WebsiteSection_3o_tR new_frontiers_NewMap_29qME"><h1>Preamble</h1><div class="new_frontiers_Introduction_2wDk9">This patch is more than ambitious.<br><br>If I tried to summarize it, you'd end up with a 20000-word essay.<br><br>Regardless, I will try to do it in the next segment.<br><br>Also, feel free to call every significant change broken, as it is a tradition.</div></div><div class="new_frontiers_SectionDivider_28Lu5"></div>
         
         <div id="MajorGameplay" class="new_frontiers_WebsiteSection_3o_tR new_frontiers_Main_3wT0k"><h1>PATCH HIGHLIGHTS</h1><div class="new_frontiers_Introduction_2wDk9"><div class="bbcodes_Italic_zA7ad BB_Italic">Something not mentioned here is that the map has also been reworked, but that is a given in any good patch.</div></div><div class="new_frontiers_FeatureCapsule_2-p0- aos-init aos-animate" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">Status Effects Reworked</div></div><div class="new_frontiers_Description_a6GNe">Status effects have been renamed and reworked to be more understandable and systematic, both function-wise and naming-wise.<br><br>There are now only two important mechanics regarding status effects:<br><br>Debuff Resistance. This one simply reduces the duration and the slow amount of debuffs by a percentage. When this percentage is 100%, we can also refer to it as Debuff Immunity.<br><br>Magic Resistance. Works the same way as before, decreases the magic damage dealt to you by a percentage. When this percentage is 100%, we can also refer to it as Magic Immunity.<br><br>Debuff and Magic Immunity can be combined to achieve a super state. An infamous item that grants both is none other than Black King Bar.<br><br> Note that neither Debuff Immunity nor Magic Immunity blocks physical damage, reflected damage, or pure damage, leaving you vulnerable to these sources of damage. <br><br>And that's all. Simple and logical.</div></div><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/stun_reduction.png"></div><div class="new_frontiers_FeatureCapsule_2-p0- aos-init aos-animate" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">Hero Class Updates</div></div><div class="new_frontiers_Description_a6GNe">This one is hard to get into. There is a lot to unpack.<br><br>There is a new hero class type: Style.<br><br>These heroes allow the players to build them however they want, depending on their playstyle, by having a fluid primary attribute. The primary attribute is determined by which attribute the hero has the most of. For example, a hero like Pangolier, who gains more agility than strength, can be turned into a strength hero by buying items that give strength.<br><br>There are also hero class specific perks now, such as damage block for Strength heroes, bonus movement speed for Agility heroes, and cooldown reduction for Intelligence heroes. To find out how these perks work for Universal and Style heroes, keep scrolling.<br><br>Also forgot to mention that every hero has an innate ability now.<br><br>And probably more.</div></div><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/heroes_header.png"></div><div class="new_frontiers_FeatureCapsule_2-p0- aos-init aos-animate" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">Jungle Economy is now dynamic</div></div><div class="new_frontiers_Description_a6GNe">Remember when killing neutrals used to give you a lot more gold and experience?<br><br>Well, that is sort of the case again — for a few minutes, until it gives a lot less again. But wait, it has increased again.. <div class="bbcodes_Italic_zA7ad BB_Italic">What?</div> <br><br>Jungle economy is now dynamic — Jungle creep bounties are now 40% higher at the start of the game, but then these bounties decrease by 10% every five minutes for twenty minutes. After that, their bounties increase by 10% every five minutes for twenty minutes, and repeat. You can see the pattern. </div></div><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/neutral_creep_scaling.png"></div>
-            <div class="new_frontiers_Introduction_2wDk9"><div class="bbcodes_Italic_zA7ad BB_Italic">There is also a new state, a new damage type, and even a new ability type. Even hex has two versions now. There is even more, but let's get into the new items.</div></div>
-            <div class="new_frontiers_WebsiteSubSection_2XWQ8"><h2>Hero Highlights</h2><div class="new_frontiers_Introduction_2wDk9">While all heroes have been balanced, some have been balanced more than others. We're calling out a few of those here.</div><div class="new_frontiers_HeroReworkContainer_1wx4D"><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Muerta_3ZKGi"><div class="new_frontiers_HeroName_1U93F">Muerta</div><div class="new_frontiers_ReworkDescription_3VS0J">After two months of haunting the lanes, Muerta has finally found her Aghanim’s Scepter and Shard. If you haven’t checked her out yet, learn more over at the <a class="Focusable" href="https://steamcommunity.com/linkfilter/?url=https://www.dota2.com/deadreckoning" rel="noopener nofollow" tabindex="0"><span data-tooltip-text="dota2.com">Dead Reckoning Update</span></a>.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C muerta new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/muerta.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/muerta.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/muerta.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/muerta"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/muerta.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Muerta</div><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Added to Captains Mode</div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/muerta_dead_shot.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Dead Shot</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ricochet Fear Duration decreased from 1/1.2/1.4/1.6s to 0.8/0.95/1.1/1.25s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip10" currentitem="false"></div><div class="__react_component_tooltip tef73ed82-470d-4f3b-a0cc-c32daeb425b7 place-top type-dark" id="infoTip10" data-id="tooltip"><style>
-  	.tef73ed82-470d-4f3b-a0cc-c32daeb425b7 {
-	    color: #fff;
-	    background: #222;
-	    border: 1px solid transparent;
-  	}
-
-  	.tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-top {
-        margin-top: -10px;
-    }
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-top::before {
-        border-top: 8px solid transparent;
-    }
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-top::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-top-color: #222;
-        border-top-style: solid;
-        border-top-width: 6px;
-    }
-
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-bottom {
-        margin-top: 10px;
-    }
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-bottom::before {
-        border-bottom: 8px solid transparent;
-    }
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-bottom::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-bottom-color: #222;
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-    }
-
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-left {
-        margin-left: -10px;
-    }
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-left::before {
-        border-left: 8px solid transparent;
-    }
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-left::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-left-color: #222;
-        border-left-style: solid;
-        border-left-width: 6px;
-    }
-
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-right {
-        margin-left: 10px;
-    }
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-right::before {
-        border-right: 8px solid transparent;
-    }
-    .tef73ed82-470d-4f3b-a0cc-c32daeb425b7.place-right::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-right-color: #222;
-        border-right-style: solid;
-        border-right-width: 6px;
-    }
-  </style><div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/muerta_the_calling.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">The Calling</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Silence Duration decreased from 2/2.5/3/3.5s to 1.5/2/2.5/3s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Duration decreased from 10s to 7/8/9/10s</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/muerta_pierce_the_veil.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Pierce the Veil</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now upgradable by Aghanim's Shard</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Grants 30% Spell Lifesteal for the duration of Pierce the Veil. Muerta permanently gains 2% Spell Amplification every time she kills an enemy hero during Pierce the Veil or any enemy hero dies within 925 units</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/muerta_parting_shot.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Parting Shot</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New ability granted by Aghanim's Scepter</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Muerta shoots an allied or enemy hero in their soul, separating it from the physical body for 4 seconds. The soul is pushed 150 units on separation and is untargetable, muted, disarmed, and invulnerable. The body is stunned for the duration and has 50% damage reduction. After this effect the soul is forcefully returned to the body which applies a strong dispel removing negative debuffs and stuns. The soul survives until the end of the effect even if the body dies. Does not deal damage to allies and Muerta can't target herself. Damage: 300. Mana Cost: 250. Cooldown: 45s</div></div></div></div></div><div class="patchnotespage_TalentNotes_2307Y"><div class="patchnotespage_TalentNoteHeader_3KTWV">Talents</div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 10 Talent Dead Shot Damage decreased from +100 to +80</div></div></div></div></div></div></div><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Clinkz_1ACxu"><div class="new_frontiers_HeroName_1U93F">Clinkz</div><div class="new_frontiers_ReworkDescription_3VS0J">Most of Clinkz’s abilities, like the best abilities in life, now create skeletons.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C clinkz new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/clinkz.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/clinkz.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/clinkz.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/clinkz"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/clinkz.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Clinkz</div><div class="patchnotespage_UpdateSubtitle_1zdBQ">Hero Reworked</div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Damage increased from 15-21 to 19-25</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Strength increased from 16 to 17</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Searing Arrows Ability removed</div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/clinkz_strafe.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Strafe</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New basic ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Clinkz and his Burning Skeleton Archers in 1200 AoE gain bonus attack speed and attack range. Attack speed bonus is 100/140/180/220 for Clinkz and 50% for the skeletons. Attack range bonus is +200 for Clinkz and the skeletons. Duration: 3.5s. Cooldown: 30/25/20/15s. Mana Cost: 75/80/85/90. Casting Strafe does not break Skeleton Walk invisibility</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/clinkz_tar_bomb.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Tar Bomb</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New basic ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Unit targeted. Clinkz throws a projectile that deals 40/60/80/100 magic damage on impact, commanding Clinkz and all Burning Skeleton Archers in range to attack the target. The 275 radius area around the target is also covered in tar for 5 seconds. Any enemy that walks across the tar gets slowed by 16/19/22/25% and receives additional 15/25/35/45 physical damage from all attacks by Clinkz or his Burning Skeleton Archers. Effect persists for 2.5 seconds after leaving the area. Affects buildings. Cast Range: 1000. Cooldown: 7/6/5/4s. Mana Cost: 40/45/50/55</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/clinkz_death_pact.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Death Pact</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now a basic ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now has 1/1/2/2 charges, and 40s charge restore time</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now creates a Burning Skeleton Archer in place of a killed creep (only one skeleton from this ability can exist at a time). Skeleton Hits to kill: 3. Skeleton Damage: 20%. Skeletons deal 25% less damage to buildings</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heal and Bonus Health is now 125/200/275/350</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost decreased from 100 to 60</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Creep Max Level is now 4/5/6/6</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/clinkz_wind_walk.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Skeleton Walk</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now an ultimate ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Duration increased from 25/30/35/40s to 35/40/45s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus Movement Speed rescaled from 15/30/45/60% to 30/45/60%</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost increased from 80 to 80/105/130</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cooldown rescaled from 20/19/18/17s to 18s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now summons 2/3/4 Burning Skeleton Archers (only one pack of skeletons from this ability can exist at a time)</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/clinkz_burning_barrage.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Burning Barrage</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now granted by Aghanim's Shard. Also douses enemies in Tar Bomb slow. Cooldown: 22s. Range: 850. Damage per arrow: 65%</div></div></div></div></div><div class="patchnotespage_TalentNotes_2307Y"><div class="patchnotespage_TalentNoteHeader_3KTWV">Talents</div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 10 Talent +20 Searing Arrows Damage replaced with +20 Tar Bomb Bonus Damage</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 15 Talent Death Pact Steal Creep Abilities replaced with +1 Death Pact Charge</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 15 Talent +20% Death Pact Health replaced with +75 Attack Range</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 20 Talent +3 Burning Barrage Arrows replaced with +40 Strafe Attack Speed</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 20 Talent +125 Attack Range replaced with +200 Death Pact Health</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 25 Talent +25% Burning Barrage Damage replaced with -7s Strafe Cooldown</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 25 Talent Searing Arrows Multishot replaced with Tar Bomb Multishot (Any time Clinkz attacks an enemy covered in tar he will also attack a random enemy within his attack range)</div></div></div></div></div></div></div><div class="new_frontiers_HeroRework_3GQWj new_frontiers_ArcWarden_3QeVO"><div class="new_frontiers_HeroName_1U93F">Arc Warden</div><div class="new_frontiers_ReworkDescription_3VS0J">Arc Warden used to create a perfect clone of himself. But now he makes a <div class="bbcodes_Italic_zA7ad BB_Italic">better</div> version of himself! Or worse! Either way, it’s different. And uncontroversial, we imagine.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C arc_warden new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/arc_warden.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/arc_warden.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/arc_warden.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/arcwarden"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/arc_warden.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Arc Warden</div><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">All Tempest Double's abilities are replaced with 'Tempest' versions of Arc Warden's abilities</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The upheaval has attuned Arc Warden to the Ancients. When playing on Dire side, Arc Warden will have the Tempest abilities by default and his Tempest Double will have its normal abilities. This condition is temporary and will go away once Zet adapts to the new paradigm.</div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/arc_warden_flux.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Flux</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tempest version provides higher damage (15/30/45/60 -&gt; 20/45/70/95) but lower movement speed penalty to the enemy (14/21/28/35% -&gt; 6/10/14/18%)</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/arc_warden_magnetic_field.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Magnetic Field</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tempest version provides +150 attack range (ranged heroes only), adds 20/40/60/80 magic damage to attacks made by allies from the field and has an increased duration of 5/6/7/8s</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/arc_warden_spark_wraith.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Spark Wraith</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tempest version has a shorter activation delay (2s -&gt; 1s), a faster moving Wraith (400 -&gt; 725), longer slow duration (0.4/0.5/0.6/0.7 -&gt; 0.6/0.8/1.0/1.2 ) but has a lower damage (100/180/260/340 -&gt; 75/135/195/255)</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/arc_warden_tempest_double.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Tempest Double</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cooldown decreased from 60/50/40s to 56/48/40s</div></div></div></div></div><div class="patchnotespage_TalentNotes_2307Y"><div class="patchnotespage_TalentNoteHeader_3KTWV">Talents</div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 15 Talent +40 Magnetic Field Attack Speed also grants to +40 Magnetic Field Magic Damage (Tempest Version)</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 20 Talent +40 Flux Damage replaced with -9s Magnetic Field Cooldown</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 20 Talent +125 Spark Wraith Damage replaced with +35% Spark Wraith Damage</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 25 Talent 40% Tempest Double Cooldown Reduction replaced with No Damage Penalty Distance for Tempest Double</div></div></div></div></div></div></div><div class="new_frontiers_HeroRework_3GQWj new_frontiers_OgreMagi_3hj_Q"><div class="new_frontiers_HeroName_1U93F">Ogre Magi</div><div class="new_frontiers_ReworkDescription_3VS0J">Ogre Magi is too dumb to be an Intelligence hero. So he isn’t anymore.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C ogre_magi new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ogre_magi.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ogre_magi.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ogre_magi.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/ogremagi"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ogre_magi.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Ogre Magi</div><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed to Strength</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength gain increased from 3.3 to 4.2</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Intelligence decreased from 15 to 0</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence gain decreased from 2.5 to 0</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Always has 0 Intelligence. Always.</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Mana increased from 75 to 120</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Damage decreased from 54-60 to 44-50</div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ogre_magi_dumb_luck.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Dumb Luck</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New innate ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Max Intelligence is 0. Ogre Magi receives 6 points of maximum mana and 0.03 mana regeneration per point of Strength. Each 20 points of Strength also increase Multicast Cast Chance by 1% (only affects multipliers over 0% so the 4x Cast Chance won't trigger on level 1 etc.)</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ogre_magi_fireblast.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Fireblast</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Stun Duration decreased from 1.5s to 1.2s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip11" currentitem="false"></div><div class="__react_component_tooltip t49921c90-d93b-419e-9de2-5842e31df4f0 place-top type-dark" id="infoTip11" data-id="tooltip"><style>
-  	.t49921c90-d93b-419e-9de2-5842e31df4f0 {
-	    color: #fff;
-	    background: #222;
-	    border: 1px solid transparent;
-  	}
-
-  	.t49921c90-d93b-419e-9de2-5842e31df4f0.place-top {
-        margin-top: -10px;
-    }
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-top::before {
-        border-top: 8px solid transparent;
-    }
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-top::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-top-color: #222;
-        border-top-style: solid;
-        border-top-width: 6px;
-    }
-
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-bottom {
-        margin-top: 10px;
-    }
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-bottom::before {
-        border-bottom: 8px solid transparent;
-    }
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-bottom::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-bottom-color: #222;
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-    }
-
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-left {
-        margin-left: -10px;
-    }
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-left::before {
-        border-left: 8px solid transparent;
-    }
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-left::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-left-color: #222;
-        border-left-style: solid;
-        border-left-width: 6px;
-    }
-
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-right {
-        margin-left: 10px;
-    }
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-right::before {
-        border-right: 8px solid transparent;
-    }
-    .t49921c90-d93b-419e-9de2-5842e31df4f0.place-right::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-right-color: #222;
-        border-right-style: solid;
-        border-right-width: 6px;
-    }
-  </style><div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ogre_magi_unrefined_fireblast.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Unrefined Fireblast</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Stun Duration decreased from 1.5s to 1.2s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip12" currentitem="false"></div><div class="__react_component_tooltip t744af91c-e692-4d87-83d8-72acd638c796 place-top type-dark" id="infoTip12" data-id="tooltip"><style>
-  	.t744af91c-e692-4d87-83d8-72acd638c796 {
-	    color: #fff;
-	    background: #222;
-	    border: 1px solid transparent;
-  	}
-
-  	.t744af91c-e692-4d87-83d8-72acd638c796.place-top {
-        margin-top: -10px;
-    }
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-top::before {
-        border-top: 8px solid transparent;
-    }
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-top::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-top-color: #222;
-        border-top-style: solid;
-        border-top-width: 6px;
-    }
-
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-bottom {
-        margin-top: 10px;
-    }
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-bottom::before {
-        border-bottom: 8px solid transparent;
-    }
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-bottom::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-bottom-color: #222;
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-    }
-
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-left {
-        margin-left: -10px;
-    }
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-left::before {
-        border-left: 8px solid transparent;
-    }
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-left::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-left-color: #222;
-        border-left-style: solid;
-        border-left-width: 6px;
-    }
-
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-right {
-        margin-left: 10px;
-    }
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-right::before {
-        border-right: 8px solid transparent;
-    }
-    .t744af91c-e692-4d87-83d8-72acd638c796.place-right::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-right-color: #222;
-        border-right-style: solid;
-        border-right-width: 6px;
-    }
-  </style><div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div></div></div></div></div><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Medusa_2dy7p"><div class="new_frontiers_HeroName_1U93F">Medusa</div><div class="new_frontiers_ReworkDescription_3VS0J">Medusa now starts weak as a baby, but like a baby, she can get stronger over time.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C medusa new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/medusa.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/medusa.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/medusa.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/medusa"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/medusa.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Medusa</div><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Strength decreased from 17 to 0</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength gain decreased from 1.5 to 0</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence gain increased from 3.4 to 3.7</div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/medusa_mystic_snake.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mystic Snake</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost decreased from 140 to 80/100/120/140</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Scepter Stone Base Duration decreased from 1.3s to 1.0s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip13" currentitem="false"></div><div class="__react_component_tooltip td80e6597-0592-43ae-bc08-6d1c380f7a9c place-top type-dark" id="infoTip13" data-id="tooltip"><style>
-  	.td80e6597-0592-43ae-bc08-6d1c380f7a9c {
-	    color: #fff;
-	    background: #222;
-	    border: 1px solid transparent;
-  	}
-
-  	.td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-top {
-        margin-top: -10px;
-    }
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-top::before {
-        border-top: 8px solid transparent;
-    }
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-top::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-top-color: #222;
-        border-top-style: solid;
-        border-top-width: 6px;
-    }
-
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-bottom {
-        margin-top: 10px;
-    }
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-bottom::before {
-        border-bottom: 8px solid transparent;
-    }
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-bottom::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-bottom-color: #222;
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-    }
-
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-left {
-        margin-left: -10px;
-    }
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-left::before {
-        border-left: 8px solid transparent;
-    }
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-left::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-left-color: #222;
-        border-left-style: solid;
-        border-left-width: 6px;
-    }
-
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-right {
-        margin-left: 10px;
-    }
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-right::before {
-        border-right: 8px solid transparent;
-    }
-    .td80e6597-0592-43ae-bc08-6d1c380f7a9c.place-right::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-right-color: #222;
-        border-right-style: solid;
-        border-right-width: 6px;
-    }
-  </style><div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/medusa_mana_shield.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mana Shield</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ability reworked</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Now a passive ability. Medusa starts with one level of Mana Shield, and the ability can be upgraded up to level 5. Creates a shield that absorbs 98% incoming damage in exchange for mana. Increases base mana. Bonus Mana: 200/225/250/275/300. Damage per point of Mana: 2/2.3/2.6/2.9/3.2</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now if a hero has Mana Shield ability, their mana bar will be visible to enemies</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now also absorbs HP Loss type damage</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/medusa_stone_gaze.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Stone Gaze</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Stone Form duration decreased from 3s to 2.4s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip14" currentitem="false"></div><div class="__react_component_tooltip td1ba33a1-18f3-4bd2-8bd5-f80fcb451655 place-top type-dark" id="infoTip14" data-id="tooltip"><style>
-  	.td1ba33a1-18f3-4bd2-8bd5-f80fcb451655 {
-	    color: #fff;
-	    background: #222;
-	    border: 1px solid transparent;
-  	}
-
-  	.td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-top {
-        margin-top: -10px;
-    }
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-top::before {
-        border-top: 8px solid transparent;
-    }
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-top::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-top-color: #222;
-        border-top-style: solid;
-        border-top-width: 6px;
-    }
-
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-bottom {
-        margin-top: 10px;
-    }
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-bottom::before {
-        border-bottom: 8px solid transparent;
-    }
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-bottom::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-bottom-color: #222;
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-    }
-
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-left {
-        margin-left: -10px;
-    }
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-left::before {
-        border-left: 8px solid transparent;
-    }
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-left::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-left-color: #222;
-        border-left-style: solid;
-        border-left-width: 6px;
-    }
-
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-right {
-        margin-left: 10px;
-    }
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-right::before {
-        border-right: 8px solid transparent;
-    }
-    .td1ba33a1-18f3-4bd2-8bd5-f80fcb451655.place-right::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-right-color: #222;
-        border-right-style: solid;
-        border-right-width: 6px;
-    }
-  </style><div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div></div><div class="patchnotespage_TalentNotes_2307Y"><div class="patchnotespage_TalentNoteHeader_3KTWV">Talents</div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 10 Talent +0.5 Mana Shield Damage per Mana replaced with +5% Stone Gaze Bonus Physical Damage</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 25 Talent +75 Intelligence replaced with +1.3 Mana Shield Damage per Mana</div></div></div></div></div></div></div><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Alchemist_1GXeS"><div class="new_frontiers_HeroName_1U93F">Alchemist</div><div class="new_frontiers_ReworkDescription_3VS0J">Alchemist the hero, like all Alchemist players, is now innately greedy.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C alchemist new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/alchemist"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Alchemist</div><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_acid_spray.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Acid Spray</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cast Point improved from 0.2s to 0.1s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cooldown decreased from 22s to 22/21/20/19s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost decreased from 130 to 120</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Duration decreased from 16s to 15s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage per second increased from 20/25/30/35 to 25/30/35/40</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_unstable_concoction.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Unstable Concoction</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Max Stun Duration decreased from 2.2/2.8/3.4/4s to 1.7/2.2/2.7/3.2s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip15" currentitem="false"></div><div class="__react_component_tooltip t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4 place-top type-dark" id="infoTip15" data-id="tooltip"><style>
-  	.t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4 {
-	    color: #fff;
-	    background: #222;
-	    border: 1px solid transparent;
-  	}
-
-  	.t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-top {
-        margin-top: -10px;
-    }
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-top::before {
-        border-top: 8px solid transparent;
-    }
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-top::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-top-color: #222;
-        border-top-style: solid;
-        border-top-width: 6px;
-    }
-
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-bottom {
-        margin-top: 10px;
-    }
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-bottom::before {
-        border-bottom: 8px solid transparent;
-    }
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-bottom::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-bottom-color: #222;
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-    }
-
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-left {
-        margin-left: -10px;
-    }
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-left::before {
-        border-left: 8px solid transparent;
-    }
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-left::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-left-color: #222;
-        border-left-style: solid;
-        border-left-width: 6px;
-    }
-
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-right {
-        margin-left: 10px;
-    }
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-right::before {
-        border-right: 8px solid transparent;
-    }
-    .t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4.place-right::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-right-color: #222;
-        border-right-style: solid;
-        border-right-width: 6px;
-    }
-  </style><div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_goblins_greed.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Greevil's Greed</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now an innate ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Max Bonus Gold per kill rescaled from 15/18/21/24 to 18</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Rune Multiplier rescaled from 1.8/2.2/2.6/3 to 2</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_corrosive_weaponry.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Corrosive Weaponry</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New basic passive ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Attacks apply a stacking debuff on enemies that reduces movement speed by 3/4/5/6% and status resistance by 3/4/5/6% per stack. Applying a new stack refreshes the duration. Has no effect on buildings or Roshan. Max Stacks: 5/7/9/11. Debuff Duration: 3.5s</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_chemical_rage.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Chemical Rage</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus Health Regen increased from 50/75/100 to 50/80/110</div></div></div></div></div><div class="patchnotespage_TalentNotes_2307Y"><div class="patchnotespage_TalentNoteHeader_3KTWV">Talents</div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 15 Talent Damage per Greevil's Greed stack increased from +1.5 to +3</div></div></div></div></div></div></div></div></div>
+            <div class="new_frontiers_Introduction_2wDk9"><div class="bbcodes_Italic_zA7ad BB_Italic">There is also a new state, a new damage type, and even a new ability type. Even hex has two versions now. There is even more, but let's get into the new items because there are a lot. Like a lot.</div></div>
             
-            <div class="new_frontiers_WebsiteSubSection_2XWQ8"><h2>New Items</h2><div class="new_frontiers_Introduction_2wDk9">Theres quite a few.  Also a few old ones brought back in a different manner.</div><div class="new_frontiers_ItemsContainer_3Qyvb"><div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tome_of_aghanim.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Tome of Aghanim<em><del>Can only be obtained through Roshan.</del></em></div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Use: Read Tome</h4> Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes. </div> </div>
+            
+            
+            
+            
+            
+            <div id="MajorGameplay" class="new_frontiers_WebsiteSection_3o_tR new_frontiers_Main_3wT0k"><h1>NEW ITEMS</h1></div><div class="new_frontiers_Introduction_2wDk9">There you go, 24 new items. Well, there are also a few old ones brought back in a different manner.</div><br><br><div class="new_frontiers_ItemsContainer_3Qyvb"><div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tome_of_aghanim.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Tome of Aghanim<em><del>Can only be obtained through Roshan.</del></em></div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Use: Read Tome</h4> Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes. </div> </div>
                  </div>
                  </div>
                 
@@ -3482,8 +3597,8 @@ a {
                    </div> 
                 </div>
                 <div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ninja_gear.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Ninja Gear</div><div class="new_frontiers_GoldPrice_3UDnx"><img class="new_frontiers_GoldIcon_PuhcK" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png">3000</div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">15</span> Agility</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">30</span> Attack Speed</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">15%</span> Movement Speed</div></div></div></div><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Active: Self-Disguise</h4> Turns the caster invisible for 30 seconds.<br><br>Attacking or moving within 900 radius of an enemy hero or structure will break this invisibility.<br><br>True Sight does not reveal this invisibility.</div><div class="new_frontiers_DescriptionHeader_3OcDB"><div class="new_frontiers_CooldownContainer_2eB31"><div class="new_frontiers_CooldownIcon_2fece" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="new_frontiers_CooldownText_1b-to">60</div></div></div></div></div></div>
-                <div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.discordapp.com/attachments/921819364880171030/1144727731502854214/Siltbreaker_Orb_of_Passage_icon.webp"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Dark Orb of Isolation</div><div class="new_frontiers_GoldPrice_3UDnx"><img class="new_frontiers_GoldIcon_PuhcK" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png">3300</div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">6</span> Strength</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">6</span> Agility</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">6</span> Intelligence</div></div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">30</span> Attack Damage</div></div></div></div><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Active: Isolate</h4> When cast on an enemy hero, puts a dark curse that prevents that hero from being targeted by its allies and reduces its vision by 150 for 5 seconds.<br><br>Cast Range: 700.<br><br>Undispellable.</div><div class="new_frontiers_DescriptionHeader_3OcDB"><div class="new_frontiers_ManaContainer_KlMDU"><div class="new_frontiers_ManaIcon_3xk74"></div><div class="new_frontiers_ManaText_1OQen">50</div></div><div class="new_frontiers_CooldownContainer_2eB31"><div class="new_frontiers_CooldownIcon_2fece" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="new_frontiers_CooldownText_1b-to">19</div></div></div></div>
-                    <div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Passive: Mind Corruption</h4> Your attacks corrupt the target's armor by 3 and apply a 20% blind for 6 seconds.<br><br>Dispellable.</div><div class="new_frontiers_DescriptionHeader_3OcDB"></div></div></div></div>
+                <div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.discordapp.com/attachments/921819364880171030/1144727731502854214/Siltbreaker_Orb_of_Passage_icon.webp"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Dark Orb of Isolation</div><div class="new_frontiers_GoldPrice_3UDnx"><img class="new_frontiers_GoldIcon_PuhcK" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png">3300</div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">6</span> All Attributes</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">30</span> Attack Damage</div></div></div><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Active: Isolate</h4> When cast on an enemy hero, puts a dark curse that prevents that hero from being targeted by its allies and reduces its vision by 150 for 5 seconds.<br><br>Cast Range: 700.<br><br>Undispellable.</div><div class="new_frontiers_DescriptionHeader_3OcDB"><div class="new_frontiers_ManaContainer_KlMDU"><div class="new_frontiers_ManaIcon_3xk74"></div><div class="new_frontiers_ManaText_1OQen">50</div></div><div class="new_frontiers_CooldownContainer_2eB31"><div class="new_frontiers_CooldownIcon_2fece" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="new_frontiers_CooldownText_1b-to">19</div></div></div></div>
+                    <div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Passive: Mind Corruption</h4> Your attacks corrupt the target's armor by 3 and apply a 15% blind for 6 seconds.<br><br>Dispellable.</div><div class="new_frontiers_DescriptionHeader_3OcDB"></div></div></div></div>
                 <div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/minotaur_horn.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Minotaur Horn</div><div class="new_frontiers_GoldPrice_3UDnx"><img class="new_frontiers_GoldIcon_PuhcK" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png">3400</div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">10 </span> Strength</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">10 </span> Health Regeneration</div></div></div><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Active: Minotaur Pride</h4> Activate to become Debuff Immune for 4 seconds.<br><br>Applies a basic dispel at the end of the duration.</div><div class="new_frontiers_DescriptionHeader_3OcDB"><div class="new_frontiers_CooldownContainer_2eB31"><div class="new_frontiers_CooldownIcon_2fece" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="new_frontiers_CooldownText_1b-to">40</div></div></div></div></div></div>
                 
                 <div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/the_leveller.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">The Leveller</div><div class="new_frontiers_GoldPrice_3UDnx"><img class="new_frontiers_GoldIcon_PuhcK" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png">3500</div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">75</span> Melee Attack Range</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">40</span> Attack Damage</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">20</span> Attack Speed</div><div class="new_frontiers_Stats_2UQHp"><div class="new_frontiers_Stat_1BaPs">+ <span class="new_frontiers_SingleValue_14Iw3">5</span> Armor</div></div></div></div></div><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Active: Level</h4> When cast on an enemy unit, sends a net that roots and brings flying units down to the ground for 2.5 seconds.<br><br>Dispellable.<br><br>Cast Range: 900.<br>Projectile Speed: 900.</div><div class="new_frontiers_DescriptionHeader_3OcDB"><div class="new_frontiers_ManaContainer_KlMDU"><div class="new_frontiers_ManaIcon_3xk74"></div><div class="new_frontiers_ManaText_1OQen">25</div></div><div class="new_frontiers_CooldownContainer_2eB31"><div class="new_frontiers_CooldownIcon_2fece" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="new_frontiers_CooldownText_1b-to">15</div></div></div></div>
@@ -3520,11 +3635,274 @@ a {
                 
                 
                 
-                </div></div></div></div></div>
+                </div>
         
+            <br>  <br>  <br>  <br>  <br>
+            
+            <div class="new_frontiers_Introduction_2wDk9"><div class="bbcodes_Italic_zA7ad BB_Italic">That was a lot. Well, it was only the new items, so now let's get into some hero rework highlights!</div></div>
+            
+            
+            
+            <div id="MajorGameplay" class="new_frontiers_WebsiteSection_3o_tR new_frontiers_Main_3wT0k"><h1>HERO HIGHLIGHTS</h1><div class="new_frontiers_Introduction_2wDk9"><div class="bbcodes_Italic_zA7ad BB_Italic">It is incredibly hard to choose which heroes to showcase, considering that pretty much every hero has been reworked in major ways. Anyway, here you go.</div></div><br><br>
+                
+                <div class="new_frontiers_HeroReworkContainer_1wx4D"><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Muerta_3ZKGi"><div class="new_frontiers_ReworkDescription_3VS0J">While not the biggest rework ability-wise, it would be disrespectful not to start with the King himself, who has just returned from his ceremony and took his place back from Wraith King.<br><br>Welcome back King Leoric!</div><br><br>
+                
+                
+                    <div class="patchnotespage_PatchNoteHero_99z4V"><div class="skeleton_king"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1133390586968281098/Skeleton_King_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Skeleton King</div><span class="Reworked">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero replacing Wraith King</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base attack range increased from 150 to 175</div></div>
+               
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base armor increased from -1 to 2</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Vampiric Spirit basic ability has been removed</div></div>
+                
+                
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym" style="margin-top: 24px;"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1133392243659653260/Crown_of_the_One_True_King_Vampiric_Aura_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Thick Boned&nbsp;<font color= "#CC7722">INNATE ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"><span class="New">NEW ABILITY</span></div></div>
+         <br>
+          <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Skeleton King has 10% bonus physical damage resistance, which increases by 5% for every 25% max health he is missing.</div></div></div></div>
+             </div>
         
+            
+          
+          <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1133393671178428476/Hellfire_Blast_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Hellfire Blast</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="Reworked">ABILITY REWORKED</span></div>
+         <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Skeleton King passively collects a skeleton charge per last hit, up to a maximum of 2/4/6/8 charges.<br><br>When cast on enemy units, releases a hellfire sphere that deals 100 damage, stuns for 1 second, and releases one skeleton per charges stored. After stunned, the target is additionally slowed by 20/25/30/35% for 2.5/3.0/3.5/4.0 seconds and takes 15/30/45/60 damage per second. The skeletons spawn around the target when the projectile hits and last 15/20/25/30 seconds.<br><br><div class="new_manacost">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">110/120/130/140</font></div> <div class="new_cooldown" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">11/10/9/8s</font></div></div></div>
+              
+              <br><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Shard"><img src="https://cdn.discordapp.com/attachments/921819364880171030/1145119073047421019/aghanims_shard-removebg-preview.png" style="width:32px;height:23px;"</span> AGHANIM'S SHARD UPGRADE ADDED </div></div> <br> 
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"> Hellfire Blast maximum skeleton charge amount is increased by 2 and the hellfire sphere now always spawns at least half the maximum number of skeletons.</div></div> </div></div>
+             
+              
+                    </div>
+                    
+              
+              <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/930591885213454386/1133752984904405142/Vampiric_Aura_29_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Vampirism Aura</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="NEW">NEW ABILITY</span></div>
+         <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Skeleton King passively grants a 10/15/20/25% lifesteal aura to allied heroes in a 1200 radius.<br><br>When cast on an enemy hero, steals 10/15/20/25% of the target's max health for 5 seconds. <br><br><div class="new_manacost">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">90/100/110/120</font></div> <div class="new_cooldown" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">30s</font></div></div></div>
+              
+               </div></div>
+             
+              </div>
+
+                    
+                   <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/930591885213454386/1133755483505827890/Mortal_Strike_29_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mortal Strike</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="Reworked">ABILITY REWORKED</span></div>
+         <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Skeleton King passively gains 12/18/24/30 bonus attack damage. <br><br>When damaging enemy units, every time he deals damage equal to 35/30/25/20% of the target's maximum health, his sword powers up for 10 seconds, dealing 150/200/250/300% bonus attack damage with his next attack.<br><br>The cooldown starts when the critical attack has landed.<br> <div class="new_cooldown" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">1s</font></div></div></div>
+              
+               </div></div>
+             
+              </div>
+                   <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/930591885213454386/1133758522979524738/Reincarnation_29_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Reincarnation</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="Reworked"></span></div>
         
-           
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now grants 10/20/30% physical damage resistance for 5 seconds after reincarnating</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Skeleton spawn amount increased from 1/2/3 to 3/6/9</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana cost rescaled from 180 to 150/200/250</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cooldown reduced from 180/140/100s to 180/120/60s</div></div>
+                        <br><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Shard"><img src="https://cdn.discordapp.com/attachments/921819364880171030/1145131294750146622/ultimate_scepter-removebg-preview.png" style="width:32px;height:23px;"</span> AGHANIM'S SCEPTER UPGRADE ADDED </div></div>  <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"> When cast on allies, Reincarnation now gets transferred to the targeted allied hero. Reincarnation goes on cooldown when cast.</div></div>
+              
+               </div></div>
+             
+              </div>
+                        
+                        </div></div></div></div></div>
+                    
+                    
+                    
+                    
+                  <div class="new_frontiers_HeroReworkContainer_1wx4D"><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Muerta_3ZKGi"><div class="new_frontiers_ReworkDescription_3VS0J">Now that we have welcomed the King, we can also look at another hero, who is not exactly the picture of health.<br><br>In fact, this particular hero is constantly losing health as we speak.<br><br>Have you ever wondered how it feels to play with negative health regeneration?<br><br>Introducing the next hero — Undying.</div><br><br><br><br><br><br>
+                
+                
+                <div class="patchnotespage_PatchNoteHero_99z4V"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Undying</div><span class="Reworked">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength rescaled from 22 + 2.4 to 15 + 3</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility decreased from 10 + 1.2 to 5 + 1.0</div></div>
+               
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence decreased from 27 + 2.8 to 16 + 1.6</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base attack damage increased from 39 to 46</div></div>
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base armor increased from 1 to 3</div></div>
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base health regeneration decreased from -0.25 to -1.75<em><del>Undying's health regeneration at level 1, not accounting for bonus health regeneration gained from items, is now 0.</del></em>
+</div></div>
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base health increased from 120 to 500</div></div>
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base mana increased from 75 to 250</div></div>
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base movement speed decreased from 300 to 285</div></div>
+                
+                
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym" style="margin-top: 24px;"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1133022317597962240/Pale_Augur_Decay_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">ROTTING BODY&nbsp;<font color= "#CC7722">INNATE ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"><span class="New">NEW ABILITY</span></div></div>
+         <br>
+          <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Undying's body is constantly rotting away, passively losing 5 health per second.<br><br>Undying's attacks spread this rot to enemy units, slowing them by 15% and dealing 15 damage per second.</div></div></div></div>
+             </div>
+        
+            
+          
+          <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/undying_decay.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Decay</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="Reworked">ABILITY REWORKED</span></div>
+         <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When targeting the ground in a 400 radius, Undying takes the vitality away from enemy heroes, stealing 2/3/4/5 health regeneration for 60 seconds.<br><br><div class="new_manacost">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">50/60/70/80</font></div> <div class="new_cooldown" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">10/8/6/4s</font></div></div></div>
+              
+              </div></div>
+             
+              
+                    </div>
+                    
+              
+              <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/undying_soul_rip.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Soul Rip</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="reworked">ABILITY REWORKED</span></div>
+         <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When targeting an enemy unit, Undying applies a 100% movement speed slow for 0.4/0.5/0.6/0.7 seconds and rips 120/200/280/360 health away that he redistributes amongst allied units evenly in a 1200 radius.<br><br> The heal prioritizes Tombstone. <br><br><div class="new_manacost">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">45/60/75/90</font></div> <div class="new_cooldown" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">32/24/16/8s</font></div></div></div>
+              
+               </div></div>
+             
+              </div>
+
+                    
+                   <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/undying_tombstone.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Tombstone</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+       
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tombstone now blights the ground in a 1200 radius. This blighted land slows enemy units by 25% and reduces their health regeneration by 25%, while having the opposite effects for Undying. Once Tombstone expires or is destroyed, the terrain remains blighted for 10 additional seconds. </div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Zombie spawn interval increased from 4.0/3.6/3.2/2.8s to 4.5/4.0/3.5/3.0s</div></div>
+                        
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Duration increased from 30s to 35/40/45/50s</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana cost decreased from 120/140/160/180 to 100</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cooldown increased from 90/85/80/75s to 100s</div></div>
+                      
+                        <br><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Shard"><img src="https://cdn.discordapp.com/attachments/921819364880171030/1145119073047421019/aghanims_shard-removebg-preview.png" style="width:32px;height:23px;"</span> AGHANIM'S SHARD UPGRADE ADDED </div></div> <br> 
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"> Tombstone now spawns an additional zombie.</div></div>
+                       <br><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Shard"><img src="https://cdn.discordapp.com/attachments/921819364880171030/1145131294750146622/ultimate_scepter-removebg-preview.png" style="width:32px;height:23px;"</span> AGHANIM'S SCEPTER UPGRADE ADDED </div></div> <br> 
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"> Reduces the cooldown by 25 seconds and enemy heroes killed on blighted terrain now turn into a Tombstone.</div></div>
+                       </div></div>
+              
+              
+                       
+                       
+             
+              </div>
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/959932061517512745/1145320559199146034/Deathlust_29_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Deathlust&nbsp;<font color= "#a0c090">ZOMBIE ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+       
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer applies a stacking 5% movement speed slow for 2.5 seconds</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now deals 5 damage per second and applies a stacking 5 attack speed slow for 2.5 seconds</div></div>
+                        
+                      
+                       
+              
+               </div></div>
+             
+              </div>
+                  <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/undying_flesh_golem.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">FLESH GOLEM</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="reworked">ABILITY REWORKED</span></div>
+         <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Undying transforms into a terrifying flesh golem for 35/40/45/50 seconds. While Undying is transformed, his health is doubled, and he emits a blight aura in a 200 radius that slows movement speed by 30/40/50% and reduces health restoration by 45/60/75%.<br><br><div class="new_healthcost">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">100/175/250</font></div> <div class="new_cooldown" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">100/90/80s</font></div></div></div>
+                      
+              
+               </div></div>
+             
+              </div>
+                        
+                        </div></div></div></div></div>
+                    
+                    
+                    <div class="new_frontiers_HeroReworkContainer_1wx4D"><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Muerta_3ZKGi"><div class="new_frontiers_ReworkDescription_3VS0J">With two undead heroes behind us, we should really look at a hero who is just bursting with life and energy<br><br>Of course, I am talking about Enchantress, who just became the only hero in the game with zero strength and zero strength gain.<br><br>Yeah, Medusa is not part of this club anymore.</div><br><br><br><br><br>
+                
+                
+                    <div class="patchnotespage_PatchNoteHero_99z4V"><div class="enchantress"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enchantress.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">ENCHANTRESS</div><span class="Reworked">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from Intelligence to Style</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength decreased from 17 + 2.0 to 0 + 0</div></div>
+               
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility increased from 19 + 2.1 to 22 + 3.0</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence decreased from 22 + 3.8 to 22 + 3.0</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base attack projectile speed decreased from 900 to 800</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base mana regeneration increased from 0 to 0.5</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base movement speed increased from 320 to 330</div></div>
+                
+                
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym" style="margin-top: 24px;"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_untouchable.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">UNTOUCHABLE&nbsp;<font color= "#CC7722">NOW AN INNATE ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+      
+         <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer pieces Debuff Immunity</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Attack speed slow decreased from 100/150/200 to 80</div></div>
+                       </div></div>
+             </div>
+        
+            
+          
+          <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_little_friends.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Little Friends&nbsp;<font color= "#CC7722">NOW A BASIC ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="Reworked">ABILITY REWORKED</span></div>
+         <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When cast on an enemy unit, Enchantress slows the unit by 10/20/30/40%, provides vision over it, and commands every non-ancient creep in a 1200 radius, including allied, enemy, and neutral, to attack it with bonus 40/60/80/100% movement and attack speed for 6 seconds.<br><br>Dispellable.<br><br><div class="new_manacost">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">60/75/90/105</font></div> <div class="new_cooldown" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">35/30/25/20s</font></div></div></div>
+              
+              </div></div>
+             
+              
+                    </div>
+                    
+              
+              <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_enchant.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Enchant</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="REWORKED">ABILITY REWORKED</span></div>
+         <br>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Enchantress's presence in a 600 radius passively increases the attack damage of allied creeps by 5/10/15/20.<br><br>When activated, she charms up to 3 non-ancient enemy or neutral creeps around her in a 450 radius and takes control over them for 12/24/36/48 seconds.<br><br><div class="new_manacost">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">95/100/105/110</font></div> <div class="new_cooldown" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color= "#F9F6EE">35/30/25/20s</font></div></div></div> <br><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Shard"><img src="https://cdn.discordapp.com/attachments/921819364880171030/1145119073047421019/aghanims_shard-removebg-preview.png" style="width:32px;height:23px;"</span> AGHANIM'S SHARD UPGRADE ADDED </div></div> <br> 
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"> Now also affects ancient-creeps and the passive bonus damage is increased by 10.</div></div>
+              
+               </div></div>
+             
+              </div>
+
+                    
+                   <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_natures_attendants.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Nature's Attendants</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="Reworked"></span></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cast point improved from 0.3s to 0s</div></div>    
+                <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now can be activated while disabled.</div></div>        
+         <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now can overheal Enchantress up to 100% of her maximum health.</div></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now also grants 4/8/12/16% magic resistance.</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heal per wisp rescaled from 4/8/12/16 to 7/10/13/16</div></div>
+                         
+                      
+                       
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Duration rescaled from 9/10/11/12s to 10s</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana cost rescaled from 140 to 60/90/120/150</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cooldown rescaled from 35s to 40/35/30/25s</div></div>
+              
+               </div></div>
+             
+              </div>
+                   <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_impetus.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Impetus<font color= "#DAA520">&nbsp;NOW AN ULTIMATE ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="Reworked"></span></div>
+                       
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now pierces Debuff Immunity<em><del>Due to Debuff Immunity no longer granting immunity against pure damage.</del></em></div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now a toggle-ability and grants 40/80/120 bonus attack range when toggled on</div></div>
+        
+              
+                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Distance as damage rescaled from 5/10/15/20% to 12/18/24%</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer deals bonus damage to creeps</div></div>
+                      
+                       
+              
+               </div></div>
+             
+              </div>
+                       
+                         <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_bunny_hop.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Sproink<font color= "#0096FF">&nbsp;NOW AN AGHANIM'S SCEPTER ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class=""></span></div>
+                       
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Number of Impetus attacks increased from 2 to 4</del></em></div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cooldown decreased from 8s to 4s</div></div>
+        
+              
+                        
+                      
+                   
+              
+               </div></div>
+             
+              </div>
+                        </div></div></div></div>
+                    
+                        
+                        <div class="new_frontiers_HeroRework_3GQWj new_frontiers_OgreMagi_3hj_Q"><div class="new_frontiers_HeroName_1U93F">Ogre Magi</div><div class="new_frontiers_ReworkDescription_3VS0J">Ogre Magi is too dumb to be an Intelligence hero. So he isn’t anymore.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C ogre_magi new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ogre_magi.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ogre_magi.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ogre_magi.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/ogremagi"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ogre_magi.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Ogre Magi</div><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed to Strength</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength gain increased from 3.3 to 4.2</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Intelligence decreased from 15 to 0</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence gain decreased from 2.5 to 0</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Always has 0 Intelligence. Always.</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Mana increased from 75 to 120</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Damage decreased from 54-60 to 44-50</div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ogre_magi_dumb_luck.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Dumb Luck</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New innate ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Max Intelligence is 0. Ogre Magi receives 6 points of maximum mana and 0.03 mana regeneration per point of Strength. Each 20 points of Strength also increase Multicast Cast Chance by 1% (only affects multipliers over 0% so the 4x Cast Chance won't trigger on level 1 etc.)</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ogre_magi_fireblast.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Fireblast</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Stun Duration decreased from 1.5s to 1.2s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip11" currentitem="false"></div><div class="__react_component_tooltip t49921c90-d93b-419e-9de2-5842e31df4f0 place-top type-dark" id="infoTip11" data-id="tooltip">
+                
+                
+                
+                <div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ogre_magi_unrefined_fireblast.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Unrefined Fireblast</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Stun Duration decreased from 1.5s to 1.2s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip12" currentitem="false"></div><div class="__react_component_tooltip t744af91c-e692-4d87-83d8-72acd638c796 place-top type-dark" id="infoTip12" data-id="tooltip">
+                
+                
+                
+                
+                <div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div></div></div></div></div><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Medusa_2dy7p"><div class="new_frontiers_HeroName_1U93F">Medusa</div><div class="new_frontiers_ReworkDescription_3VS0J">Medusa now starts weak as a baby, but like a baby, she can get stronger over time.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C medusa new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/medusa.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/medusa.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/medusa.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/medusa"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/medusa.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Medusa</div><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Strength decreased from 17 to 0</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength gain decreased from 1.5 to 0</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence gain increased from 3.4 to 3.7</div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/medusa_mystic_snake.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mystic Snake</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost decreased from 140 to 80/100/120/140</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Scepter Stone Base Duration decreased from 1.3s to 1.0s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip13" currentitem="false"></div><div class="__react_component_tooltip td80e6597-0592-43ae-bc08-6d1c380f7a9c place-top type-dark" id="infoTip13" data-id="tooltip">
+                
+                
+                
+                <div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/medusa_mana_shield.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mana Shield</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ability reworked</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Now a passive ability. Medusa starts with one level of Mana Shield, and the ability can be upgraded up to level 5. Creates a shield that absorbs 98% incoming damage in exchange for mana. Increases base mana. Bonus Mana: 200/225/250/275/300. Damage per point of Mana: 2/2.3/2.6/2.9/3.2</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now if a hero has Mana Shield ability, their mana bar will be visible to enemies</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now also absorbs HP Loss type damage</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/medusa_stone_gaze.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Stone Gaze</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Stone Form duration decreased from 3s to 2.4s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip14" currentitem="false"></div><div class="__react_component_tooltip td1ba33a1-18f3-4bd2-8bd5-f80fcb451655 place-top type-dark" id="infoTip14" data-id="tooltip">
+                
+                
+                
+                <div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div></div><div class="patchnotespage_TalentNotes_2307Y"><div class="patchnotespage_TalentNoteHeader_3KTWV">Talents</div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 10 Talent +0.5 Mana Shield Damage per Mana replaced with +5% Stone Gaze Bonus Physical Damage</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 25 Talent +75 Intelligence replaced with +1.3 Mana Shield Damage per Mana</div></div></div></div></div></div></div><div class="new_frontiers_HeroRework_3GQWj new_frontiers_Alchemist_1GXeS"><div class="new_frontiers_HeroName_1U93F">Alchemist</div><div class="new_frontiers_ReworkDescription_3VS0J">Alchemist the hero, like all Alchemist players, is now innately greedy.</div><div class="new_frontiers_HeroImageContainer_3if2p"><div class="new_frontiers_HeroShadow_2BFdc"></div><div class="heropage_HeroPortraitContainer_3oI3C alchemist new_frontiers_HeroReworkPortrait_2mfy8"><video class="heropage_HeroPortrait_22nJ5 new_frontiers_HeroReworkPortraitVideo_3nAVf" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.png" autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.webm"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.png"></video></div></div><div class="new_frontiers_HeroReworkPatchNotes_1H5sT"><div class="patchnotespage_PatchNoteHero_99z4V"><a class="patchnotespage_HeroHeader_EYgE0" href="/hero/alchemist"><div class="patchnotespage_HeroImage_ym_hi" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Alchemist</div><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_acid_spray.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Acid Spray</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cast Point improved from 0.2s to 0.1s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cooldown decreased from 22s to 22/21/20/19s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost decreased from 130 to 120</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Duration decreased from 16s to 15s</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage per second increased from 20/25/30/35 to 25/30/35/40</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_unstable_concoction.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Unstable Concoction</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Max Stun Duration decreased from 2.2/2.8/3.4/4s to 1.7/2.2/2.7/3.2s </div><div class="patchnotespage_InfoBlock_2jges"><div class="patchnotespage_InfoBlockIcon_1WQgr" data-tip="true" data-for="infoTip15" currentitem="false"></div><div class="__react_component_tooltip t51649d1a-93d7-4d5b-97bf-8d16f15bc8e4 place-top type-dark" id="infoTip15" data-id="tooltip">
+                
+                
+                
+                
+                ><div>Duration decreased as a part of the comprehensive Disables Reduction</div></div></div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_goblins_greed.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Greevil's Greed</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now an innate ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Max Bonus Gold per kill rescaled from 15/18/21/24 to 18</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Rune Multiplier rescaled from 1.8/2.2/2.6/3 to 2</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_corrosive_weaponry.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Corrosive Weaponry</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New basic passive ability</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD patchnotespage_IsHidden_t11N2"></div><div class="patchnotespage_Note_eSxyZ">Attacks apply a stacking debuff on enemies that reduces movement speed by 3/4/5/6% and status resistance by 3/4/5/6% per stack. Applying a new stack refreshes the duration. Has no effect on buildings or Roshan. Max Stacks: 5/7/9/11. Debuff Duration: 3.5s</div></div></div></div><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/alchemist_chemical_rage.png&quot;);"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Chemical Rage</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus Health Regen increased from 50/75/100 to 50/80/110</div></div></div></div></div><div class="patchnotespage_TalentNotes_2307Y"><div class="patchnotespage_TalentNoteHeader_3KTWV">Talents</div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Level 15 Talent Damage per Greevil's Greed stack increased from +1.5 to +3</div></div></div></div></div></div></div>
         
       
          
@@ -3553,7 +3931,7 @@ a {
             
 
         <div class="patchnotespage_PatchNotesList_2bYtA"><div class="patchnotespage_PatchNoteHero_99z4V"><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a>
-        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Map Changes</span></div></div>
+        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">MAP</font></span></div></div>
             <br>
             
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The map is now smaller but about 10% bigger than the pre-7.33 map, with the majority of the extra space being around the Rosh Pits located at the top-left and bottom-right sides of the map. Compared to the 7.32 map, there are 2-2 more Neutral Camps on each side, both of which are located around the Rosh Pits.</div></div><br>
@@ -3564,18 +3942,18 @@ a {
             
       
             
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Economy</span></div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ECONOMY</font></span></div></div>
             <br>
            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Passive gold per minute is now static and has increased from 90 to 100.<em><del>Previously increased up to 150 per minute.<br> </del></em> </div></div><br> 
             
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">There is now an extra melee creep that spawns on both teams offlane.</div></div><br>
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Denied Creeps now give 25% of their gold bounty to the denier. </div></div> <br>
                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Jungle Creeps gold and experience rewards are now dynamic: Their bounties are 40% higher at the start of the game, but they decrease by 10% every 5 minutes for 20 minutes. After that, their bounties increase by 10% every 5 minutes for 20 minutes, and they repeat. </div></div><br>
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Runes</span></div></div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">RUNES</font></span></div></div>
             <br>
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes reworked. They now spawn at minute 2, near the ancient camp, and continue to spawn every 2 minutes. Their bounty, which is 90 gold and experience, is no longer granted to the whole team; instead, it is given only to the hero that picks them up. This bounty scales as the game progresses, granting +15 gold and experience with each spawn.</div></div> <br>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wisdom Runes have been removed.<em><del>Experience is now granted by Bounty Runes.<br> </del></em> </div></div><br>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Structures</span></div></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">STRUCTURES</font></span></div></div>
             <br>
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools now generate Healing Lotuses every 2 minutes. <em><del>They previously generated a Healing Lotus every 3 minutes.<br> </del></em> </div></div><br>
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tower Protection aura is now only applied around tier 3/4 towers and only grants bonus armor now. <em><del>Previously also granted +1/3 health regeneration.<br> </del></em>  </div></div><br>
@@ -3583,7 +3961,7 @@ a {
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tier 2 towers do not have Split Shot ability anymore.</div></div><br>
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tier 1 towers attack range are increased from 700 to 800.</div></div><br>
     
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Creeps and Roshan</span></div></div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">CREEPS AND ROSHAN</font></span></div></div>
             <br>
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan now drops a Tome of Aghanim upon his third death on the radiant side instead of Aghanim's Blessing.<em><del>New item. Grants the Aghanim's Scepter upgrade to the consumer for 5 minutes.<br> </del></em> </div></div><br>
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Flagbearer Creeps now only spawn on the mid lane and grant 175% of the experience of a melee creep instead of bonus gold.</div></div><br>
@@ -3597,23 +3975,23 @@ a {
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage__HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Small Ancient Creeps levels are increased from 3 to 10.</div></div><br> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage__hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Big Ancient Creeps levels are increased from 6 to 12. </div></div><br>
        
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ancient Creeps now have 100% magic resistance.</div></div><br>
-    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Damage Types</span></div></div>
+    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">DAMAGE TYPES</font></span></div></div>
             <br>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Introducing a new damage type: Dominated. Creeps set under control by Helm of The Dominator or a summon hero like Chen now gain this damage type. Units with this damage type deal 200% damage to heroes, 100% to creeps and 50% to structures.</div></div><br>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pure damage now pierces Debuff Immunity and Magic Immunity. The damage numbers of pure damage dealing abilities that previously did not pierce have been adjusted with this in mind.</div></div><br>
-      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Attributes</span></div></div>
+      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ATTRIBUTES</font></span></div></div>
             <br>
   
          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength now grants 20 health per point.<em><del>Previously gave 22 health per point.<br> </del></em> </div></div><br>
               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility now grants 1 armor per 7 points.<em><del>Previously gave 1 armor per 6 points.<br> </del></em> </div></div><br>
               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence does not grant 0.1% magic resistance per point anymore.</div></div><br>
               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence now grants 10 mana per point.<em><del>Previously gave 12 mana per point.<br> </del></em> </div></div><br>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Ability Types</span></div></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ABILITY TYPES</font></span></div></div>
             <br>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Introducing a new ability type: Semi-Ultimate. These abilities can be leveled up at level 4 and then again every four levels, up to a maximum of three times.</div></div><br>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ultimate passive abilities are no longer affected by Break.</div></div><br>
   
-       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">States and Mechanics</span></div></div>
+       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">STATES AND MECHANICS</font></span></div></div>
             <br>
       
       
@@ -3626,7 +4004,8 @@ a {
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Immunity. Grants 100% magic resistance and prevents most spells from targeting units in this state.</div></div><br>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Damage Amplification has been reworked into Magic Damage Amplification.<em><del>The difference is that Magic Damage Amplification does not increase pure and physical damage from abilities.</del></em> </div></div>
         <br>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Damage Reduction has been reworked into Magic Damage Reduction.<em><del>The difference is that Magic Damage Reduction does not decrease pure and physical damage from abilities.</del></em></div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Damage Reduction has been reworked into Magic Damage Reduction.<em><del>The difference is that Magic Damage Reduction does not decrease pure and physical damage from abilities.</del></em></div></div> <br>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Lifesteal has been reworked into Magic Lifesteal.<em><del>The difference is that Magic Lifesteal does not lifesteal from pure and physical damage.</del></em>Magic Lifesteal reduction on creeps decreased from 75% to 50%.</div></div>
         <br>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hex now has two versions:</div></div>
         <br>
@@ -3635,8 +4014,8 @@ a {
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New state: Frozen. Frozen units are forbidden from casting spells and attacking but can use items. Abilities that now use this mechanic are, for example, Crystal Maiden's Frostbite and Drow Ranger's Frost Arrows. This state is dispelled by any kind of forced movement, for example Force Staff's Force ability.</div></div><br>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Units with the flying state now elevate from the ground by 190 units, therefore heroes with a shorter attack range than 190 cannot attack them anymore.</div></div> <br>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Break is now always dispellable and does not get applied on abilities that are in the ultimate ability slot.</div></div> <br>
-      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Lifesteal reduction on creeps decreased from 75% to 50%.</div></div><br>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold">Major Removals</span></div></div>
+     
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">REMOVALS</font></span></div></div>
             <br>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tormentors.</div></div><br>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Watchers.</div></div><br>
@@ -5629,7 +6008,7 @@ a {
           <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_mana_break.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">&nbsp;&nbsp;Mana Break</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="Reworked">&nbsp;&nbsp;&nbsp;ABILITY REWORKED</span></div>
          <br>
          <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color= "#F9F6EE">Passive.</font> Burns the mana of the opponent and deals damage equal to 50% of the mana burned. If the enemy unit is above 50% max mana, then it burns 6/8/10/12% of its current mana; if the unit is below 50% max mana, then it burns 3/4/5/6% of its max mana.<em><del>Illusions burn half the mana.</del></em>
-             </div></div></div></div>
+             </div></div></div></div></div>
             
       <div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1137880323590455378/Planetfall_Alt_Aftershock_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">&nbsp;&nbsp;Aftershock</div>
         
