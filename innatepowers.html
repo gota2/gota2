@@ -3424,11 +3424,13 @@ a {
 .patchnotespage_PatchNoteItem_32hr0 {
     width: 100%;
     min-height: 0;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     padding: 0px 40px;
+    
     padding-bottom: 0px;
-    margin-bottom: 20px
+    margin-bottom: 0px;
+        align-items: center;
 }
 
 @media(max-width: 600px) {
@@ -3438,10 +3440,15 @@ a {
 }
 
 .patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 {
+   padding: 16px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center;
+    background: linear-gradient(to right, rgba(50, 0, 25, 0.38) 100%, rgba(0, 40, 0, 0) 100%);
+    border-bottom: 1px solid rgba(0,0,0,.4509803922);
+   box-shadow: 0px 0px 10px #000;
+    
 }
 
 .patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_ItemImage_2LRUz {
@@ -3464,9 +3471,9 @@ a {
 .patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_RightSection_Jyw3S .patchnotespage_ItemName_1MKhq {
     font-size: clamp(16px, 2vw, 20px);
     font-weight: 600;
-    color: #fff;
+    color: orange;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     font-family: "Reaver", serif
 }
 
@@ -3576,15 +3583,30 @@ a {
 }
 
 .patchnotespage_NoteElement_1gbgx .patchnotespage_Dot_1gcyD {
-    width: 3px;
-    height: 3px;
-    min-width: 5px;
-    min-height: 5px;
-    border-radius: 3px;
-    background-color: #999;
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+    min-height: 7px;
+    border-radius: 7px;
+    background-color: purple;
     margin-right: 10px;
-    margin-top: 12px
+    margin-top: 8px
+        
 }
+        .patchnotespage_NoteElement_1gbgx .patchnotespage_small_Dot_1gcyD  {
+        width: 7px;
+    height: 7px;
+    min-width: 7px;
+    min-height: 7px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, rgba(60, 0, 60, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
+    margin-right: 10px;
+    margin-top: 8px;
+       margin-left: 20px;
+	  
+	  border: 1.5px solid purple;
+        
+        }
     .patchnotespage_NoteElement_1gbgx .mana_icon {
      width: 16px;
     height: 16px;
@@ -3603,15 +3625,15 @@ a {
     margin-right: 5px;
     margin-top: 3px
 }    
-        .patchnotespage_NoteElement_1gbgx .gold_icon {
+    .gold_icon {
      width: 20px;
     height: 20px;
-    border-radius: 3px;
+        margin-top: 1px;
+   
      background-image: url("https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Buyback_used_icon.png/revision/latest/scale-to-width-down/128?cb=20161204172446") ;
-            background-color: inherit;
+            background-color: transparent;
    
-    margin-right: 5px;
-   
+ 
 }    
         .patchnotespage_NoteElement_1gbgx .health_icon {
       width: 16px;
@@ -3737,18 +3759,63 @@ span.comment_undying {
     line-height: 1.3;
     font-weight: 200;
 }
-  .span      
+    
        
 
 
    
-
+        .h20 {
+color: #cacaff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Radiance",serif;
+    letter-spacing: 0px;
+    text-transform: none;
+    border: none;
+    margin: 12px -12px 12px -12px;
+    padding: 8px 12px;
+    background-image: linear-gradient(to right, rgba(202, 202, 255, 0.1), rgba(202, 202, 255, 0))}
 
    
 
 
-
-
+        .item_ability{
+            
+             background: linear-gradient(90deg, rgba(60, 0, 60, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
+   border-radius: 3px;
+  box-shadow: 0px 0px 10px #000;
+            padding: 20px; 20px; 20px;
+           
+        }
+        .item_basic{
+            
+            width: 100%;
+    min-height: 0;
+              
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+  
+    background: linear-gradient(to bottom, rgba(20, 15, 7, 0.38) 100%, rgba(0, 40, 0, 0) 100%);
+   
+        }
+         .item_recipe{
+            
+            width: 100%;
+    min-height: 0;
+              
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    padding-bottom: 15px;
+ align-items: center;
+     box-shadow: 0px 0px 5px black;
+    background: linear-gradient(to left, rgba(90, 70, 85, 0.38) 3.07%, rgba(90, 50, 65, 0.3) 88.06%);
+  
+        }
 
 
 
@@ -4045,6 +4112,7 @@ span.comment_undying {
                    <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/undying_tombstone.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Tombstone</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
        
               <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tombstone now blights the ground in a 1200 radius. This blighted land slows enemy units by 25% and reduces their health regeneration by 25%, while having the opposite effects for Undying. Once Tombstone expires or is destroyed, the terrain remains blighted for 10 additional seconds. </div></div>
+                       
                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Zombie spawn interval increased from 4.0/3.6/3.2/2.8s to 4.5/4.0/3.5/3.0s</div></div>
                         
                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Duration increased from 30s to 35/40/45/50s</div></div>
@@ -4751,7 +4819,7 @@ span.comment_undying {
                 <div>&nbsp;</div>
 <div class="">
             <center><h3 class="OrangeGradient"><font color="purple">General UPDATES</font></h3></center>
-           <center> <p><b><font color="#FFD580">Map Reworked&nbsp;&nbsp;&nbsp;Economy Reworked&nbsp;&nbsp;&nbsp;Mechanics Reworked</font></b></p></center>
+           <center> <p><b><font color="#CBC3E3">Map Reworked&nbsp;&nbsp;&nbsp;Economy Reworked&nbsp;&nbsp;&nbsp;Mechanics Reworked</font></b></p></center>
         </div>
     
  <div>&nbsp;</div> <div>&nbsp;</div>
@@ -4763,68 +4831,92 @@ span.comment_undying {
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">MAP</font></span></div></div>
             <div>&nbsp;</div>
             
-        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The map is now smaller but about 10% bigger than the pre-7.33 map, with the majority of the extra space being around the Rosh Pits located at the top-left and bottom-right corners. Compared to the 7.32 map, there are 2-2 more Neutral Camps on each side, both of which are located around the Rosh Pits.</div></div><div>&nbsp;</div>
+        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Map is now smaller but about 10% bigger than the pre-7.33, with the majority of the extra space being around the Rosh Pits located at the top-left and bottom-right corners. Compared to the 7.32 map, there are 2-2 more Neutral Camps on each side, both of which are located around the Rosh Pits.</div></div><div>&nbsp;</div>
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Twin Gates were moved to the location where the Tormentors used to be. They do not require to be channeled anymore; the teleporting is instant; however, they place a dispellable debuff on the teleported units that silences and mutes them for 4 seconds.</div></div><div>&nbsp;</div>
            
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan Pits are still located at the edges of the map; however, Roshan does not use Twin Gates anymore to travel between them. He now uses an underground cave system, which is inaccessible by heroes, to travel to the other pit. How he dug this cave system and gets to the other side so quickly will remain a trade secret.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mid Lane is now slightly wider and the tier 1 towers are further away from the river.</div></div><div>&nbsp;</div>
+
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Jungle Layout has been completely reworked.</div></div><div>&nbsp;</div>
-            
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mid Lane is now slightly wider and the tier 1 towers are further away from the river.</div></div><div>&nbsp;</div>
       
             
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ECONOMY</font></span></div></div>
             <div>&nbsp;</div>
            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base GPM increased from 90 to 100. This amount no longer increases over time.<em><del>Previously increased up to 150 per minute.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div> 
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Offlane waves now have an additional ranged creep every third wave.</div></div><div>&nbsp;</div>
             
       
       
-                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Jungle Creeps gold and experience rewards are now dynamic. Jungle Creep bounties are now 40% higher at the start of the game, but then these bounties decrease by 10% every five minutes for twenty minutes. After that, their bounties increase by 10% every five minutes for twenty minutes, and repeat. </div></div><div>&nbsp;</div>
+                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Jungle Creeps gold and experience rewards are now dynamic:</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Jungle Creep bounties are now 40% higher at the start of the game, but then these bounties decrease by 10% every five minutes for twenty minutes. After that, their bounties increase by 10% every five minutes for twenty minutes, and repeat. </div></div><div>&nbsp;</div>
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">RUNES</font></span></div></div>
             <div>&nbsp;</div>
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes reworked. They now spawn at minute 2, near the ancient camp, and continue to spawn every 2 minutes. Their bounty, which is 90 gold and experience, is no longer granted to the whole team; instead, it is given only to the hero that picks them up. This bounty scales as the game progresses, granting +15 gold and experience with each spawn.</div></div> <div>&nbsp;</div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes reworked:</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">They now spawn at minute 2, near the ancient camp, and continue to spawn every 2 minutes. Their bounty, which is 90 gold and experience, is no longer granted to the whole team; instead, it is given only to the hero that picks them up. This bounty scales as the game progresses, granting +15 gold and experience with each spawn. </div></div><div>&nbsp;</div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wisdom Runes have been removed.<em><del>Experience is now granted by Bounty Runes.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">STRUCTURES</font></span></div></div>
             <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tower Protection aura reworked. Now grants 3 bonus armor to allied units that are being attacked.<em><del>Previously, passively granted bonus armor and health regeneration to allied units.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tower Protection aura reworked:  </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now grants 3 bonus armor to allied units that are being attacked.<em><del>Previously, passively granted bonus armor and health regeneration to allied units.<div>&nbsp;</div> </del></em></div></div><div>&nbsp;</div>
               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tier 1 towers attack range increased from 700 to 800.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tier 2 towers do not have Split Shot ability anymore.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tier 2 towers no longer have Split Shot glyph ability.</div></div><div>&nbsp;</div>
              
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools now generate a Healing Lotus every 2 minutes.<em><del>They previously generated a Healing Lotus every 3 minutes.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Healing Lotus spawn interval decreased from 180s to 120s. </div></div><div>&nbsp;</div>
                
                 
       
     
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">CREEPS AND ROSHAN</font></span></div></div>
             <div>&nbsp;</div>
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan now drops a Tome of Aghanim upon his third death on the radiant side instead of Aghanim's Blessing.<em><del>Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Denied Creep experience penalty to enemy heroes increased from 50% to 75%. </div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Every second wave on both teams offlane now has an extra ranged creep.</div></div><div>&nbsp;</div>
-      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Flagbearer Creeps now only spawn on the mid lane and grant 175% of the experience of a melee creep instead of bonus gold.</div></div><div>&nbsp;</div>
-                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Flagbearer Creep Inspirational Aura now gives +15% movement speed in a 600 radius instead of +3 bonus health regeneration.</div></div><div>&nbsp;</div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan third death reward on Radiant-side changed from Aghanim's Blessing to Tome of Aghanim.<em><del>Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
+            
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Creeps experience penalty when denied increased from 50% to 75%. </div></div> <div>&nbsp;</div>
+            
+      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Flagbearer Creeps reworked:</div></div><div>&nbsp;</div>
+                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Flagbearer Creeps now only spawn on the mid-lane and grant 200% of the experience of a melee creep when killed.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Inspirational Aura now grants 15% bonus movement speed in a 1200 radius to allied units instead of bonus health regeneration.</div></div> <div>&nbsp;</div>
                      
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lane Creeps had their levels decreased :</div></div><div>&nbsp;</div>
-         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Melee Creeps level are decreased from 3 to 2.</div></div> <div>&nbsp;</div>
-           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ranged Creeps level are decreased from 5 to 4.</div></div><div>&nbsp;</div>
+         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Melee Creeps level decreased from 3 to 2.</div></div> <div>&nbsp;</div>
+           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ranged Creeps level decreased from 5 to 4.</div></div><div>&nbsp;</div>
        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lane Creeps do not move faster during night-time anymore.</div></div><div>&nbsp;</div>
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ancient Creeps had their levels increased:</div></div><div>&nbsp;</div>
-          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage__HIDDEN_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Small Ancient Creeps levels are increased from 3 to 10.</div></div><div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage__hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Big Ancient Creeps levels are increased from 6 to 12. </div></div><div>&nbsp;</div>
+          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Small Ancient Creeps levels increased from 3 to 10.</div></div><div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Big Ancient Creeps levels increased from 6 to 12. </div></div><div>&nbsp;</div>
        
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ancient Creeps now have Magic Immunity.</div></div><div>&nbsp;</div>
     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">DAMAGE TYPES</font></span></div></div>
             <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Introducing a new damage type: Dominated. Creeps set under control permanently by Helm of The Dominator or a summon hero like Chen now gain this damage type. Units with this damage type deal 200% damage to heroes, 100% to creeps and 50% to structures.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pure damage now pierces Debuff Immunity and Magic Immunity. The damage numbers of pure damage dealing abilities that previously did not pierce have been adjusted with this in mind.</div></div><div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Reflected damage now pierces Debuff Immunity and Magic Immunity.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Damage Type: Dominated.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Creeps set under control permanently by Helm of The Dominator or a summon hero like Chen now gain this damage type. Units with this damage type deal 200% damage to heroes, 100% to creeps and 50% to structures.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pure Damage now pierces Debuff Immunity and Magic Immunity. This is due to Debuff and Magic Immunity no longer granting Pure Damage Immunity.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Reflected Damage now pierces Debuff Immunity and Magic Immunity. This is due to Debuff and Magic Immunity no longer granting Reflected Damage Immunity.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following creep damage types saw a multitude of value changes:</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Runty damage penalty against fortified armor type increased 30% to 50%.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pierce damage penalty against fortified armor type increased from 65% to 75%.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pierce damage penalty against hero armor type decreased from 50% to 25%.</div></div><div>&nbsp;</div>
+           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pierce damage increase against basic armor type increased from 50% to 100%.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Siege damage increase against fortified armor type increased from 150% to 200%.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Siege damage penalty against hero armor type increased from 0% to 25%.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Siege damage penalty against basic armor type increased from 0% to 50%.</div></div><div>&nbsp;</div>
+
+          
+            
+            
+           
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ATTRIBUTES</font></span></div></div>
             <div>&nbsp;</div>
   
-         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength now grants 20 health per point.<em><del>Previously gave 22 health per point.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility now grants 1 armor per 7 points.<em><del>Previously gave 1 armor per 6 points.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence does not grant 0.1% magic resistance per point anymore.</div></div><div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence now grants 10 mana per point.<em><del>Previously gave 12 mana per point.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
+         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength: </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus health per strength decreased from 22 to 20.</div></div> <div>&nbsp;</div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility: </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus armor per agility decreased from 0.167 to 0.143.</div></div> <div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence: </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants 0.1% magic resistance.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus mana per intelligence decreased from 12 to 10.</div></div> <div>&nbsp;</div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ABILITY TYPES</font></span></div></div>
             <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Introducing a new ability type: Semi-Ultimate. These abilities can be leveled up at level 4 and then again every four levels, up to a maximum of three times.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Ability Type: Semi-Ultimate: </div></div><div>&nbsp;</div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These abilities can be leveled up at level 4 and then again every four levels, up to a maximum of three times.</div></div> <div>&nbsp;</div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Passive abilities in the ultimate ability-slot are no longer affected by Break.</div></div><div>&nbsp;</div>
   
        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">STATES AND MECHANICS</font></span></div></div>
@@ -4834,61 +4926,81 @@ span.comment_undying {
        
        
      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Status effects have been reworked into the following system:</div></div><div>&nbsp;</div>
-          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Resistance. Reduces the duration and slow amount of debuffs by a percentage. When this percentage is 100%, it can also be referred to as Debuff Immunity.</div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Resistance. Works the same way as before, decreases the magic damage dealt to you by a percentage. When this percentage is 100%, it can also be referred to as Magic Immunity.</div></div><div>&nbsp;</div>
+          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Resistance. Reduces the duration and slow amount of debuffs by a percentage. When this percentage is 100%, it can also be referred to as Debuff Immunity.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Resistance. Works the same way as before, decreases the magic damage dealt to you by a percentage. When this percentage is 100%, it can also be referred to as Magic Immunity.</div></div><div>&nbsp;</div>
             
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These two can be combined to achieve a super state where you do not take magical damage or get affected by debuffs.<div>&nbsp;</div>Two important differences:<div>&nbsp;</div>Neither Debuff Immunity nor Magic Immunity blocks physical damage, reflected damage, or pure damage now, leaving you vulnerable to these sources of damage.<div>&nbsp;</div>Debuff Resistance and Debuff Immunity are now the same mechanic, therefore abilities that pierce Debuff Immunity now also pierce Debuff Resistance.</div></div><div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Damage Amplification has been reworked into Magic Damage Amplification.<em><del>The difference is that Magic Damage Amplification does not increase pure and physical damage from abilities.</del></em> </div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These two can be combined to achieve a super state where you do not take magical damage or get affected by debuffs.<div>&nbsp;</div></div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Two important differences:</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neither Debuff Immunity nor Magic Immunity blocks physical damage, reflected damage, or pure damage now, leaving you vulnerable to these sources of damage.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Resistance and Debuff Immunity are now the same mechanic, therefore abilities that pierce Debuff Immunity now also pierce Debuff Resistance.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Damage Reduction has been removed.</div></div> <div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Damage Amplification has been reworked into Magic Damage Amplification. </div></div>
         <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Damage Reduction has been reworked into Magic Damage Reduction.<em><del>The difference is that Magic Damage Reduction does not decrease pure and physical damage from abilities.</del></em></div></div> <div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Lifesteal has been reworked into Magic Lifesteal.<em><del>The difference is that Magic Lifesteal does not lifesteal from pure and physical damage.</del></em>Magic Lifesteal creep penalty removed. Magic Lifesteal is now 2.0x more effective on heroes.</div></div>
+          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer increases pure and physical ability damage.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Lifesteal has been reworked into Magic Lifesteal:</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now has a 400 range buffer. When dealing magic damage outside of this range, it no longer heals.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer heals from pure and physical ability damage.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer has a creep penalty. Now is 2.0x more effective on heroes.</div></div><div>&nbsp;</div>
+            
+       
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lifesteal reworked:</div></div>
         <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lifesteal penalty on creeps removed. Ranged Heroes now have a 50% lifesteal penalty.</div></div>
-        <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now has a 400 range buffer. When dealing attack damage outside of this range, it no longer heals.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer has a creep penalty. Now is 2.0x more effective on heroes.</div></div><div>&nbsp;</div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hex now has two versions:</div></div>
         <div>&nbsp;</div>
-          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Greater Hex. Transforms a unit into a sheep, removing its secondary attributes, for example, magic resistance, evasion, and magic lifesteal. This unit has 300 movement speed while transformed and its movement speed can be increased by movement speed boosts.</div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lesser Hex. Transforms a unit into a frog, decreasing its movement speed to 100. This unit's movement speed cannot be increased while transformed.</div></div><div>&nbsp;</div>
-      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New state: Paralyze. Paralyzed units are forbidden from casting spells and attacking but can use items. Abilities that now use this mechanic are, for example, Crystal Maiden's Frostbite and Drow Ranger's Frost Arrows. This state is dispelled by any kind of forced movement, for example Force Staff's Force ability.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Units with the flying state now elevate from the ground by 190 units, therefore heroes with a shorter attack range than 190 cannot attack them anymore.</div></div> <div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Break is now always dispellable and does not get applied on abilities that are in the ultimate ability slot.</div></div> <div>&nbsp;</div>
+          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Greater Hex. Transforms a unit into a sheep, removing its secondary attributes, for example, magic resistance, evasion, and magic lifesteal. This unit has 300 movement speed while transformed and its movement speed can be increased by movement speed boosts.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lesser Hex. Transforms a unit into a frog, decreasing its movement speed to 100. This unit's movement speed cannot be increased while transformed.</div></div><div>&nbsp;</div>
+      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New State: Paralyze: </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Paralyzed units are forbidden from casting spells and attacking but can use items. Abilities that now use this mechanic are, for example, Crystal Maiden's Frostbite and Drow Ranger's Frost Arrows. This state is dispelled by any kind of forced movement, for example Force Staff's Force ability.</div></div><div>&nbsp;</div>
+            
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Break is now always dispellable and does not get applied on abilities that are in the ultimate-ability slot.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Flying units now elevate from the ground by 190 units, preventing units with a shorter attack range from attacking them.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Auras no longer have a linger effect duration.</div></div> <div>&nbsp;</div>
      
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">REMOVALS</font></span></div></div>
             <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Talents.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral Items.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Outposts.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tormentors.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Watchers.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wraith King.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following concepts, structures, and heroes have been removed:</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Talents.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral Items.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Outposts.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tormentors.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Watchers.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wraith King.</div></div><div>&nbsp;</div>
             </div>
             
               <div class="">
             <center><h3 class="OrangeGradient"><font color="purple">Hero Class Updates</font></h3></center>
-           <center> <p><b><font color="#FFD580">New Hero Class&nbsp;&nbsp;&nbsp;New Class Benefits&nbsp;&nbsp;&nbsp;Innate Abilities</font></b></p></center>
+           <center> <p><b><font color="#CBC3E3">New Hero Class&nbsp;&nbsp;&nbsp;New Class Benefits&nbsp;&nbsp;&nbsp;Innate Abilities</font></b></p></center>
         </div>
     
  <div>&nbsp;</div> <div>&nbsp;</div>
     <div class="patchnotespage_PatchNoteHero_99z4V"><div class="general_notes"><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a>
            <div class="patchnotespage_Notes_16viL">
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">There are now class specific benefits that heroes gain depending on their primary attribute : </div></div>
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">There are now class specific benefits that heroes gain depending on their primary attribute: </div></div>
               <div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage__Hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength heroes now gain 0.5 damage block per strength.<em><del>The chance to block is 50% and works on ranged heroes too.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage__Hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility heroes now gain 0.08% movement speed per agility. </div></div><div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage__Hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence heroes now gain 0.06% cooldown reduction per intelligence. </div></div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength heroes now gain 0.5 damage block per strength.<em><del>The chance to block is 50% and works on ranged heroes too.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility heroes now gain 0.08% movement speed per agility. </div></div><div>&nbsp;</div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence heroes now gain 0.06% cooldown reduction per intelligence. </div></div>
               <div>&nbsp;</div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes now have their own innate abilities. These abilities differ from being a useful tool early on to being a game-changing late-game ability to abuse. They also differ in leveling: some can be leveled, while others cannot. A few of these innate abilities will be familiar, for example, Invoker's Invoke or Earth Spirit's Stone Remnants; however, others, like Chaotic Luck or Black Grimoire, will probably not be.   </div></div><div>&nbsp;</div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New hero class type: Style. These heroes allow the players to build them however they want, depending on their playstyle, by having a fluid primary attribute. The primary attribute is determined by which attribute the hero has the most of. For example, a hero like Pangolier, who gains more agility than strength, can be turned into a strength hero by buying items that give strength.</div></div><div>&nbsp;</div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Hero pool reduced from 34 to 8. These heroes are now Void Spirit, Enigma, Faceless Void, Chaos Knight, Keeper of the Light, IO, Elder Titan, and Weaver.</div></div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes now have their own innate abilities:</div></div><div>&nbsp;</div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These passive and active abilities differ from being a useful tool early on to being a game-changing late-game ability to abuse. They also differ in leveling: some can be leveled, while others cannot. A few of these innate abilities will be familiar, for example, Invoker's Invoke or Earth Spirit's Stone Remnants; however, others, like Chaotic Luck or Black Grimoire, will probably not be. </div></div><div>&nbsp;</div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Hero Class Type: Style:</div></div><div>&nbsp;</div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These heroes allow the players to build them however they want, depending on their playstyle, by having a fluid primary attribute. The primary attribute is determined by which attribute the hero has the most of. For example, a hero like Pangolier, who gains more agility than strength, can be turned into a strength hero by buying items that give strength.</div></div><div>&nbsp;</div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Heroes reworked:</div></div>
                <div>&nbsp;</div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Heroes now fully benefit from all attribute bonuses such as damage block per strength, movement speed per agility, and cooldown reduction per intelligence.</div></div><div>&nbsp;</div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Hero damage gain per stat reduced from 0.7 to 0.5.</div></div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero pool reduced from 34 to 8. These heroes are now Void Spirit, Enigma, Faceless Void, Chaos Knight, Keeper of the Light, IO, Elder Titan, and Weaver.</div></div><div>&nbsp;</div>
+               
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Heroes now fully benefit from every attribute's bonus perks, such as damage block per strength, movement speed per agility, and cooldown reduction per intelligence.</div></div><div>&nbsp;</div>
+     
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Hero damage gain per stat reduced from 0.7 to 0.5.</div></div>
                <div>&nbsp;</div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes do not move faster during night-time anymore. Heroes and their summons are now granted a 25 bonus movement speed buff if they are traversing through the enemy side of the map.</div></div>
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes no longer move faster during night-time. Heroes and their summons are now granted a 25 bonus movement speed buff if they are traversing through the enemy side of the map.</div></div>
               <div>&nbsp;</div>
-                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Innate damage block for melee heroes is removed. </div></div>
-                <div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes do not get a free Teleport Scroll anymore upon death.</div></div>
+                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes no longer get a free Teleport Scroll upon death.</div></div>
             <div>&nbsp;</div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Innate damage block for melee heroes is removed. </div></div>
+                <div>&nbsp;</div>
                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Maximum Level decreased from 30 to 25.</div></div>
               <div>&nbsp;</div>
               
@@ -4967,7 +5079,7 @@ span.comment_undying {
 
  <div class="">
             <center><h3 class="OrangeGradient"><font color="purple">Item Updates</font></h3></center>
-           <center> <p><b>17<font color="#FFD580"> New Items</font>&nbsp;&nbsp;&nbsp;38<font color="#FFD580"> Reworked Recipes</font>&nbsp;&nbsp;&nbsp;31<font color="#FFD580"> Reworked Items</font></b></p></center>
+           <center> <p><b>17<font color="#CBC3E3"> New Items</font>&nbsp;&nbsp;&nbsp;38<font color="#CBC3E3"> Reworked Recipes</font>&nbsp;&nbsp;&nbsp;31<font color="#CBC3E3"> Reworked Items</font></b></p></center>
         </div>
     
  <div>&nbsp;</div> <div>&nbsp;</div>
@@ -4975,41 +5087,50 @@ span.comment_undying {
 
 
 
-            <div class="patchnotespage_UpdatesSection_3n8oL patchnotespage_IsShown_rKsLh"><div class="general_notes"><div>&nbsp;</div>
+            <div class="patchnotespage_UpdatesSection_3n8oL patchnotespage_IsShown_rKsLh"><div class="general_notes"><div>&nbsp;</div><div class=".patchnotespage_PatchNoteItem_32hr0">
                 
                 <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tome_of_aghanim.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Tome of Aghanim</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
-                   <div>&nbsp;</div>
-                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h4><font color="#ADD8E6"><b>Use: Read Tome</b></font></h4> <div>&nbsp;</div>Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes. </div></div><div>&nbsp;</div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 10s</div></div><div>&nbsp;</div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Can only be obtained through Roshan.</div></div></div></div>
+                  <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Granted upon Roshan's third death on radiant-side.</div></div></div> <div class="item_basic">
+                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Use: Read Tome</font></h20> <div>&nbsp;</div>Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes. </div></div><div>&nbsp;</div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 10s</div></div></div>
+                        
+                        </div></div></div>
                 
                 
                 
-                
-                
+               
                                            
                  <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/faded_broach.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Faded Broach</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
-                   <div>&nbsp;</div>
+                  <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">New Miscellaneous Item. Cost: 250</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div></div> <div class="item_basic"> 
                    
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+100 Mana</div></div><div>&nbsp;</div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost: 250g</div></div></div><div>&nbsp;</div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+75 Mana</font></div></div
                      </div>
+                     </div>
+                       </div></div>
                 
                 
                 
               
                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/fairys_trinket.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Fairy's Trinket</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
-                   <div>&nbsp;</div>
+                     <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">New Miscellaneous Item. Cost: 400</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div></div> <div class="item_basic"> 
                    
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+4% Magical Damage Amplification</div></div><div>&nbsp;</div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost: 400g</div></div></div><div>&nbsp;</div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+4% Magical Damage Amplification</font></div></div>
+                   
                      </div>
+                    </div></div>
                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/stout_shield.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Stout Shield</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
-                   <div>&nbsp;</div>
-                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h4><font color="#ADD8E6"><b>Passive: Melee Damage Block</b></font></h4> <div>&nbsp;</div>Grants melee heroes a 50% chance upon attacked to block 30 attack damage.</div></div><div>&nbsp;</div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 10s</div></div><div>&nbsp;</div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Can only be obtained through Roshan.</div></div></div></div>
-                
+                   <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">New Equipment Item. Cost: 500</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div></div><div class="item_basic">
+                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Melee Damage Block</font></h20> <div>&nbsp;</div>Grants melee heroes a 50% chance upon attacked to block 30 attack damage.</div></div>
+                       </div>
+                        
+                        </div></div></div>
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1122893854375420055/Siltbreaker_Bogdugg27s_Cudgel_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Bogdugg's Cudgel</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
+                   <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ"><span class="New">Recipe:</span> Orb of Venom + Ring of Regen + Recipe. Total cost: 850</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div></div><div class="item_basic">
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+2.5 Health Regeneration</font></div></div><div>&nbsp;</div>
+                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Maim</font></h20> <div>&nbsp;</div>Every attack has a 30% chance to wound enemy units, slowing their movement and attack speed by 30% and reducing their health regeneration by 15% for 5 seconds.</div></div>
+                       </div>
+                        
+                        </div></div></div>
                 <div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tpscroll.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Teleport Scroll</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New"></span></div></div></div>
                   <div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ" style="color:LightBlue;">CHANGES</div></div><div>&nbsp;</div>
                  <div class="patchnotespage_NoteElement_1gbgx"></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now initially comes in a limited stock of 3 with a restock time of 60 seconds and a max stock count of 10.</div
