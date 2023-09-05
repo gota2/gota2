@@ -209,7 +209,32 @@ div.Container, div.Container .Inner
     height: 287px;
 }
         
-
+        .header_text{
+            width: 100%;
+    padding: 15px 0;
+    color: orange;
+    font-size: clamp(30px,4vw,72px);
+    letter-spacing: 3px;
+    font-weight: 800;
+    border-image: -webkit-gradient(linear, left top, right top, from(rgba(146, 30, 94, 0)), to(rgba(146, 30, 94, 0)), color-stop(0.2, #F5A043), color-stop(0.8, #F5A043)) 2 0 2 0;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background: radial-gradient(circle at top, rgba(60, 0, 60, 0.5019607843), rgba(60, 0, 60, 0.5019607843), rgba(60, 0, 60, 0.5019607843), rgba(146, 30, 94, 0));
+    backdrop-filter: blur(16px);
+    text-shadow: 0px 4px 12px rgba(0,0,0,.3);
+        } 
+        .header_line{
+            margin: 15px 0 25px 0;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(146, 30, 94, 0), #921E5E, #F5A043, #921E5E, rgba(146, 30, 94, 0));
+        }
+        .recipe_line{
+           
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(70, 0, 70, 0), purple, pink, purple, rgba(70, 0, 70, 0));
+        }
 h1.OrangeGradient, h2.OrangeGradient, h3.OrangeGradient, h4.OrangeGradient
 {
     display: table;
@@ -452,6 +477,19 @@ h2.OrangeBoxHeader b
     -webkit-text-stroke: 1px black;
     
 }
+        #BG2 h8
+{
+    width: 100%;
+    text-align: center;
+    font-size: 88px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #CC5500;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+   filter: drop-shadow(60px 0px 60px red) drop-shadow(25px 0px 90px blue);
+    
+}
         #BG2 h10
 {
     width: 100%;
@@ -465,6 +503,7 @@ h2.OrangeBoxHeader b
     color: #CC5500;
     font-weight: bold;
     -webkit-text-stroke: 1px pink;
+    filter: drop-shadow(60px 0px 60px red) drop-shadow(25px 0px 90px blue);
     
 }
 
@@ -590,6 +629,18 @@ em, em del, ins
     font-style: normal;
     text-decoration: none;
 }
+        em3, em3 del3, ins3
+{
+    /* Reset */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-style: normal;
+    text-decoration: none;
+}
         em2, em2 del2, ins
 {
     /* Reset */
@@ -610,7 +661,7 @@ em
     height: 16px;
     margin-left: 5px;
     margin-right: 5px;
-    background-image: url(https://www12.lunapic.com/editor/working/169385928622695958?28438902388);
+    background-image: url(https://cdn.discordapp.com/attachments/921819364880171030/1148619842539233400/orange_info_block.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -622,10 +673,15 @@ em
     height: 16px;
     margin-left: 5px;
     margin-right: 5px;
-    background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/icon_info.png);
+    background-image: url(https://cdn.discordapp.com/attachments/921819364880171030/1148619842539233400/orange_info_block.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+        em3
+{
+   color: orange;
+    text-transform: capitalize;
 }
 
 em del
@@ -637,6 +693,26 @@ em del
     display: block;
     visibility: hidden;
     width: 100%;
+    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/new_frontiers/backgrounds/featured_teal.jpg");
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 17px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}
+        em3 del3
+{
+    font-size: clamp(17px,1.5vw,19px);
+    color: #DA70D6;
+    line-height: 1.3;
+    font-weight: 200;
+    display: block;
+    visibility: hidden;
+    width: 100%;
+    align-items: center;
     background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/new_frontiers/backgrounds/featured_teal.jpg");
     text-align: center;
     padding: 10px 15px 10px 15px;
@@ -672,6 +748,10 @@ em:hover del
     visibility: visible;
 }
         em2:hover del2
+{
+    visibility: visible;
+}
+         em3:hover del3
 {
     visibility: visible;
 }
@@ -1960,6 +2040,9 @@ a {
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_IntroductionSection_1e-VS .new_frontiers_Body_31D4Q.new_frontiers_Italic2_2dHzK {
     font-size: 40px;
     font-style: italic
+        
+        
+    
     
 }
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR {
@@ -2024,7 +2107,7 @@ a {
     font-family: "Reaver",serif;
     color: #800080;
     padding: 0px 12vw 40px 12vw;
-             background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/new_frontiers/backgrounds/featured_teal.jpg");
+             background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/header_bg.png");
     text-align: center;
     font-size: clamp(60px,1.6vw,28px);
     letter-spacing: .2px;
@@ -3356,8 +3439,9 @@ a {
     padding-bottom: 0px;
     border-radius: 3px;
     margin-bottom: 30px;
-              
-    background: linear-gradient(90deg, rgba(60, 0, 60, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
+             
+                  background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/augupdate23/repeater_grey_alt.jpg");
+   
     box-shadow: 0px 0px 50px #000
 }
         
@@ -3370,7 +3454,8 @@ a {
     padding-bottom: 0px;
     border-radius: 3px;
     margin-bottom: 30px;
-    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/new_frontiers/backgrounds/featured_purple.jpg");
+            
+   background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/augupdate23/repeater_grey_alt.jpg");
     box-shadow: 0px 0px 50px #000
 }
 .patchnotespage_PatchNoteHero_99z4V {
@@ -3507,7 +3592,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url("https://www12.lunapic.com/editor/working/169385928622695958?46199;");
+    background-image: url("https://cdn.discordapp.com/attachments/921819364880171030/1148642424755855370/item_header.jpg");
     border-bottom: 1px solid rgba(0,0,0,.4509803922);
    box-shadow: 0px 0px 10px #000;
     
@@ -3517,10 +3602,21 @@ a {
     width: 72px;
     height: 52px;
     background-size: cover;
+   
     background-repeat: no-repeat;
     box-shadow: 0px 0px 20px #000;
     margin-right: 16px;
-    margin-bottom: 10px
+    
+}
+        .recipe_item {
+    width: 36px;
+    height: 26px;
+         
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    
+    
 }
 
 .patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_RightSection_Jyw3S {
@@ -3641,7 +3737,14 @@ a {
 .patchnotespage_NoteElement_1gbgx {
     display: flex;
     flex-direction: row;
-    align-items: flex-start
+    align-items: flex-start;
+      
+}
+        .patchnotespage_NoteElement2_1gbgx {
+    
+        text-transform: none;
+            text-align: center;
+            font-size: 17px;
 }
 
 .patchnotespage_NoteElement_1gbgx .patchnotespage_Dot_1gcyD {
@@ -3721,6 +3824,16 @@ a {
    
     
 }
+        .patchnotespage_NoteElement_1gbgx recipe_text {
+    font-family: "Radiance";
+    text-align: left;
+   font-size: clamp(17px,1.5vw,19px);
+    color: rgba(187,187,187,0.9333333333);
+   
+   font-weight: 200;
+    
+}
+        
  .cost_text{
         font-family: "Radiance";
     text-align: left;
@@ -3733,14 +3846,33 @@ font-weight: 200;
     color: #fff
 }
 
-span.New {
+.New {
    background: -webkit-linear-gradient(#228B22 10%, #50C878 90%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0,0,0,0);
     
-    font: "Noto Sans"
+   
 }
+        .New_recipe {
+   background: -webkit-linear-gradient(#228B22 10%, #50C878 90%);
+    background-clip: text;
+            font-size: 18px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    
+   
+}
+        .old_recipe {
+   background: -webkit-linear-gradient(#FFAC1C 10%, #CC5500 90%);
+    background-clip: text;
+            font-size: 18px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    
+   
+}
+
 
 
 span.Reworked {
@@ -3749,7 +3881,7 @@ span.Reworked {
      font: "Noto Sans";
 }
 
-span.Shard {
+.Shard {
     background: -webkit-linear-gradient(#0096FF 10%, #088F8F 90%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -3862,21 +3994,22 @@ color: #cacaff;
     padding-bottom: 15px;
     border-radius: 3px;
 
-    background-image: url("https://www12.lunapic.com/editor/working/169385928622695958?59827;");
+  background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2022/backgrounds/generic_bg_02.jpg")
    
         }
          .item_recipe{
-            
+          
             width: 100%;
     min-height: 0;
-           box-shadow: 0px 0px 10px #000;   
+             box-shadow: 0px 0px 10px #000;  
     display: flex;
     flex-direction: column;
     padding: 18px;
     padding-bottom: 15px;
- align-items: center;
-     
-    background-image: url("https://www12.lunapic.com/editor/working/169385928622695958?60482;");
+    border-radius: 3px;
+             align-content: center;
+
+  background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2022/backgrounds/generic_bg_02.jpg")
   
         }
         .item_recipe_old{
@@ -3890,7 +4023,7 @@ color: #cacaff;
     padding-bottom: 15px;
  align-items: center;
      
-    background-image: url("https://www12.lunapic.com/editor/working/169385928622695958?20653;");
+    background-image: url("https://cdn.discordapp.com/attachments/921819364880171030/1148618359173296239/old_recipe.jpg");
   
         }
 
@@ -3972,7 +4105,7 @@ color: #cacaff;
             
             
             
-            <div id="MajorGameplay" class="new_frontiers_WebsiteSection_3o_tR new_frontiers_Main_3wT0k"><h1>NEW ITEMS</h1></div><div class="new_frontiers_Introduction_2wDk9">There you go, 24 new items. Well, there are also a few old ones brought back in a different manner.</div><div>&nbsp;</div><div class="new_frontiers_ItemsContainer_3Qyvb"><div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tome_of_aghanim.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Tome of Aghanim<em><del>Can only be obtained through Roshan.</del></em></div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Use: Read Tome</h4> Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes. </div> </div>
+            <div id="MajorGameplay" class="new_frontiers_WebsiteSection_3o_tR new_frontiers_Main_3wT0k"><h1>NEW ITEMS</h1></div><div class="new_frontiers_Introduction_2wDk9">There you go, 24 new items. Well, there are also a few old ones brought back in a different manner.</div><div>&nbsp;</div><div class="new_frontiers_ItemsContainer_3Qyvb"><div class="new_frontiers_GameItemDetails_3NBnk"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tome_of_aghanim.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Tome of Aghanim<em><del><div class="patchnotespage_NoteElement2_1gbgx"><div class="patchnotespage_Note_eSxyZ">Granted upon Roshan's third death on radiant-side.</div></div></del></em></div></div></div><div class="new_frontiers_Body_31D4Q"><div class="new_frontiers_DescriptionContainer_Qov_s"><div class="new_frontiers_Description_a6GNe"><h4>Use: Read Tome</h4> Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes. </div> </div>
                  </div>
                  </div>
                 
@@ -4879,7 +5012,7 @@ color: #cacaff;
                             </div>
                           
                           <div>&nbsp;</div><div>&nbsp;</div>
-                                    <div class="new_frontiers_Introduction2_2wDk9"><div class="bbcodes_Italic_zA7ad BB_Italic2"><div>&nbsp;</div><b>INNATE POWERS GAMEPLAY UPDATE</b></div></div>
+                                    <div class="new_frontiers_Introduction2_2wDk9"><div class="bbcodes_Italic_zA7ad BB_Itali"><div>&nbsp;</div><b><h8>INNATE POWERS UPDATE</h8></b></div></div>
          
           <div class="patchnotespage_Body_11CXi">
               
@@ -4896,17 +5029,22 @@ color: #cacaff;
 			<div class="outposts"></div>
                 <div>&nbsp;</div>
 <div class="">
-            <center><h3 class="OrangeGradient"><font color="purple">General UPDATES</font></h3></center>
-           <center> <p><b><font color="#CBC3E3">Map Reworked&nbsp;&nbsp;&nbsp;Economy Reworked&nbsp;&nbsp;&nbsp;Mechanics Reworked</font></b></p></center>
-        </div>
+            <center><h3 class="header_text">GENERAL UPDATES</h3></center><div>&nbsp;</div> 
+    <center> <p><b><font color="#FFFF8F">Map Reworked&nbsp;&nbsp;&nbsp;Economy Reworked&nbsp;&nbsp;&nbsp;Mechanics Reworked</font></b></p></center>
+    <center><h3 class="header_line"></h3></center>
     
- <div>&nbsp;</div> <div>&nbsp;</div>
+    <div>&nbsp;</div> 
+           
+        </div>
+            
+    
+ 
  
            
             
 
         <div class="patchnotespage_PatchNotesList_2bYtA"><div class="patchnotespage_PatchNoteHero_99z4V"><div class="general_notes"><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a>
-        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">MAP</font></span></div></div>
+        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>MAP</h3></font></span></div></div>
             <div>&nbsp;</div>
             
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Map is now smaller but about 10% bigger than the pre-7.33, with the majority of the extra space being around the Rosh Pits located at the top-left and bottom-right corners. Compared to the 7.32 map, there are 2-2 more Neutral Camps on each side, both of which are located around the Rosh Pits.</div></div><div>&nbsp;</div>
@@ -4918,7 +5056,7 @@ color: #cacaff;
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mid Lane is now slightly wider and the tier 1 towers are further away from the river.</div></div><div>&nbsp;</div>
       
             
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ECONOMY</font></span></div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>ECONOMY</h3></font></span></div></div>
             <div>&nbsp;</div>
            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base GPM increased from 90 to 100. This amount no longer increases over time.<em><del>Previously increased up to 150 per minute.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div> 
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Offlane waves now have an additional ranged creep every third wave.</div></div><div>&nbsp;</div>
@@ -4927,12 +5065,12 @@ color: #cacaff;
       
                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Jungle Creeps gold and experience rewards are now dynamic:</div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Jungle Creep bounties are now 40% higher at the start of the game, but then these bounties decrease by 10% every five minutes for twenty minutes. After that, their bounties increase by 10% every five minutes for twenty minutes, and repeat. </div></div><div>&nbsp;</div>
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">RUNES</font></span></div></div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>RUNES</h3></font></span></div></div>
             <div>&nbsp;</div>
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes reworked:</div></div> <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">They now spawn at minute 2, near the ancient camp, and continue to spawn every 2 minutes. Their bounty, which is 90 gold and experience, is no longer granted to the whole team; instead, it is given only to the hero that picks them up. This bounty scales as the game progresses, granting +15 gold and experience with each spawn. </div></div><div>&nbsp;</div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wisdom Runes have been removed.<em><del>Experience is now granted by Bounty Runes.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">STRUCTURES</font></span></div></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>STRUCTURES</h3></font></span></div></div>
             <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tower Protection aura reworked:  </div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now grants 3 bonus armor to allied units that are being attacked.<em><del>Previously, passively granted bonus armor and health regeneration to allied units.<div>&nbsp;</div> </del></em></div></div><div>&nbsp;</div>
@@ -4944,7 +5082,7 @@ color: #cacaff;
                 
       
     
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">CREEPS AND ROSHAN</font></span></div></div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>ROSHAN AND CREEPS</h3></font></span></div></div>
             <div>&nbsp;</div>
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan third death reward on Radiant-side changed from Aghanim's Blessing to Tome of Aghanim.<em><del>Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
             
@@ -4961,8 +5099,8 @@ color: #cacaff;
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ancient Creeps had their levels increased:</div></div><div>&nbsp;</div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Small Ancient Creeps levels increased from 3 to 10.</div></div><div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Big Ancient Creeps levels increased from 6 to 12. </div></div><div>&nbsp;</div>
        
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ancient Creeps now have Magic Immunity.</div></div><div>&nbsp;</div>
-    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">DAMAGE TYPES</font></span></div></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ancient Creeps now have Magical Damage Immunity.</div></div><div>&nbsp;</div>
+    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>DAMAGE TYPES</h3></font></span></div></div>
             <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Damage Type: Dominated.</div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Creeps set under control permanently by Helm of The Dominator or a summon hero like Chen now gain this damage type. Units with this damage type deal 200% damage to heroes, 100% to creeps and 50% to structures.</div></div> <div>&nbsp;</div>
@@ -4981,7 +5119,7 @@ color: #cacaff;
             
             
            
-      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ATTRIBUTES</font></span></div></div>
+      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>ATTRIBUTES</h3></font></span></div></div>
             <div>&nbsp;</div>
   
          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength: </div></div><div>&nbsp;</div>
@@ -4991,13 +5129,13 @@ color: #cacaff;
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence: </div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants 0.1% magic resistance.</div></div> <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus mana per intelligence decreased from 12 to 10.</div></div> <div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">ABILITY TYPES</font></span></div></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>ABILITY TYPES</h3></font></span></div></div>
             <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Ability Type: Semi-Ultimate: </div></div><div>&nbsp;</div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These abilities can be leveled up at level 4 and then again every four levels, up to a maximum of three times.</div></div> <div>&nbsp;</div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Passive abilities in the ultimate ability-slot are no longer affected by Break.</div></div><div>&nbsp;</div>
   
-       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">STATES AND MECHANICS</font></span></div></div>
+       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>STATES AND MECHANICS</h3></font></span></div></div>
             <div>&nbsp;</div>
       
       
@@ -5036,7 +5174,7 @@ color: #cacaff;
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Flying units now elevate from the ground by 190 units, preventing units with a shorter attack range from attacking them.</div></div> <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Auras no longer have a linger effect duration.</div></div> <div>&nbsp;</div>
      
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "#CC5500">REMOVALS</font></span></div></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color= "purple"><h3>REMOVALS</h3></font></span></div></div>
             <div>&nbsp;</div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following concepts, structures, and heroes have been removed:</div></div> <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Talents.</div></div><div>&nbsp;</div>
@@ -5048,11 +5186,14 @@ color: #cacaff;
             </div>
             
               <div class="">
-            <center><h3 class="OrangeGradient"><font color="purple">Hero Class Updates</font></h3></center>
-           <center> <p><b><font color="#CBC3E3">New Hero Class&nbsp;&nbsp;&nbsp;New Class Benefits&nbsp;&nbsp;&nbsp;Innate Abilities</font></b></p></center>
+           <center><h3 class="header_text">HERO CLASS UPDATES</h3></center><div>&nbsp;</div> 
+    <center> <p><b><font color="#FFFF8F">New Class Benefits&nbsp;&nbsp;&nbsp;New Hero Class&nbsp;&nbsp;&nbsp;Innate Abilities</font></b></p></center>
+    <center><h3 class="header_line"></h3></center>
+    
+    <div>&nbsp;</div> 
         </div>
     
- <div>&nbsp;</div> <div>&nbsp;</div>
+
     <div class="patchnotespage_PatchNoteHero_99z4V"><div class="general_notes"><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a>
            <div class="patchnotespage_Notes_16viL">
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">There are now class specific benefits that heroes gain depending on their primary attribute: </div></div>
@@ -5156,11 +5297,14 @@ color: #cacaff;
 
 
  <div class="">
-            <center><h3 class="OrangeGradient"><font color="purple">Item Updates</font></h3></center>
-           <center> <p><b>17<font color="#CBC3E3"> New Items</font>&nbsp;&nbsp;&nbsp;38<font color="#CBC3E3"> Reworked Recipes</font>&nbsp;&nbsp;&nbsp;31<font color="#CBC3E3"> Reworked Items</font></b></p></center>
+            <center><h3 class="header_text">ITEM UPDATES</h3></center>  <div>&nbsp;</div>
+               <center> <p><b>17<font color="#FFFF8F"> New Items</font>&nbsp;&nbsp;&nbsp;38<font color="#FFFF8F"> Reworked Recipes</font>&nbsp;&nbsp;&nbsp;31<font color="#FFFF8F"> Reworked Items</font></b></p></center>
+    <center><h3 class="header_line"></h3></center>
+    
+    <div>&nbsp;</div> 
         </div>
     
- <div>&nbsp;</div> <div>&nbsp;</div>
+
 
 
 
@@ -5168,7 +5312,23 @@ color: #cacaff;
             <div class="patchnotespage_UpdatesSection_3n8oL patchnotespage_IsShown_rKsLh"><div class="item_notes"><div>&nbsp;</div><div class=".patchnotespage_PatchNoteItem_32hr0">
                 
                 <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tome_of_aghanim.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Tome of Aghanim</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
-                  <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Granted upon Roshan's third death on radiant-side.</div></div></div> <div class="item_basic">
+                    <div class="item_recipe">
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><font color="orange">Granted upon Roshan's third death on radiant-side.</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div>
+                   <div class="item_basic">
                    <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Use: Read Tome</font></h20> <div>&nbsp;</div>Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes. </div></div><div>&nbsp;</div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 10s</div></div></div>
                         
@@ -5178,8 +5338,24 @@ color: #cacaff;
                 
                
                                            
-                 <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/faded_broach.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Faded Broach</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
-                  <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost: 250g.</div></div></div> <div class="item_basic"> 
+                 <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/faded_broach.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Faded Broach</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">250</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><div class="New">New Item</div></div></div></div>
+                     <div class="item_recipe">
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><font color="orange">New Miscellaneous Item</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div>
+                   <div class="item_basic"> 
                    
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+75 Mana</font></div></div>
                      
@@ -5191,21 +5367,59 @@ color: #cacaff;
               
                
                
-                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1122893854375420055/Siltbreaker_Bogdugg27s_Cudgel_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Bogdugg's Cudgel</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
-                   <div class="item_recipe">
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1122893854375420055/Siltbreaker_Bogdugg27s_Cudgel_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Bogdugg's Cudgel</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1050</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><div class="New">New Item</div></div></div>
+                 
                       
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Belt of Strength + Ring of Regen + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 1050g</div></div></div><div class="item_basic">
+                      </div>
+                    
+                    <div class="item_recipe">
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/belt_of_strength.png"><font color="orange">Belt of Strength<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_regen.png">Ring of Regen<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div>
+                    <div class="item_basic">
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+6 Strength</font></div></div>
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+2.5 Health Regeneration</font></div></div><div>&nbsp;</div>
                    <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Maim</font></h20> <div>&nbsp;</div>Every attack has a 25% chance to wound enemy units, slowing their movement and attack speed by 25% for 5 seconds.</div></div>
                        </div>
-                        
+                      
                         </div></div></div>
-                     <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1122892797368872982/Siltbreaker_Treads_of_Ermacor_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Ninja Tabi</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
+                
+                
+                
+                
+                
+                
+                
+                     <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1122892797368872982/Siltbreaker_Treads_of_Ermacor_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Ninja Tabi</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1050</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
                    <div class="item_recipe">
-                       
-                        
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Band of Elvenskin + Wind Lace + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 1050g</div></div></div><div class="item_basic">
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/band_of_elvenskin.png"><font color="orange">Band of Elvenskin<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wind_lace.png">Wind Lace<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+            <div class="recipe_line"></div>
+                         
+                         
+                         
+                         <div class="item_basic">
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+6 Agility</font></div></div>
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+25 Movement Speed</font></div></div><div>&nbsp;</div>
                          <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Active: Determination</font></h20></div></div> <div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When activated, you gain slow immunity for 2 seconds.<div>&nbsp;</div>Dispellable.</div></div><div>&nbsp;</div>
@@ -5215,10 +5429,23 @@ color: #cacaff;
                    
                         
                         </div></div></div>
-                     <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//items/fairys_trinket.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Fairy's Trinket</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
+                     <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//items/fairys_trinket.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Fairy's Trinket</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1050</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
                    <div class="item_recipe">
-                        
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Robe of the Magi + Sage's Mask + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 1050g</div></div></div><div class="item_basic">
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/robe.png"><font color="orange">Robe of the Magi<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sobi_mask.png">Sage's Mask<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+6 Intelligence</font></div></div>
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+1.4 Mana Regeneration</font></div></div>
                          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+5% Magical Damage Amplification</font></div></div>
@@ -5227,11 +5454,23 @@ color: #cacaff;
                         
                         </div></div></div>
                 
-                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_powder_bag.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Tree Processor</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
-                   <div class="item_recipe">
-                       
-                        
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Gloves of Haste + Quelling Blade + Tango + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 1225g</div></div></div><div class="item_basic">
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_powder_bag.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Tree Processor</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1225</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
+                       <div class="item_recipe">
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gloves_of_haste.png"><font color="orange">Gloves of Haste<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/quelling_blade.png">Quelling Blade<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tango.png">Tango<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+25 Attack Speed</font></div></div><div>&nbsp;</div>
                    <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Active: Destroy Trees</font></h20> <div>&nbsp;</div>Destroys every tree around you continuously for 4 seconds. For every tree killed, you are granted 1% bonus movement speed and 0.5 bonus health regeneration for 6 seconds.<div>&nbsp;</div>Radius: 450<div>&nbsp;</div></div></div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana cost: 25</div></div>
@@ -5242,13 +5481,25 @@ color: #cacaff;
                        </div><div>&nbsp;</div>
                         
                         </div></div></div>
-                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/poor_mans_shield.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Poor Man's Shield</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/poor_mans_shield.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Poor Man's Shield</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1400</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="New">New Item</span></div></div></div>
                    <div class="item_recipe">
-                       
-                        
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Crown + Crown + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 1400g</div></div></div><div class="item_basic">
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/crown.png"><font color="orange">Crown<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/crown.png">Crown<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+6 All Attributes</font></div></div><div>&nbsp;</div>
-                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Melee Damage Block</font></h20> <div>&nbsp;</div>Grants melee heroes a 50% chance upon attacked to block 30 attack damage.</div></div>
+                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Melee Damage Block</font></h20> <div>&nbsp;</div>Grants melee heroes a 100% chance upon attacked to block 30 attack damage.</div></div>
                        </div>
                         
                         </div></div></div>
@@ -5293,8 +5544,8 @@ color: #cacaff;
                                           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Restock duration increased from 80s to 120s</div></div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost increased from 40g to 80g</div></div>
                        
                         
-                        </div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dust.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Dust of Appearance</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
-                   <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost: 75g</div></div></div><div class="item_basic">
+                        </div></div></div><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dust.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Dust of Appearance</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">75</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+                   <div class="item_basic">
                    <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Active: Reveal</font></h20></div></div>  <div>&nbsp;</div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When activated, throws dust on the ground that reveals every invisible unit in a 900 radius for 8 seconds, as well as damaging them by 50 and slowing their movement speed by 25%. The thrown dust stays on the ground for 12 seconds, indicating the position of invisible units that move in this area but not revealing them.</div></div>  <div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 30s</div></div>
                        </div>
@@ -5383,7 +5634,7 @@ color: #cacaff;
                      <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/aghanims_shard.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Aghanim's Shard</div><div class="patchnotespage_ItemTitle_2kpOY"><span class=""></span></div></div></div>
                    <div class="item_basic">
 
-                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now never grants a new ability. Now only improves an already existing ability of a hero. </div></div>
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now never grants a new ability, only improves an already existing ability of a hero. </div></div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now can be purchased at minute 10.</div></div>
                                            
                        <div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost decreased from 1400g to 1000g.</div></div>
@@ -5427,14 +5678,14 @@ color: #cacaff;
                      
                      
                      
-                     <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_venom.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Orb of Venom</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
-                   <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost: 300g</div></div></div><div class="item_basic">
+                     <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_venom.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Orb of Venom</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">300</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+                   <div class="item_basic">
                    <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Poison Attack</font></h20> <div>&nbsp;</div>Every attack within a 400-range applies a stacking 4% movement speed slow and 4% health regeneration reduction for 4 seconds. <div>&nbsp;</div> Maximum stack count: 5.<div>&nbsp;</div> Dispellable.
                        </div>
                         
                         </div></div></div> </div> </div>
-                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blight_stone.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Blight Stone</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
-                   <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost: 400g</div></div></div><div class="item_basic">
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blight_stone.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Blight Stone</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">400</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+                   <div class="item_basic">
                    <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Armor Corruption</font></h20> <div>&nbsp;</div>Every attack applies a stacking 1 armor corruption for 6 seconds.<div>&nbsp;</div>Maximum stack count: 3.<div>&nbsp;</div>Dispellable.
                        </div>
                         
@@ -5819,9 +6070,9 @@ color: #cacaff;
                         
                         </div></div></div>
                 
-                         <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/shadow_amulet.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Shadow Amulet</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
-                   <div class="item_recipe"><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Cost: 1500g</div></div></div><div class="item_basic">
-                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Active: Shadow Walk</font></h20></div></div> <div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When activated, grants 15% bonus movement speed and turns you invisible for 14 seconds.<div>&nbsp;</div>The invisibility ends when you attack or cast an ability.</div></div><div>&nbsp;</div>
+                         <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/shadow_amulet.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Shadow Amulet</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1500</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+                   <div class="item_basic">
+                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Active: Shadow Walk</font></h20></div></div> <div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When activated, grants 15% bonus movement speed and turns you invisible for 14 seconds.<div>&nbsp;</div>The invisibility ends when you attack or cast an ability. The attack that exits invisibility deals 75 bonus physical damage. </div></div><div>&nbsp;</div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana cost: 50</div></div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 25s</div></div>
                        </div>
@@ -6075,11 +6326,17 @@ color: #cacaff;
                        
                      
                        
-    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Magic Stick + Circlet + Iron Branch + Recipe.<em2><del2><div class="item_recipe_old">
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ"><span class="reworked">Old Recipe:</span><div>&nbsp;</div></div></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Magic Stick + Iron Branch + Iron Branch + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 450g</div></div></div></del2></em2></div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 500g</div></div>
-    </div><div class="item_basic">
-                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Energy Charge now gains two charges for every ability cast.</div></div>  
+    <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><font class="old_recipe">OLD&nbsp;&nbsp;</font><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/magic_stick.png"><font color="orange">Magic Stick<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png">Iron Branch<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png">Iron Branch<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+              <div>&nbsp;</div>
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><font class="New_recipe">NEW&nbsp;&nbsp;</font><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/magic_stick.png"><font color="orange">Magic Stick<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/circlet.png">Circlet<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png">Iron Branch<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div></div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
+                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Energy Charge now gains an additional charge per ability cast.</div></div>  
+    <div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost increased from 450g to 500g</div></div> 
+                       
                        </div>
                         
                         </div></div>
@@ -6087,13 +6344,15 @@ color: #cacaff;
 
                 
       
-      <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bracer.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Bracer</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+      <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bracer.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Bracer</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">490</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
                    <div class="item_recipe">
                        
                         
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Circlet + Gauntlets of Strength + Gauntlets of Strength + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 490g</div></div>
-
-    </div><div class="item_basic">
+                        <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/circlet.png"><font color="orange">Circlet<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gauntlets.png">Gauntlets of Strength<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gauntlets.png">Gauntlets of Strength<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div></div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+8 Strength</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+2 Agility</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+2 Intelligence</font></div></div>
@@ -6103,67 +6362,106 @@ color: #cacaff;
                 
                 
                 
-      <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wraith_band.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Wraith Band</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+      <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wraith_band.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Wraith Band</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">490</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
                    <div class="item_recipe">
                        
                         
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Circlet + Slippers of Agility + Slippers of Agility + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 490g</div></div>
-
-    </div><div class="item_basic">
+                        <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/circlet.png"><font color="orange">Circlet<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/slippers.png">Slippers of Agility<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/slippers.png">Slippers of Agility<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div></div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+8 Agility</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+2 Strength</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+2 Intelligence</font></div></div>
                        </div>
                         
                         </div></div>
-      <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/null_talisman.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Null Talisman</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+      <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/null_talisman.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Null Talisman</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">490</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
                    <div class="item_recipe">
                        
                         
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Circlet + Mantle of Intelligence + Mantle of Intelligence + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 490g</div></div>
-
-    </div><div class="item_basic">
+                     <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/circlet.png"><font color="orange">Circlet<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mantle.png">Mantle of Intelligence<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mantle.png">Mantle of Intelligence<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div></div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+8 Intelligence</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+2 Strength</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+2 Agility</font></div></div>
                        </div>
                         
                         </div></div>
-       <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/soul_ring.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Soul Ring</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Shard">RECIPE REWORKED</span></div></div></div>
-                   <div class="item_recipe">
-                       
-                       
-    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Ring of Regen + Ring of Protection + Gauntlets of Strength + Gauntlets of Strength<em2><del2><div class="item_recipe_old">
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ"><span class="Reworked">Old Recipe:</span><div>&nbsp;</div></div></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Ring of Protection + Gauntlets of Strength + Gauntlets of Strength + Recipe</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 805g</div></div></div></del2></em2></div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 755g</div></div>
-    </div><div class="item_basic">
+       <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/soul_ring.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Soul Ring</div><div class="patchnotespage_ItemTitle_2kpOY"><div class="Shard">RECIPE REWORKED</div></div></div>
+                 
+                      
+                       <div>&nbsp;</div></div>
+                    
+           <div class="item_recipe">
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><font class="old_recipe">OLD&nbsp;&nbsp;</font><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gauntlets.png"><font color="orange">Gauntlets of Strength<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gauntlets.png">Gauntlets of Strength<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_protection.png">Ring of Protection<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+              <div>&nbsp;</div>
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><font class="New_recipe">NEW&nbsp;&nbsp;</font><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gauntlets.png"><font color="orange">Gauntlets of Strength<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gauntlets.png">Gauntlets of Strength<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_protection.png">Ring of Protection<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_regen.png">Ring of Regen</font></div></div></div>
            
            
-                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now also grants 2.5 bonus health regeneration</div></div>  
-           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Sacrifice cooldown decreased from 25s to 20s</div></div>  
-                       </div>
-                        
-                        </div></div>
-               <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_corrosion.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Orb of Corrosion</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+           
+                    <div class="recipe_line"></div>
+           
+           
+                    <div class="item_basic">
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now also grants 2.5 bonus health regeneration</div></div>
+                           
+                       <div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost decreased from 805 to 755g</div></div> 
+                      
+                        </div>
+           
+           
+           
+           </div></div>
+                
+                
+                
+               <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_corrosion.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Orb of Corrosion</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">800</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
                    <div class="item_recipe">
                        
                         
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Blight Stone + Orb of Venom + Recipe.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 800g</div></div>
-
-    </div><div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Corrosion</font></h20> <div>&nbsp;</div>Every attack applies a stacking 7% movement speed slow, 7% health regeneration reduction, and 1 armor corruption for 6 seconds.<div>&nbsp;</div> Maximum stack count: 3.<div>&nbsp;</div> Dispellable.
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blight_stone.png"><font color="orange">Blight Stone<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_venom.png">Orb of Venom<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><h20><font color="#E0B0FF">Passive: Corrosion</font></h20> <div>&nbsp;</div>Every attack applies a stacking 7% movement speed slow, 7% health regeneration reduction, and 1 armor corruption for 6 seconds.<div>&nbsp;</div> Maximum stack count: 3.<div>&nbsp;</div> Dispellable.
                        </div>
                         
                         </div></div>
                         
                         </div></div>
                 
-                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/falcon_blade.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Falcon Blade</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/falcon_blade.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Falcon Blade</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1900</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
                    <div class="item_recipe">
                        
                         
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Cloak + Blades of Attack + Sage's Mask + Faded Broach.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 1900g</div></div>
-
-    </div><div class="item_basic">
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blades_of_attack.png"><font color="orange">Blades of Attack<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/faded_broach.png">Faded Broach<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sobi_mask.png">Sage's Mask<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/cloak.png">Cloak</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+10 Attack Damage</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+100 Mana</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+1.5 Mana Regeneration</font></div></div>
@@ -6184,8 +6482,8 @@ color: #cacaff;
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Regeneration state grants 5 bonus mana regeneration</div></div> <div>&nbsp;</div> 
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now can also be built from the following combination of items:</div></div><div>&nbsp;</div> 
                        
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ring of Health + Ring of Health</div></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Void Stone + Void Stone</div></div> 
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_health.png">Ring of Health<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_health.png">Ring of Health</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/void_stone.png">Void Stone<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/void_stone.png">Void Stone</div></div> 
                        <div>&nbsp;</div>
                        <div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost increased from 1400g to 1800g</div></div> 
                        
@@ -6238,13 +6536,22 @@ color: #cacaff;
                         
                         </div></div></div></div>
                 
-                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Phase Boots</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Phase Boots</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1200</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
                    <div class="item_recipe">
                        
                         
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Boots of Speed + Blades of Attack + Wind Lace.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 1200g</div></div>
-
-    </div><div class="item_basic">
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/boots.png"><font color="orange">Boots of Speed<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wind_lace.png">Wind Lace<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blades_of_attack.png">Blades of Attack</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+10 Attack Damage</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+75 Movement Speed</font></div></div>
           <div>&nbsp;</div>
@@ -6257,13 +6564,22 @@ color: #cacaff;
                     
                     
                         </div></div>
-                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mask_of_madness.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Mask of Madness</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
+                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mask_of_madness.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Mask of Madness</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">2500</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"></div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Reworked">ITEM REWORKED</span></div></div></div>
                    <div class="item_recipe">
                        
                         
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Morbid Mask + Blitz Knuckles + Wind Lace + Recipe</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 2500g</div></div>
-
-    </div><div class="item_basic">
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/lifesteal.png"><font color="orange">Morbid Mask<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blitz_knuckles.png">Blitz Knuckles<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wind_lace.png">Wind Lace<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+ 
+               
+            
+                    
+                    
+                    
+                    </div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+40 Attack Speed</font></div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+10% Lifesteal</font></div></div>
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">+25 Movement Speed</font></div></div>
@@ -6299,14 +6615,19 @@ color: #cacaff;
                 
                 <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 60px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Boots of Travel</div><div class="patchnotespage_ItemTitle_2kpOY"><span class="Shard">RECIPE REWORKED</span></div></div></div>
                    <div class="item_recipe">
-                       
-
-    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Boots of Speed + Teleport Scroll + Recipe<em2><del2><div class="item_recipe_old">
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ"><span class="Reworked">Old Recipe:</span><div>&nbsp;</div></div></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">Boots of Speed + Recipe</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 2500g</div></div></div></del2></em2></div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patchnotespage_Note_eSxyZ">Total cost: 2500g</div></div>
-    </div><div class="item_basic">
-                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Teleport no longer has a mana cost.</div></div>  
-           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Teleport cooldown increased from 40s to 50s.</div></div>  
+               
+               
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><font class="old_recipe">OLD&nbsp;&nbsp;</font><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/boots.png"><font color="orange">Boots of Speed<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+              <div>&nbsp;</div>
+               
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><font class="New_recipe">NEW&nbsp;&nbsp;</font><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/boots.png"><font color="orange">Boots of Speed<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tpscroll.png">Teleport Scroll<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div></div>
+           
+           
+           
+                    <div class="recipe_line"></div><div class="item_basic">
+                  <div class="patchnotespage_NoteElement_1gbgx"><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Teleport no longer has a mana cost.</div></div>  
+           <div class="patchnotespage_NoteElement_1gbgx"><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Teleport cooldown increased from 40s to 50s.</div></div>  
                        </div>
                         
                         </div></div>
