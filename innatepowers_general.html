@@ -14,7 +14,20 @@
 
 	
 	
-    <script>
+    <link href="gota_stylesheet.css" rel="stylesheet">    
+        <style>.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+</style>
+		 <script>
     function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -34,11 +47,6 @@
 window.addEventListener("scroll", reveal);
     </script>
 	
-
-
-	
-	
-      <link href="gota_stylesheet.css" rel="stylesheet">    
     
     
 </head><body>
