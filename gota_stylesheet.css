@@ -7532,6 +7532,17 @@ a {
     margin-right: 5px;
     min-width: 0px
 }
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+    opacity: 1;}
+
 
 .ReactVirtualized__Table__rowColumn {
     margin-right: 5px;
@@ -7572,7 +7583,7 @@ a {
     color: #fff;
     font-size: 17px;
     letter-spacing: .5px;
-    overflow-x: hidden
+    overflow: hidden
 }
 
 @media(min-width: 2560px) {
