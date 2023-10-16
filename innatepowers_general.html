@@ -14,7 +14,25 @@
 
 	
 	
-    
+    <script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+    </script>
 	
 
 
@@ -32,7 +50,7 @@
 
     	<a id="HeaderLogo" href="https://www.dota2.com/700/"></a>
         <a class="HeaderPage " href="https://gota2classic.com/innatepowers">MAIN PAGE</a>
-    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_general">GENERAL UPDATES</a>
+    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_general"><font color="#CC5500">	GENERAL UPDATES</font></a>
     	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_items">ITEM UPDATES</a>
     	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_heroes">HERO UPDATES</a>
    
@@ -90,7 +108,7 @@
     
 <div class="">
     
-            <center><h3 class="header_text">GENERAL UPDATES</h3></center><div>&nbsp;</div> 
+            <center><h3 class="header_text ">GENERAL UPDATES</h3></center><div>&nbsp;</div> 
    
     
     <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> 
@@ -106,9 +124,9 @@
         <div class="patchnotespage_PatchNotesList_2bYtA"><div class="patchnotespage_PatchNoteHero_99z4V"><div class="general_notes"><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a>
    
                         <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.discordapp.com/attachments/921820785704833044/1150736850747654155/169442517985121174_2.png"><div class="hidden_text">MAP REWORKED</div></div>    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.discordapp.com/attachments/921820785704833044/1150736850747654155/169442517985121174_2.png"><div class="hidden_text">MAP REWORKED</div></div>    
            
-        
+         <div class="patchnotespage_Notes_16viL reveal">
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">MAP UPDATES</span></div></div>
            
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Map reworked. To clearly see every change, it is recommended to load-up the game.<div>&nbsp;</div>Some noteable updates:</div></div><div>&nbsp;</div>
@@ -119,15 +137,15 @@
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Twin Gates were moved to the location where the Tormentors used to be. They do not require to be channeled anymore; the teleporting is instant; however, they place a dispellable debuff on the teleported units that silences and mutes them for 4 seconds. Twin Gates still cannot be used while the user is silenced.</div></div>&nbsp;
             
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral camps were relocated, and new paths have been added to discover while navigating inside the forests.</div></div>&nbsp;
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mid lane is now wider and the tier 1 towers are further away from the river.</div></div>&nbsp;
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mid lane is now wider and the tier 1 towers are further away from the river.</div></div>&nbsp;</div>
    
 
      
    
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2020/tribute_image.png"><div class="hidden_text">DYNAMIC REWARDS</div></div>    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2020/tribute_image.png"><div class="hidden_text">DYNAMIC REWARDS</div></div>    
            
-            
+            <div class="patchnotespage_Notes_16viL reveal">
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">ECONOMY UPDATES</span></div></div>
          
            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base GPM increased from 90 to 100. This amount no longer increases as the game progresses.<em><del>Previously increased up to 150 per minute.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div> 
@@ -147,14 +165,14 @@
             <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Offlane waves now have an additional melee creep every second wave.</div></div><div>&nbsp;</div>
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral creep experience and gold rewards are now dynamic. Works the following way:</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral creeps now grant 30% bonus gold and experience at the beginning of the game, but then grant 10% less every 5 minutes for 15 minutes.<div>&nbsp;</div>After 15 minutes have passed, the effect gets reversed, and neutral creeps start granting 10% more gold and experience every 5 minutes for 15 minutes.<div>&nbsp;</div>After another 15 minutes have passed, the effect gets reversed again, and neutrals creeps start granting 10% less every 5 minutes for 15 minutes. And repeat.</div></div><div>&nbsp;</div>
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral creeps now grant 30% bonus gold and experience at the beginning of the game, but then grant 10% less every 5 minutes for 15 minutes.<div>&nbsp;</div>After 15 minutes have passed, the effect gets reversed, and neutral creeps start granting 10% more gold and experience every 5 minutes for 15 minutes.<div>&nbsp;</div>After another 15 minutes have passed, the effect gets reversed again, and neutrals creeps start granting 10% less every 5 minutes for 15 minutes. And repeat.</div></div><div>&nbsp;</div></div>
             
            
                  <div>&nbsp;</div>
                   <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/gameplay/overlay_items_top.png"><div class="hidden_text">SIDE SHOPS RETURNED</div></div>    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/gameplay/overlay_items_top.png"><div class="hidden_text">SIDE SHOPS RETURNED</div></div>    
            
-        
+        <div class="patchnotespage_Notes_16viL reveal">
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">SHOP UPDATES</span></div></div>
            
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Side Shops readded with the following inventory:</div></div>
@@ -198,20 +216,21 @@
                     
                     
                     
-                    </div>
+                    </div></div>
       <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.discordapp.com/attachments/921819364880171030/1160926130749055017/169684969895255272.png?ex=65366fb6&is=6523fab6&hm=23d822e3d5986cc18890df1ed2416eebd46b51e8da617ab9d4b9d6c0748e2848&"><div class="hidden_text">HEALING LOTUS SPAWNING REWORKED</div></div>    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.discordapp.com/attachments/921819364880171030/1160926130749055017/169684969895255272.png?ex=65366fb6&is=6523fab6&hm=23d822e3d5986cc18890df1ed2416eebd46b51e8da617ab9d4b9d6c0748e2848&"><div class="hidden_text">HEALING LOTUS SPAWNING REWORKED</div></div> 
+            <div class="patchnotespage_Notes_16viL reveal">
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">LOTUS POOL UPDATES</span></div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools were moved to the center of the primary jungles.</div></div><div>&nbsp;</div>
             
      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Healing Lotus spawning reworked.</div></div><div>&nbsp;</div>
                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Healing Lotuses now spawn around the Lotus Pool ready to be picked up every 2 minutes.</div></div><div>&nbsp;</div>
- <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools now can be channeled to instantly restore 50 health and 100 mana. Once channeled, they dry up and go on cooldown for 3 minutes. While it is on cooldown, the Healing Lotus spawning is delayed and temporarily stopped. If the channeler has a Bottle, then it will be filled with a Water Rune.</div></div><div>&nbsp;</div>
+ <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools now can be channeled to instantly restore 50 health and 100 mana. Once channeled, they dry up and go on cooldown for 3 minutes. While it is on cooldown, the Healing Lotus spawning is delayed and temporarily stopped. If the channeler has a Bottle, then it will be filled with a Water Rune.</div></div><div>&nbsp;</div></div>
             
             
         <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//dawnbreaker/patch/patch_general.png"><div class="hidden_text">RUNE SYSTEM REWORKED</div></div>    
-            
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//dawnbreaker/patch/patch_general.png"><div class="hidden_text">RUNE SYSTEM REWORKED</div></div>    
+            <div class="patchnotespage_Notes_16viL reveal">
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">Rune UPDATES</span></div></div>
       
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Rune system has been reworked into the following:</div></div> <div>&nbsp;</div>
@@ -251,12 +270,15 @@
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Water Runes no longer spawn. They can only be acquired through Lotus Pools.</div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Shield Rune removed.</div></div> <div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wisdom Rune removed.</div></div> <div>&nbsp;</div>
-            
+            </div>
             
             
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/neutral_creep_scaling.png"><div class="hidden_text">CREEP SCALING REWORKED</div></div>    
-<div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">CREEP UPDATES</span></div></div>
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/neutral_creep_scaling.png"><div class="hidden_text">CREEP SCALING REWORKED</div></div>    
+
+                
+                <div class="patchnotespage_Notes_16viL reveal">
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">CREEP UPDATES</span></div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral creep scaling reworked.</div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral Creeps now gain a level every 4 minutes. When they level up, they gain 4 bonus attack damage and 0.8 bonus armor. Their levels can be viewed at the same location as hero levels.<div>&nbsp;</div>When a creep is dominated, it instead levels up every time its owner levels up.</div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mega creeps now spawn with 4 bonus damage and 0.5 bonus armor per consecutive wave. </div></div><div>&nbsp;</div>
@@ -273,10 +295,10 @@
         
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lane creeps no longer move faster during night-time.</div></div><div>&nbsp;</div>
              
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Creep experience penalty when denied increased from 50% to 75%. </div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Creep experience penalty when denied increased from 50% to 75%. </div></div> <div>&nbsp;</div></div>
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.discordapp.com/attachments/1097644327871721633/1150928126675787826/96434-removebg-preview.png"><div class="hidden_text">roshan rewards reworked</div></div>    
-    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.discordapp.com/attachments/1097644327871721633/1150928126675787826/96434-removebg-preview.png"><div class="hidden_text">roshan rewards reworked</div></div>    
+    <div class="patchnotespage_Notes_16viL reveal">
 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">ROSHAN UPDATES</span></div></div>
    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan no longer uses Twin Gates to travel between his pits. He now uses an underground cave system, which is inaccessible by heroes, to travel to the other pit. How he dug this cave system and gets to the other side so quickly will remain a trade secret.</div></div>&nbsp;
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan base attribute updates:</div></div><div>&nbsp;</div>
@@ -293,14 +315,14 @@
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Second death: Aegis of the Immortal + Slice of Cheese<em><del>When consumed, restores 1250 health and 750 mana.</del></em></div></div> 
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Third death: Aegis of the Immortal + Cheese + Tome of Aghanim<em><del>Rumors say reading this tome allows the reader to use their Aghanim's Scepter upgrade for 5 minutes.</del></em></div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Fourth death: Aegis of the Immortal + Block of Cheese + Infused Aghanim's Scepter<em><del>Previously called Aghanim's Blessing.</del></em></div></div><div>&nbsp;</div> 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan respawn interval decreased from 8-11 minutes to 8-10 minutes.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan respawn interval decreased from 8-11 minutes to 8-10 minutes.</div></div><div>&nbsp;</div></div>
        <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/gameplay/overlay_heroes_top.png"><div class="hidden_text">NEW HERO CLASS</div><div class="hidden_text2">INNATE ABILITIES</div></div>    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/gameplay/overlay_heroes_top.png"><div class="hidden_text">NEW HERO CLASS</div><div class="hidden_text2">INNATE ABILITIES</div></div>    
               
     
 
    
-           
+           <div class="patchnotespage_Notes_16viL reveal">
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">HERO CLASS UPDATES</span></div></div>
        
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">There are now class specific benefits that heroes gain depending on their primary attribute: </div></div>
@@ -340,10 +362,10 @@ These heroes allow the players to build them however they want, depending on the
                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Innate damage block for melee heroes is removed. </div></div>
                 <div>&nbsp;</div>
                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Maximum Level decreased from 30 to 25.</div></div>
-              <div>&nbsp;</div>
+              <div>&nbsp;</div></div>
                <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2020/bounty_bg.png"><div class="hidden_text">FORMULAS REWORKED</div></div>    
-      
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2020/bounty_bg.png"><div class="hidden_text">FORMULAS REWORKED</div></div>    
+      <div class="patchnotespage_Notes_16viL reveal">
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">HERO KILL UPDATES</span></div></div>
                  
             
@@ -355,12 +377,13 @@ These heroes allow the players to build them however they want, depending on the
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="new_recipe">NEW&nbsp;&nbsp;</font> AssistGold = [(HeroBounty - StreakGold) / 2] / NumberOfHeroes </div></div><div>&nbsp;</div>
             
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">First Blood now also grants 100 bonus experience</div></div><div>&nbsp;</div>
-                 
+                 </div>
                                     
 
        
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//dawnbreaker/patch/patch_maps.png"><div class="hidden_text">new modifier</div><div class="hidden_text2">GLYPH REWORKED</div></div>    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//dawnbreaker/patch/patch_maps.png"><div class="hidden_text">new modifier</div><div class="hidden_text2">GLYPH REWORKED</div></div>   
+          <div class="patchnotespage_Notes_16viL reveal">
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">STRUCTURE UPDATES</span></div></div>
      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Glyph of Fortification reworked.</div></div><div>&nbsp;</div>
                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now grants 100% damage reduction to allied structures for 20 seconds. The damage reduction gradually decreases over the duration.</div></div><div>&nbsp;</div>
@@ -372,7 +395,7 @@ These heroes allow the players to build them however they want, depending on the
                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Momentum Surge grants 10% bonus movement speed and 40 bonus attack speed for 10 seconds.</div></div><div>&nbsp;</div>
 
                   
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tier 1 Tower attack range increased from 700 to 800.</div></div><div>&nbsp;</div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tier 1 Tower attack range increased from 700 to 800.</div></div><div>&nbsp;</div></div>
             
                 
                
@@ -380,8 +403,8 @@ These heroes allow the players to build them however they want, depending on the
      
             
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/gameplay/overlay_gameplay_top.png"><div class="hidden_text">NEW ABILITY TYPE</div></div>   
-           
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/gameplay/overlay_gameplay_top.png"><div class="hidden_text">NEW ABILITY TYPE</div></div>   
+           <div class="patchnotespage_Notes_16viL reveal">
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">ABILITY TYPE UPDATES</span></div></div>
    
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Ability Type: Semi-Ultimate.</div></div><div>&nbsp;</div>
@@ -390,13 +413,13 @@ These heroes allow the players to build them however they want, depending on the
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Divided We Stand</div></div>
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Invoke</div></div>
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Proximity Mines</div></div><div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Passive abilities in the ultimate ability-slot are no longer affected by Break.</div></div><div>&nbsp;</div> <div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Passive abilities in the ultimate ability-slot are no longer affected by Break.</div></div><div>&nbsp;</div> <div>&nbsp;</div></div>
             
               
         
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/heroes_header.png"><div class="hidden_text">NEW DAMAGE TYPE</div></div>   
-            
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/heroes_header.png"><div class="hidden_text">NEW DAMAGE TYPE</div></div>   
+            <div class="patchnotespage_Notes_16viL reveal">
     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">DAMAGE TYPE UPDATES</span></div></div>
     
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Damage Type: Dominated.</div></div>
@@ -413,7 +436,7 @@ Creeps set under control permanently by Helm of The Dominator or a summon hero l
            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pierce damage increase against basic armor type increased from 50% to 100%.</div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Siege damage increase against fortified armor type increased from 150% to 200%.</div></div><div>&nbsp;</div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Siege damage penalty against hero armor type increased from 0% to 25%.</div></div><div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Siege damage penalty against basic armor type increased from 0% to 50%.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Siege damage penalty against basic armor type increased from 0% to 50%.</div></div><div>&nbsp;</div></div>
 
           
             
@@ -421,8 +444,8 @@ Creeps set under control permanently by Helm of The Dominator or a summon hero l
                  
          
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/balance_heroes.png"><div class="hidden_text">primary attribute perks</div></div>   
-          
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/balance_heroes.png"><div class="hidden_text">primary attribute perks</div></div>   
+          <div class="patchnotespage_Notes_16viL reveal">
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">ATTRIBUTE UPDATES</span></div></div>
        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Attribute general perks are now increased by 20% if the attribute is the primary attribute of the hero, while Universal Heroes always benefit 10% more from the general perks of every attribute. </div></div><div>&nbsp;</div>
   
@@ -432,7 +455,7 @@ Creeps set under control permanently by Helm of The Dominator or a summon hero l
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus armor per agility decreased from 0.167 to 0.143.</div></div> <div>&nbsp;</div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence: </div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants 0.1% magic resistance.</div></div> 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus mana per intelligence decreased from 12 to 9.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bonus mana per intelligence decreased from 12 to 9.</div></div> <div>&nbsp;</div></div>
             <div>&nbsp;</div> <div>&nbsp;</div>
 
             
@@ -444,7 +467,7 @@ Creeps set under control permanently by Helm of The Dominator or a summon hero l
            
             
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/stun_reduction.png"><div class="hidden_text">new state</div><div class="hidden_text2">new mechanics</div></div>    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/stun_reduction.png"><div class="hidden_text">new state</div><div class="hidden_text2">new mechanics</div></div>    <div class="patchnotespage_Notes_16viL reveal">
        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">STATE AND MECHANIC UPDATES</span></div></div>
   
       
@@ -491,11 +514,11 @@ Creeps set under control permanently by Helm of The Dominator or a summon hero l
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Backpack items are no longer visible to enemy units.</div></div> <div>&nbsp;</div>
            
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Aura effects no longer have a linger duration.</div></div> <div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Experience Acquisition range decreased from 1500 to 1200</div></div><div>&nbsp;</div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Experience Acquisition range decreased from 1500 to 1200</div></div><div>&nbsp;</div><div>&nbsp;</div></div>
      
              <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/bkb_changes.png"><div class="hidden_text">debuff immunity reworked</div></div>    
-           
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/bkb_changes.png"><div class="hidden_text">debuff immunity reworked</div></div>    
+           <div class="patchnotespage_Notes_16viL reveal">
        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">DEBUFF IMMUNITY UPDATES</span></div></div>
    
       
@@ -510,12 +533,12 @@ Creeps set under control permanently by Helm of The Dominator or a summon hero l
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Immunity and Magic Damage Immunity, when combined is what we call Magic Immunity. In this state, while abilities can target you, they won't deal damage and their debuffs immediately end without ever affecting you. The only exception to this is if the ability pierces Magic Immunity.<div>&nbsp;</div>Two noteable differences:<div>&nbsp;</div></div></div>
     
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neither Debuff Immunity nor Magic Immunity blocks physical damage, reflected damage, or pure damage now, leaving you vulnerable to these sources of damage.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Resistance and Debuff Immunity are now the same mechanic, therefore abilities that pierce Debuff Immunity now also pierce Debuff Resistance.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_smaller_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Resistance and Debuff Immunity are now the same mechanic, therefore abilities that pierce Debuff Immunity now also pierce Debuff Resistance.</div></div><div>&nbsp;</div></div>
             <div class="new_frontiers_Image4_1XlWc">
-    <img class="new_frontiers_Image3_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/outpost_header.png"><div class="hidden_text">MAJOR REMOVALS</div></div>    
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/outpost_header.png"><div class="hidden_text">MAJOR REMOVALS</div></div>    
        
            
-             
+             <div class="patchnotespage_Notes_16viL reveal">
            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">THE GRAVEYARD</span></div></div>
     
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following concepts, structures, and heroes have been removed:</div></div> <div>&nbsp;</div>
@@ -526,7 +549,7 @@ Creeps set under control permanently by Helm of The Dominator or a summon hero l
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Watchers.</div></div><div>&nbsp;</div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wraith King.</div></div><div>&nbsp;</div>
               <div>&nbsp;</div>  <div>&nbsp;</div>
-            <div>&nbsp;</div><div>&nbsp;</div></div></div></div></div>
-                <div class="new_frontiers_ButtonsSection_1gTHT" ><div class="new_frontiers_StandardButton_end_13-RH " ><div class="new_frontiers_ButtonText_1AJXE" ><a class="" href="https://gota2classic.com/innatepowers_items">NEXT UP: ITEM UPDATES</div></div></div>
-                                 <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+            <div>&nbsp;</div><div>&nbsp;</div></div></div></div></div></div>
+                <div class="new_frontiers_ButtonsSection_1gTHT reveal" ><div class="new_frontiers_StandardButton_end_13-RH " ><div class="new_frontiers_ButtonText_1AJXE" ><a class="" href="https://gota2classic.com/innatepowers_items">NEXT UP: ITEM UPDATES</div></div></div>
+                               <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
            
