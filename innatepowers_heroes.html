@@ -7,7 +7,26 @@
    
 
     
-		
+		 <script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+    </script>
+	
 			
 		
 
@@ -34,7 +53,7 @@
              <a class="HeaderPage " href="https://gota2classic.com/innatepowers">MAIN PAGE</a>
     	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_general">GENERAL UPDATES</a>
     	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_items">ITEM UPDATES</a>
-    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_heroes">HERO UPDATES</a>
+        <a class="HeaderPage " href="https://gota2classic.com/innatepowers_heroes"><font color="#CC5500">HERO UPDATES</font></a>
    
     	<div style="clear: both;"></div>
     </div>
@@ -103,7 +122,7 @@
            
             
 
-        <div class="patchnotespage_PatchNotesList_2bYtA"><div class="patchnotespage_PatchNoteHero_99z4V"><div class="general_notes"><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a>
+        <div class="patchnotespage_PatchNotesList_2bYtA"><div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="general_notes"><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a>
            
                        
                            
@@ -118,11 +137,11 @@
            
 
 
-  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">HERO UPDATES</span></div></div>
+  <div class="patchnotespage_NoteElement_1gbgx reveal"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">HERO UPDATES</span></div></div>
                 
                 
                 
-          <div class="patchnotespage_PatchNoteHero_99z4V"><div class="anti_mage"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_anti_mage_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Anti-Mage</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+          <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="anti_mage"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_anti_mage_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Anti-Mage</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                        
                         
                   
@@ -195,7 +214,7 @@
               </div>
                        
                          </div></div>
-                <div class="patchnotespage_PatchNoteHero_99z4V"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_undying_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Axe</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+                <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_undying_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Axe</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                
               
        
@@ -285,7 +304,7 @@
                       
               
                </div>
-                <div class="patchnotespage_PatchNoteHero_99z4V"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bane.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Bane</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+                <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bane.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Bane</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Night Vision increased from 1200 to 1800.</div></div>
                          
@@ -389,7 +408,7 @@
                     </div>
                        
                          </div></div>
-                <div class="patchnotespage_PatchNoteHero_99z4V"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/broodmother.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Broodmother</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+                <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/broodmother.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Broodmother</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from Universal to Agility</div></div>
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Attack Damage increased from 11 to 32</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Silken Bola basic ability has been removed.</div></div>
@@ -503,7 +522,7 @@
                     </div>
                        
                          </div></div>
-              <div class="patchnotespage_PatchNoteHero_99z4V"><div class="anti_mage"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_drow_ranger_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Drow Ranger</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+              <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="anti_mage"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_drow_ranger_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Drow Ranger</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility increased from 20 + 2.9 to 20 + 4.2</div></div>
                   
           
@@ -591,7 +610,7 @@
                     </div>
                        
                          </div></div>
-             <div class="patchnotespage_PatchNoteHero_99z4V"><div class="elder_titan"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_elder_titan_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/elder_titan.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Elder Titan</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"> 
+             <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="elder_titan"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_elder_titan_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/elder_titan.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Elder Titan</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"> 
                        
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from Strength to Universal</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence increased from 23 + 1.6 to 23 + 2.7</div></div>
@@ -674,7 +693,7 @@
                </div></div>
              
               </div> </div>
-                 <div class="patchnotespage_PatchNoteHero_99z4V"><div class="enchantress"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_enchantress_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enchantress.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">ENCHANTRESS</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+                 <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="enchantress"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_enchantress_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enchantress.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">ENCHANTRESS</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from Intelligence to Style</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength decreased from 17 + 2.0 to 0 + 0</div></div>
                
@@ -759,7 +778,7 @@
                         </div></div></div></div>
             
             
-               <div class="patchnotespage_PatchNoteHero_99z4V"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enigma.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Enigma</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+               <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enigma.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Enigma</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Health Regeneration increased from 0.25 to 2.5</div></div>
                          
@@ -867,7 +886,7 @@
               
                     </div>
                        
-                         </div></div><div class="patchnotespage_PatchNoteHero_99z4V"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/juggernaut.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Juggernaut</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+                         </div></div><div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/juggernaut.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Juggernaut</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Movement Speed increased from 300 to 315</div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Omnislash ultimate ability has been removed.</div></div>
        
@@ -984,7 +1003,7 @@
 
                        
                          </div></div>
-    <div class="patchnotespage_PatchNoteHero_99z4V"><div class="night_stalker"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_night_stalker_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/night_stalker.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Night Stalker</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+    <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="night_stalker"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_night_stalker_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/night_stalker.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Night Stalker</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                        
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Dark Ascension ultimate ability has been removed.</div></div>
                          
@@ -1059,7 +1078,7 @@
               </div>
                        
                          </div></div>
-    <div class="patchnotespage_PatchNoteHero_99z4V"><div class="ogre_magi"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_ogre_magi_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ogre_magi.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">OGRE MAGI</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+    <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="ogre_magi"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_ogre_magi_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ogre_magi.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">OGRE MAGI</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from Strength to Intelligence</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength rescaled from 23 + 4.2 to 30 + 3.8</div></div>
                
@@ -1179,7 +1198,7 @@
              
               </div>
                         </div></div></div>
-            <div class="patchnotespage_PatchNoteHero_99z4V"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_undying_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sand_king.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Sand King</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+            <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_undying_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sand_king.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Sand King</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                
               
        
@@ -1258,7 +1277,7 @@
                       
               
                </div></div>
-<div class="patchnotespage_PatchNoteHero_99z4V"><div class="skeleton_king"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_skeleton_king_ym_hi" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1133390586968281098/Skeleton_King_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Skeleton King</div><span class="new_recipe">NEW HERO</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero replacing Wraith King</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Attack Range increased from 150 to 175</div></div>
+<div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="skeleton_king"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_skeleton_king_ym_hi" style="background-image: url('https://cdn.discordapp.com/attachments/921820785704833044/1133390586968281098/Skeleton_King_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Skeleton King</div><span class="new_recipe">NEW HERO</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero replacing Wraith King</div></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Attack Range increased from 150 to 175</div></div>
                
             
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Vampiric Spirit basic ability has been removed</div></div>
@@ -1346,7 +1365,7 @@
                         
                         </div></div></div>
             
-                    <div class="patchnotespage_PatchNoteHero_99z4V"><div class="night_stalker"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_sven_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sven.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Sven</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+                    <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="night_stalker"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_sven_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sven.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Sven</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                        
                         
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Movement Speed decreased from 325 to 300</div></div>
@@ -1410,7 +1429,7 @@
               </div>
                        
                          </div></div>
-    <div class="patchnotespage_PatchNoteHero_99z4V"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_undying_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Undying</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+    <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_undying_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Undying</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                
               
        
@@ -1508,7 +1527,7 @@
                       
               
                </div></div>
-            <div class="patchnotespage_PatchNoteHero_99z4V"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_undying_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/vengefulspirit.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Vengeful Spirit</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+            <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="undying"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_undying_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/vengefulspirit.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Vengeful Spirit</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                
               
        
@@ -1588,7 +1607,7 @@
                       
               
                </div></div>
-<div class="patchnotespage_PatchNoteHero_99z4V"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_wraith_king_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/skeleton_king.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Wraith King</div><span class="removed_recipe">HERO REMOVED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+<div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_wraith_king_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/skeleton_king.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Wraith King</div><span class="removed_recipe">HERO REMOVED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero removed from the game.</div></div>
                          
@@ -1598,7 +1617,7 @@
                        </div>
                          </div></div>
       
-                       <div class="patchnotespage_PatchNoteHero_99z4V"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/zuus.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Zeus</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
+                       <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="zeus"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_zeus_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/zuus.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Zeus</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
                         
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Attack Damage decreased 37 to 20</div></div>
                          
