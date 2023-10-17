@@ -1884,24 +1884,6 @@ font-weight: bolder;
     }
 }
 
-.new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_AnchorNavigation_3bFf7 .new_frontiers_AnchorLink_359v2 {
-    cursor: pointer;
-    font-size: 15px;
-    font-family: "Radiance",serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ff6046;
-    font-weight: 700;
-    width: -webkit-fill-available;
-    max-width: 300px;
-    transition: color,text-shadow .2s ease
-}
-
-.new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_AnchorNavigation_3bFf7 .new_frontiers_AnchorLink_359v2:hover {
-    color: #fff;
-    text-shadow: 0px 0px 12px #fff
-}
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_TrailerContainer_1QUVo {
     position: absolute;
