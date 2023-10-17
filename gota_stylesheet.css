@@ -3726,7 +3726,7 @@ position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 12px
+    margin-right: 6px
 }
 
  .item_description_container .item_description_header .item_description_cooldown .item_description_cooldown_icon {
@@ -4728,7 +4728,7 @@ font-size: 19px;
     min-height: 7px;
     border-radius: 7px;
     background: linear-gradient(90deg, rgba(60, 0, 60, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
-    margin-right: 10px;
+    margin-right: 14px;
     margin-top: 8px;
        margin-left: 20px;
 	  
@@ -4742,7 +4742,7 @@ font-size: 19px;
     min-height: 7px;
     border-radius: 7px;
     background: linear-gradient(90deg, rgba(60, 0, 60, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
-    margin-right: 10px;
+    margin-right: 14px;
     margin-top: 8px;
      
 	  
@@ -4756,7 +4756,7 @@ font-size: 19px;
     min-height: 7px;
     border-radius: 7px;
     background: linear-gradient(90deg, rgba(60, 0, 60, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
-    margin-right: 10px;
+    margin-right: 14px;
     margin-top: 8px;
        margin-left: 40px;
 	  
@@ -4783,9 +4783,10 @@ font-size: 19px;
     margin-top: 3px
 }    
     .gold_icon {
-     width: 20px;
-    height: 20px;
-        margin-top: 1px;
+     width: 16px;
+    height: 16px;
+        margin-top: 3px;
+        margin-right: 5px;
    
    
             background-color: transparent;
