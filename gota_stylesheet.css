@@ -2306,7 +2306,7 @@ font-weight: bolder;
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureCapsule_2-p0- {
      width: 100%;
-    max-width: 64%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2324,7 +2324,7 @@ font-weight: bolder;
 }
         .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureCapsule_3-p0- {
     width: 100%;
-            max-width: 64%;
+
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -2439,6 +2439,7 @@ font-weight: bolder;
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureCapsule_3-p0- .new_frontiers_Image_1XlWc {
     width: 100%;
+    max-width: 64%;
 
 }
         
