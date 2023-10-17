@@ -606,7 +606,7 @@ em del
    margin-left: auto;
     margin-right: auto;
     visibility: hidden;
-    width: 50%;
+    width: 100%;
     font-weight: bolder;
    
     transition: opacity 0.3s ease-in-out;
@@ -4729,7 +4729,7 @@ margin-top: 8px;
     min-height: 7px;
     border-radius: 7px;
     background: linear-gradient(90deg, rgba(60, 0, 60, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
-    margin-right: 14px;
+    margin-right: 9px;
     margin-top: 8px;
        margin-left: 20px;
 	  
