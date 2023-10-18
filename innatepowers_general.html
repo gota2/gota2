@@ -92,6 +92,7 @@ window.addEventListener("scroll", reveal);
   max-width: 100%;
   max-height: 600px;
         border-radius: 25px;
+box-shadow: 0px 0px 20px grey;
   overflow: hidden; }
 div#comparison figure {
   background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dawnbreaker/patch/maps/radiant_safelane_old.png);
@@ -133,6 +134,7 @@ div#comparison figure div {
   max-width: 100%;
   max-height: 600px;
         border-radius: 25px;
+           box-shadow: 0px 0px 20px grey;
   overflow: hidden; }
 div#comparison2 figure {
  background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dawnbreaker/patch/maps/radiant_primary_jungle_old.png);
@@ -174,6 +176,7 @@ div#comparison2 figure div {
   max-width: 100%;
   max-height: 600px;
         border-radius: 25px;
+                 box-shadow: 0px 0px 20px grey;
   overflow: hidden; }
 div#comparison3 figure {
  background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dawnbreaker/patch/maps/dire_triangle_old.png);
@@ -219,6 +222,7 @@ div#comparison3 figure div {
   max-width: 100%;
   max-height: 600px;
         border-radius: 25px;
+                 box-shadow: 0px 0px 20px grey;
   overflow: hidden; }
 div#comparison4 figure {
  background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dawnbreaker/patch/maps/dire_safelane_old.png);
@@ -272,6 +276,7 @@ div#comparison4 figure div {
   max-width: 100%;
   max-height: 600px;
         border-radius: 25px;
+                 box-shadow: 0px 0px 20px grey;
   overflow: hidden; }
 div#comparison5 figure {
  background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dawnbreaker/patch/maps/dire_primary_jungle_old.png);
@@ -326,6 +331,7 @@ div#comparison5 figure div {
   max-width: 100%;
   max-height: 600px;
         border-radius: 25px;
+                 box-shadow: 0px 0px 20px grey;
   overflow: hidden; }
 div#comparison6 figure {
  background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dawnbreaker/patch/maps/radiant_secret_shop_old.png);
@@ -410,7 +416,9 @@ input[type=range]{
   -moz-appearance:none;
   position: relative;
   top: -2rem; left: -2%;
-  background-color: rgba(255,255,255,0.1);
+
+     box-shadow: 0px 0px 20px black;
+    background-color: rgba(181, 166, 66, 0.5);
   width: 102%;
 }
 input[type=range]:focus {
@@ -424,7 +432,7 @@ input[type=range]::-moz-range-track {
   -moz-appearance:none;
     height:15px;
     width: 98%;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(115, 147, 179,0.5);
     position: relative;
     outline: none;
  }
@@ -436,14 +444,16 @@ input[type=range]::-webkit-slider-thumb {
     -webkit-appearance:none;
     width: 20px; height: 15px;
     background: #CC5500;
-    border-radius: 0;
+    border-radius: 5px;
+    border: 2px solid black;
    }
 input[type=range]::-moz-range-thumb {
   -moz-appearance: none;
-  width: 20px;
+  width: 40px;
   height: 15px;
   background: #CC5500;
-  border-radius: 0;
+  border-radius: 5px;
+      border: 2px solid black;
      }
 input[type=range]:focus::-webkit-slider-thumb {
     background: #CC5500;
@@ -451,6 +461,7 @@ input[type=range]:focus::-webkit-slider-thumb {
 input[type=range]:focus::-moz-range-thumb {
     background: #CC5500;
    }
+
 
 
         .wrapper_map {
@@ -561,7 +572,7 @@ font-size: 22px;
   <figure>
     <div id="divisor"></div>
   </figure>
-  <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+  <input  type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
 </div>
  <div>&nbsp;</div></div>
             <h3 class="OrangeGradient"><font color="#008000">RADIANT SAFELANE</font></h3>
