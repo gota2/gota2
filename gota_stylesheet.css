@@ -3764,13 +3764,7 @@ font-size: 19px;
     background: linear-gradient(#00A4DB, #007196)
 }
 
- .item_description_container .item_description_header .item_description_mana_container .item_description_cast_range_icon {
-    width: 20px;
-    height: 20px;
-     background-image: "https://static-00.iconduck.com/assets.00/bolt-spell-cast-icon-2048x2048-hhzj2k5o.png";
 
-    background: linear-gradient(#00A4DB, #007196)
-}
 
  .item_description_container .item_description_header .item_description_mana_container .item_description_mana_text {
     margin-left: 8px;
