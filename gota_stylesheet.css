@@ -5213,10 +5213,10 @@ html:not(.no-js) [data-aos=fade-left] {
 }
         .scepter-icon {
 	width: 55px;
-            background-size: no-repeat;
-	height: 40px;
+            background-repeat: no-repeat;
+	height: 41px;
             border-radius: 3px;
-	background-size: contain;
+	background-size: cover;
 	background-image: url( 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png' );
 	margin-right: 10px;
 	display: inline-block;
@@ -5248,7 +5248,7 @@ html:not(.no-js) [data-aos=fade-left] {
 	font-family: "Reaver", serif;
 	font-weight: 600;
 	font-size: 16px;
-	color: #0096FF;
+	color: #5D3FD3;
 	font-weight: 600;
 	display: inline-block;
 	margin-top: 1px;
