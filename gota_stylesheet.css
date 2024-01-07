@@ -5193,7 +5193,7 @@ html:not(.no-js) [data-aos=fade-left] {
 	flex-direction: row;
 
 	 border-radius: 5px;
-   box-shadow: 0px 0px 1px black;
+   box-shadow: 0px 0px 2px black;
   background-color: rgb(10, 0, 300, 0.1);
 
 }
