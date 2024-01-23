@@ -85,6 +85,81 @@ window.addEventListener("scroll", reveal);
     </script>
 	
     <style>
+<style>
+    .cast_range_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/921819364880171030/1192478468462612540/170437925783315393.png?ex=65a9391e&is=6596c41e&hm=9177d6ff38ae0c27441104674efa935ccd5f80e630df8045d6958afdd0e02e92&' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+        .scepter_recipe {
+   background: -webkit-linear-gradient(#6495ED 10%, #1434A4 90%);
+    background-clip: text;
+            font-size: 18px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+
+
+}
+        .scepter-bg {
+
+            background-color: #00224150;
+            padding: 15px 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 1px black;
+        }
+        .patch-ability-tag {
+	display: inline-block;
+	padding: 2px 2px;
+	background-color: #333;
+	text-transform: uppercase;
+
+	font-size: 16px;
+
+
+	color: white;
+	border-radius: 2px;
+	margin-left: 5px;
+}
+
+.patch-ability-tag.upgrade {
+	background-color: #CC5500;
+}
+        .patch-ability-tag.adjust {
+	background-color: #36454F;
+}
+        .dispel_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/959932061517512745/1193122235372806224/Purge_Satyr_Banisher_icon.webp?ex=65ab90ac&is=65991bac&hm=a830649d9c1edb9ce5b3a7e0e013dd0656a9f506f96e206f1b9ed48fc7a1122d&' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+        .general_dash {
+            margin-top: 10px;
+             margin-bottom: 10px;
+ width: 100%;
+    height: 0.5px;
+   border-top: 1px solid rgba(225, 193, 110, 0.4);
+
+}
 
     div#comparison {
   width: 100%;
@@ -563,7 +638,7 @@ font-size: 22px;
     <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div>
         </div><div class="patchnotespage_NoteElement_1gbgx reveal"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ" style="display: block;
   margin-left: auto;
-  margin-right: auto; font-size: 22px; font-weight: bold">Map reworked. To clearly see every change, it is recommended to load-up the game.</div></div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+  margin-right: auto; font-size: 22px; font-weight: bold"><font color="#E1C16E">Map reworked. To clearly see every change, it is recommended to load-up the game.</font></div></div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
             <div>&nbsp;</div><div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div>
     
             <div class="patchnotespage_Notes_16viL reveal">    <div class="wrapper_map"><div class="first">BEFORE</div><div class="second">AFTER</div></div>
@@ -687,9 +762,10 @@ font-size: 22px;
 
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">JUNGLE UPDATES</span></div></div>
 
-
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Jungle Zones reworked.</div></div>&nbsp;
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes and their units now gain 4 bonus health regeneration when traversing through the center of their own native jungle, while 25 bonus movement speed when traversing through the enemy forests.</div></div>&nbsp;
+<div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">Jungle Zone Auras</font><div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
+                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Well Wishes, Mighty Mines, Stalwart Statues, and Skeleton Strength map auras have been removed.</div></div>&nbsp;
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes and their units now gain 2 bonus health regeneration and 1 bonus mana regeneration when traversing through the center of their own native jungle, while they gain 25 bonus movement speed when traversing through the enemy forests.</div></div>&nbsp;
+                  <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">Miscellaneous</font></span></div></div></div><div class="general_dash"></div>
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral Camps were relocated, and new paths have been added to discover while navigating inside the forests.</div></div>&nbsp;
 
 
@@ -700,8 +776,9 @@ font-size: 22px;
     <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2020/tribute_image.png">
 
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">ECONOMY UPDATES</span></div></div>
-         
-           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base GPM increased from 90 to 100. This amount no longer increases as the game progresses.<em><del>Previously increased up to 150 per minute.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div> 
+         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">PASSIVE GOLD</font></span></div></div></div><div class="general_dash"></div>
+           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base GPM increased from 90 to 100. This amount no longer increases as the game progresses.<em><del>Previously increased up to 150 per minute.<div>&nbsp;</div> </del></em> </div></div>&nbsp;
+                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">RELIABLE & UNRELIABLE GOLD</font></span></div></div></div><div class="general_dash"></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following events now grant reliable gold:</div></div><div>&nbsp;</div>
                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan Death</div></div>
                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero Death</div></div>
@@ -714,8 +791,8 @@ font-size: 22px;
                              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following events now grant unreliable gold:</div></div><div>&nbsp;</div>
                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes</div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Passive GPM</div></div>
-                
-            <div>&nbsp;</div>
+                &nbsp;
+<div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">Jungle Zone Auras</font><div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral creep experience and gold rewards are now dynamic. Works the following way:</div></div><div>&nbsp;</div>
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral creeps now grant 30% bonus gold and experience at the beginning of the game, but then grant 10% less every 5 minutes for 15 minutes.<div>&nbsp;</div>After 15 minutes have passed, the effect gets reversed, and neutral creeps start granting 10% more gold and experience every 5 minutes for 15 minutes.<div>&nbsp;</div>After another 15 minutes have passed, the effect gets reversed again, and neutrals creeps start granting 10% less every 5 minutes for 15 minutes. And repeat.</div></div><div>&nbsp;</div></div>
             
