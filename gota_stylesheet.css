@@ -836,10 +836,6 @@ em:hover del
     background-position: center
 }
 
-* {
-    box-sizing: border-box;
-    font-family: "Radiance","Noto Sans",sans-serif
-}
 
 a {
     text-decoration: none;
@@ -6295,10 +6291,6 @@ background-color: rgba(0, 0, 0, 0.7);
     background-color: rgba(36,36,36,.3019607843)
 }
 
-* {
-    box-sizing: border-box;
-    font-family: "Radiance","Noto Sans",sans-serif
-}
 
 a {
     text-decoration: none;
@@ -6918,10 +6910,7 @@ a {
 }
 
 
-* {
-    box-sizing: border-box;
-    font-family: "Radiance","Noto Sans",sans-serif
-}
+
 
 a {
     text-decoration: none;
