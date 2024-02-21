@@ -3103,7 +3103,7 @@ position: relative;
     width: 100%;
     display: grid;
     
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
    
     margin: 0px auto 16px;
     padding: 0vw 10vw
