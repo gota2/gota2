@@ -42,7 +42,7 @@ border-radius: 3px;
             border-radius: 10px;
             box-shadow: 0px 0px 1px black;
         }
-        .patch-ability-tag {
+        .patch-ability-tag2 {
 	display: inline-block;
 	padding: 2px 2px;
 	background-color: #333;
@@ -55,8 +55,24 @@ border-radius: 3px;
 	border-radius: 2px;
 	margin-left: 5px;
 }
+        .patch-ability-tag2 {
+	display: inline-block;
+	padding: 2px 2px;
+	background-color: #333;
+	text-transform: uppercase;
+
+	font-size: 17px;
+
+
+	color: white;
+	border-radius: 2px;
+	margin-left: 5px;
+}
 
 .patch-ability-tag.upgrade {
+	background-color: #8B4000;
+}
+        .patch-ability-tag2.upgrade {
 	background-color: #8B4000;
 }
         .patch-ability-tag.adjust {
@@ -76,6 +92,34 @@ border-radius: 3px;
 
 
 
+}
+             .patch-ability-tag2.addition {
+	background-color: #355E3B;
+}
+        .patch-ability-tag2.returning {
+	background-color: #8B8000;
+}
+        .patch-ability-tag2.adjust {
+	background-color: #36454F;
+}
+        .patch-ability-tag2.renamed {
+	background-color: #5C4033;
+}
+            .patch-ability-tag2.renamed2 {
+	background-color: #702963;
+}
+        .patch-ability-tag2.scepter {
+
+            background-color: #1434A4;
+
+        }
+
+        .cooldown_display {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+
+    right: 0px
 }
     </style>
     
@@ -247,7 +291,7 @@ window.addEventListener("scroll", reveal);
 
 
               <div>&nbsp;</div>
-                  <div class="shard-label"><div class="scepter-icon"></div><div class="scepter-ability-label">Aghanim's Scepter Upgrade<div class="patch-ability-tag upgrade">REWORKED</div><div></div><font color="#CC5500"></font></div>
+                  <div class="shard-label"><div class="scepter-icon"></div><div class="scepter-ability-label">Aghanim's Scepter Upgrade<div class="patch-ability-tag2 upgrade">REWORKED</div><div></div><font color="#CC5500"></font></div>
 </div>
               <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/924414834110504980/1166666849153449985/Arsenal_of_the_Demonic_Vessel_Death_Coil_icon.webp?ex=654b522c&is=6538dd2c&hm=44c1e1625bb3208c4291b0af5e1edde85a51441ba0b5be8e6137a2da473e4921&');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mist Cloud&nbsp;<font color= "#0096FF"></font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="scepter_recipe">NEW ABILITY</span></div>
          <div>&nbsp;</div>
@@ -315,59 +359,86 @@ window.addEventListener("scroll", reveal);
                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#EEDC82"><b>Counterspell Ally</b></font> bonus ability has been removed.</div></div>
 
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#EEDC82"><b>Blink Fragment</b></font> bonus ability has been removed. </div></div></div>
-               
-               <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_counterspell.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Magic Shield&nbsp;<font color= "#DAA520">INNATE ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="New_recipe">NEW ABILITY</span></div>
-         <div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Passive. Anti-Mage's defenses grant him 20% bonus magic resistance. He gains an additional 5% bonus magic resistance for 6 seconds, up to a maximum of 20% bonus magic resistance, every time an enemy unit's ability damages him. The bonus magic resistance is granted before the damage of the ability is applied.<div>&nbsp;</div></div></div>
-                   <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#D2042D
 
-">No</font></div></div>
+
+              <div class="item_description_container">
+               <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_counterspell.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Magic Shield<div class="patch-ability-tag2 addition">NEW INNATE ABILITY</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+
+                   <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090"><font color="#C0C0C0">PASSIVE</font> - Anti-Mage's defenses grant him +<font color="white">20%</font> Magic Resistance. He gains additional +<font color="white">5%</font> Magic Resistance every time an enemy unit's ability damages him for <font color="white">6</font> seconds. Maximum Stack Count: <font color="white">4</font>. The duration of the stacks is refreshed when reapplied.</font> </div></div>
+
+                           <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#50C878">Yes</font></div></div></div>
               
               </div></div>
              
               
-                    </div> 
+                    </div>  </div>
             
           
-          <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_mana_break.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mana Break</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe"></span></div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer applies a 25/30/35/40% movement speed slow on full drain.</div></div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer burns 1.6%/2.4%/3.2%/4% of the target's maximum mana pool on hit.</div></div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now applies a mana curse on the target that causes the items and abilities of the victim to cost 10/15/20/25% bonus mana for 2.5 seconds. This effect can be dispelled.</div></div>
-                          <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Burn On Hit increased from 25/30/35/40 to 25/40/55/70</div></div>
+          <div class="item_description_container">
+
+
+
+                        <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('http://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_mana_break.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mana Break<div class="patch-ability-tag2 upgrade">ABILITY REWORKED</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090"><font color="#C0C0C0">PASSIVE</font> - Anti-Mage's every attack burns mana and places a mana curse on the target. Enemy units affected by the curse have increased an mana cost on every item and ability for the duration. Illusions can also apply the mana curse but burn less mana per hit.<div>&nbsp;</div>CURSE DURATION: <font color="white">2.5</font><div></div>MANA COST INCREASE: <font color="white">10%/15%/20%/25%</font><div></div>MANA BURN PER HIT: <font color="white">25/40/55/70</font><div></div>ILLUSION PENALTY: <font color="white">50%</font>
+
+
+
+
+
+
+                           <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#50C878">Yes</font></div></div></div> </div></div>
+
+
+
+
+
+
+
 
 
 
 
                </div></div>
 
-              </div>
+              </div>  </div>
                     
               
               <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_blink.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Blink</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe"></span></div>
-<div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer has a 45 mana cost.</div></div>
+
          <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Max Distance increased from 750/900/1050/1200 to 900/1000/1100/1200</div></div>
+                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost decreased from 45 to 0</div></div>
               <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown decreased from 13.5/11.0/8.5/6.0s to 9/8/7/6s</div></div>
               
                </div></div>
              
               </div> 
 
-                    
-                   <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/1089338046538854442/1146197662731870229/Counterspell_Ally_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Counterspell</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe">ABILITY REWORKED</span></div> <div>&nbsp;</div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No Target. Anti-Mage forms a magic-shell around himself for 1.8/2.2/2.6/3.0 seconds that reflects every point-targeted ability back to its caster with 20/30/40/50% bonus damage and 20/30/40/50% faster projectile speed.<div>&nbsp;</div></div></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#D2042D
+                    <div class="item_description_container">
 
-">No</font></div></div>
 
-                <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost: 50/65/80/95</div></div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 30/25/20/15s</div></div>
-                       <div>&nbsp;</div>
 
-               <div class="shard-label"><div class="scepter-icon"></div><div class="scepter-ability-label">Aghanim's Scepter Upgrade<div class="patch-ability-tag upgrade">REWORKED</div><div></div><font color="#CC5500"></font></div>
+                        <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/1089338046538854442/1146197662731870229/Counterspell_Ally_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Counterspell<div class="patch-ability-tag2 upgrade">ABILITY REWORKED</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090"><font color="#C0C0C0">NO TARGET</font> - Anti-Mage forms a magic-shell around himself that reflects every unit-targeted ability back to its caster with bonus damage and a faster projectile speed.<div>&nbsp;</div>DURATION: <font color="white">1.8/2.2/2.6/3.0</font><div></div>BONUS DAMAGE: <font color="white">20%/30%/40%/50%</font><div></div>BONUS SPEED: <font color="white">20%/30%/40%/50%<div>&nbsp;</div>
+
+
+
+                           <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">55/70/85/100</font></div>
+
+
+
+
+
+                               <div class= "cooldown_display"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">30/25/20/15</font></div></div></div></div></font></font> </font>
+
+
+
+                           <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div></div> <div>&nbsp;</div></div></div>
+
+               <div class="shard-label"><div class="scepter-icon"></div><div class="scepter-ability-label">Aghanim's Scepter Upgrade<div class="patch-ability-tag2 upgrade">REWORKED</div><div></div><font color="#CC5500"></font></div>
 </div>
-              <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/1089338046538854442/1146197662731870229/Counterspell_Ally_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Counterspell&nbsp;<font color= "#0096FF"></font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="scepter_recipe">ABILITY UPGRADE</span></div>
-         <div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#ADD8E6">Duration increased by 1 second. Counterspell is now an area of effect ability with a 400-radius centered around Anti-Mage.</font>  </div></div>
+              <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/1089338046538854442/1146197662731870229/Counterspell_Ally_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Counterspell<div class="patch-ability-tag2 scepter">ABILITY UPGRADE</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#ADD8E6">Duration increased by <font color="white">1</font> second. Counterspell is now an area of effect ability with a <font color="white">400</font>-radius centered around Anti-Mage.</font>  </div></div>
 
 
 
@@ -386,7 +457,7 @@ window.addEventListener("scroll", reveal);
               
                </div></div>
              
-              </div> 
+              </div>  </div>
                    <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_mana_void.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mana Void&nbsp;<font color= "#DAA520"></font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe"></span></div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now burns 15/20/25% of the target's maximum mana before dealing damage.</div></div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now only applies a stun when the target runs out of mana after using the ability.</div></div>
