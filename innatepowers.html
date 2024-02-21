@@ -29,6 +29,123 @@ window.addEventListener("scroll", reveal);
 	
 	
 	<style>
+        .item_description_container .item_description_header .item_description_mana_container .item_description_cast_range_icon {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/921819364880171030/1192478468462612540/170437925783315393.png?ex=65a9391e&is=6596c41e&hm=9177d6ff38ae0c27441104674efa935ccd5f80e630df8045d6958afdd0e02e92&' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+               .patch-ability-tag {
+	display: inline-block;
+	padding: 2px 2px;
+	background-color: #333;
+	text-transform: uppercase;
+
+	font-size: 18px;
+
+
+	color: white;
+	border-radius: 2px;
+
+}
+     .patch-ability-tag.recipe {
+	background-color: #00008B;
+}
+
+.patch-ability-tag.upgrade {
+	background-color: #8B4000;
+}
+        .patch-ability-tag.addition {
+	background-color: #355E3B;
+}
+        .patch-ability-tag.returning {
+	background-color: #8B8000;
+}
+        .patch-ability-tag.adjust {
+	background-color: #36454F;
+}
+        .patch-ability-tag.renamed {
+	background-color: #5C4033;
+}
+            .patch-ability-tag.renamed2 {
+	background-color: #702963;
+}
+        .dispel_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/959932061517512745/1193122235372806224/Purge_Satyr_Banisher_icon.webp?ex=65ab90ac&is=65991bac&hm=a830649d9c1edb9ce5b3a7e0e013dd0656a9f506f96e206f1b9ed48fc7a1122d&' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+        .general_dash {
+            margin-top: 10px;
+             margin-bottom: 10px;
+ width: 100%;
+    height: 0.5px;
+   border-top: 1px solid rgba(225, 193, 110, 0.4);
+
+}
+    .cast_range_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/921819364880171030/1192478468462612540/170437925783315393.png?ex=65a9391e&is=6596c41e&hm=9177d6ff38ae0c27441104674efa935ccd5f80e630df8045d6958afdd0e02e92&' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+    .range_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/1089338046538854442/1209252976858890270/Ranged_icon.webp?ex=65e63f98&is=65d3ca98&hm=2ccdb6c6feb4e30001103aaa5bde2015e56f1e4203da2181df2a49a9841429e8&' );
+border-radius: 3px;
+
+	display: inline-block;
+        filter: invert(50%);
+
+
+
+}
+    .melee_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/1089338046538854442/1209256878828429342/Melee_icon.webp?ex=65e6433a&is=65d3ce3a&hm=a8fa72b248195b2facf91af5541ae62ca1da47c092961fe7115b1bf632a0ff81&' );
+border-radius: 3px;
+
+	display: inline-block;
+        filter: invert(50%);
+
+
+
+}
 
     .cast_range_icon {
      width: 16px;
@@ -187,26 +304,26 @@ border-radius: 3px;
                 
                 
                 
-                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1133022317597962240/Pale_Augur_Decay_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">ROTTING BODY</font></div></div><div class="item_description">Undying's body is constantly rotting away, passively losing 5 health per second. Undying's attacks spread this rot to enemy units, slowing them by 15% and dealing 15 damage per second.<div>&nbsp;</div>  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#50C878
+                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1133022317597962240/Pale_Augur_Decay_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">ROTTING BODY</font></div></div><div class="item_description"><font color="#708090">Undying's body is constantly rotting away, losing <font color="white">5</font> Health per second. Undying's every attack spreads this rot to enemy units, reducing -<font color="white">15%</font> Movement Speed and dealing <font color="white">15</font> Magical Damage per second. Lasts <font color="white">4</font> seconds.</font><div>&nbsp;</div>  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#50C878
 ">Yes</font></div></div>
-</div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1126254119091445830/Darkness_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">DARKNESS COMES </font></div></div><div class="item_description">Night Stalker shifts the day-night cycle, starting the cycle with night first, as well as drawing out the night sooner than expected, making the daytime 30 seconds shorter. Each subsequent day is even shorter by an additional 30 seconds, eventually leading to a permanent night.</div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/zuus_thundergods_wrath.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">THUNDERGOD'S WRATH</font></div></div><div class="item_description">When activated, Zeus strikes every enemy hero, no matter where they may be, with the current level of Lightning Bolt, dealing damage, stunning them, and providing True Sight over them.<div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost: 300</div></div>
-                   <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 160s</div></div></div></div></div>
+                    </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1126254119091445830/Darkness_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">DARKNESS COMES </font></div></div><div class="item_description"><font color="#708090">Night Stalker shifts the day-night cycle, starting the cycle with night first, as well as drawing out the night sooner than expected, making the daytime <font color="white">30</font> seconds shorter. Each subsequent day is even shorter by an additional <font color="white">30</font> seconds, eventually leading to a permanent night.</font></div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/zuus_thundergods_wrath.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">THUNDERGOD'S WRATH</font></div></div><div class="item_description"><font color="#708090">When activated, Zeus strikes every enemy hero, no matter where they may be, with the current level of Lightning Bolt, dealing damage, stunning them, and providing True Sight over them.</font><div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost: <font color="white">300</font></div></div>
+                   <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: <font color="white">160</font></div></div></div></div></div>
                 
                 
                 
                 
                 
                 </div>
-                   <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/1097644327871721633/1163565575985967234/Vigil_Signet_Warcry_icon.webp?ex=654009e3&is=652d94e3&hm=5a6a4ba1e913e8143ecf0ad594e220dc6643fbcc9a9a53749695b40fc70c9652&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Aura of Honor</font></div></div><div class="item_description">Sven's honorable acts inspire allied heroes in a 1200-radius, passively granting them 4 bonus armor.</div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1161035574707232918/Primal_Paean_Primal_Roar_icon.webp?ex=6536d5a4&is=652460a4&hm=a9fe9c77284d941a90a73be29db09f12c4dc314d5759547efd94c33c7deab57d&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Beast Companion </font></div></div><div class="item_description">Beastmaster chooses a non-ancient savage beast of any level to take his side in the battles to come.<div>&nbsp;</div>Beastmaster loses 300 health when the beast dies.<div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cast_range_icon"></div><div class="patchnotespage_Note_eSxyZ">Cast Range: 600</div></div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 60s</div></div> </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921819364880171030/1136358778284015636/Bladeform_Legacy_Omnislash_Origins_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">PARRY</font></div></div><div class="item_description">Juggernaut has a 15% chance to block attacks within a 400-range and counterattack the attacker.</div></div></div>
+                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/1097644327871721633/1163565575985967234/Vigil_Signet_Warcry_icon.webp?ex=654009e3&is=652d94e3&hm=5a6a4ba1e913e8143ecf0ad594e220dc6643fbcc9a9a53749695b40fc70c9652&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Rouge Knight</font></div></div><div class="item_description"><font color="#708090">Sven gains +<font color="white">2</font> Armor for every nearby enemy hero. Radius: <font color="white">1200</font>.</font></div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1161035574707232918/Primal_Paean_Primal_Roar_icon.webp?ex=6536d5a4&is=652460a4&hm=a9fe9c77284d941a90a73be29db09f12c4dc314d5759547efd94c33c7deab57d&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Beast Companion </font></div></div><div class="item_description"><font color="#708090">Beastmaster chooses a non-ancient savage beast of any level to take his side in the battles to come.<div>&nbsp;</div>Beastmaster loses <font color="white">300</font> health when the beast dies.</font><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cast_range_icon"></div><div class="patchnotespage_Note_eSxyZ">Cast Range: 600</div></div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 60s</div></div> </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921819364880171030/1136358778284015636/Bladeform_Legacy_Omnislash_Origins_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">PARRY</font></div></div><div class="item_description"><font color="#708090">Juggernaut has a <font color="white">15%</font> chance to block attacks within a <font color="white">400</font>-range and counterattack the attacker.</font></div></div></div>
                 
                 
                 
                 
                 
                 </div>
-                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/marci_sidekick.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Sidekick</font></div></div><div class="item_description">Marci's loyalty helps ensure survival, imbuing a chosen allied hero with 10 bonus attack damage, and healing this allied hero by 50% of the damage dealt to enemy units by her.<div>&nbsp;</div>Sidekick is removed when the chosen allied hero and Marci drift 2400 units apart from each other.<div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#D2042D
+                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/marci_sidekick.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Sidekick</font></div></div><div class="item_description"><font color="#708090">Marci's loyalty helps ensure survival, imbuing a chosen allied hero with +<font color="white">10</font> Attack Damage, and healing this allied hero by <font color="white">50%</font> of the damage dealt to enemy units by her.<div>&nbsp;</div>Sidekick is removed when the chosen allied hero and Marci drift <font color="white">2400</font>-units apart from each other.</font><div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#D2042D
 
-">No</font></div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cast_range_icon"></div><div class="patchnotespage_Note_eSxyZ">Cast Range: 1200</div></div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost: 25</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 60s</div></div></div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/1097644327871721633/1161045984915226624/Fists_of_Axe_Unleashed_Culling_Blade_icon.webp?ex=6536df55&is=65246a55&hm=1ba1b7828b063ebf32625239d646fefc0963c88b61edc00fda3c5a45015608a8&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Battleforged Skin </font></div></div><div class="item_description">Axe's red-blooded body prevents enemy heroes from lifestealing off of him. </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921819364880171030/1161044437737156642/Chaos_Arbiter_Chaos_Strike_icon.webp?ex=6536dde5&is=652468e5&hm=55567ca4bacc60fa0b8e2ada028899e20b36f4ddd58e838ec9d57b7afe92deae&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Chaotic Luck</font></div></div><div class="item_description">Chaos Knight's chance to proc his abilities and items is set to a flat 50% for 6 seconds.<div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#D2042D
+                    ">No</font></div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cast_range_icon"></div><div class="patchnotespage_Note_eSxyZ">Cast Range: <font color="white">1200</font></div></div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost: <font color="white">25</font></div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: <font color="white">60</font></div></div></div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/1097644327871721633/1161045984915226624/Fists_of_Axe_Unleashed_Culling_Blade_icon.webp?ex=6536df55&is=65246a55&hm=1ba1b7828b063ebf32625239d646fefc0963c88b61edc00fda3c5a45015608a8&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Battleforged Skin </font></div></div><div class="item_description"><font color="#708090">Axe's red-blooded body prevents enemy heroes from lifestealing off of him.</font> </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921819364880171030/1161044437737156642/Chaos_Arbiter_Chaos_Strike_icon.webp?ex=6536dde5&is=652468e5&hm=55567ca4bacc60fa0b8e2ada028899e20b36f4ddd58e838ec9d57b7afe92deae&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Chaotic Luck</font></div></div><div class="item_description"><font color="#708090">Chaos Knight's chance to proc his abilities and items is set to a flat <font color="white">50%</font> for <font color="white">6</font> seconds.</font><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#D2042D
 
 ">No</font></div></div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 30s</div></div></div></div></div>
                 
@@ -230,7 +347,7 @@ border-radius: 3px;
              <div class="new_frontiers_SectionDivider_preview_28Lu5"></div>  
             
             
-            <div class="augupdate22_Aug2023Page_VM6IJ"><div class="augupdate22_Container_omYvI" style="background-image: url(&quot;&quot;);"><div class="augupdate22_Inset_2Xhpl"><div class="augupdate22_SingleRow_37-Uk reveal"><div class="augupdate22_XLText_2gejB"><div class="augupdate22_XLTitle_2YOZN"><h1>NEW & REWORKED ITEMS</h1></div><div class="augupdate22_XLBody_3FODG">Introducing <font color="green">26</font> New Items and <font color="orange">71</font> Reworked Items. There are also a few old ones brought back in a different manner. This segment will show some examples.</div></div></div><div class="new_frontiers_ItemsContainer_3Qyvb">
+        <div class="augupdate22_Aug2023Page_VM6IJ"><div class="augupdate22_Container_omYvI" style="background-image: url(&quot;&quot;);"><div class="augupdate22_Inset_2Xhpl"><div class="augupdate22_SingleRow_37-Uk reveal"><div class="augupdate22_XLText_2gejB"><div class="augupdate22_XLTitle_2YOZN"><h1>ITEM CHANGES</h1></div><div class="augupdate22_XLBody_3FODG">Introducing <font color="green">26</font> New Items and <font color="orange">71</font> Reworked Items. There are also a few old ones brought back in a different manner. This segment will show some examples.</div></div></div><div class="new_frontiers_ItemsContainer_3Qyvb">
             
 
                 
@@ -269,22 +386,135 @@ border-radius: 3px;
 
                        </div>
 
-                  <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Lunar Blessing      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero gains +<font color="white">3</font> Mana Regeneration and +<font color="white">400</font> Vision during daytime.</font></div></div><div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div></div></div>
+                  <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Lunar Blessing      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero gains +<font color="white">3</font> Mana Regeneration and +<font color="white">400</font> Vision during nighttime.</font></div></div><div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div></div></div>
 
 
                     </div></div>
 </div>
 </div>
 </div>
+
+
+
+
+                    <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.discordapp.com/attachments/959932061517512745/1208405594189336586/Siltbreaker_Creed_of_Omniscience_icon.webp?ex=65e32a68&is=65d0b568&hm=33fcaee0e893e3cb990cfc3cb0cc990465e2ae9ad94394658f24a8f3465f09ea&');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Guardian Charm</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1200</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+
+
+
+
+
+                   <div class="item_basic">
+
+
+
+
+                        <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Guardian Aura    </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero emits a protective aura that grants +<font color="white">1</font> Health Regeneration and +<font color="white">1</font> Armor to nearby allied units for every <font color="white">10%</font> Health they are missing. Radius: <font color="white">1200</font>.</font></div></div>
+</font></div></div>
+                       </div>
+
+                     </div>
+                       </div></div>
+                
+                
+                
+                <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/penta_edged_sword.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Diabolic Blade</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">2800</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/broadsword.png"><font color="lightblue">Broadsword<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vitality_booster.png">Vitality Booster<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">20</font> Attack Damage</div></div>
+                          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">250</font> Health</div></div>
+                        <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Devil's Curse      </b></font></h4><font color="#708090">
+
+
+                            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">UNIT TARGET</font> - Equipped Hero applies a dark curse on the target unit that prevents the cursed target's allies from going within a <font color="white">600</font>-radius of their cursed ally for <font color="white">5</font> seconds. Allied units that are already within the radius are pushed outside.</font></div></div>
+
+
+
+                            <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">750</div></div><div class="item_description_mana_container"><div class="item_description_mana_icon"></div><div class="item_description_mana_text">25</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">17</div></div></div></div>
+
+
+                       </div>
+
+                        </div></div></div></div>
+
+                
+
+
+                 <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.discordapp.com/attachments/921819364880171030/1209140513811472394/image.png?ex=65e5d6db&is=65d361db&hm=4df74281c1f4168a02c2a321083fd30c955717641eefb18f953bea1c4b755f93&');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Gungnir</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">4900</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/maelstrom.png"><font color="lightblue">Maelstrom<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/javelin.png">Javelin<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/broadsword.png">Broadsword<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+
+
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">50</font> Attack Damage</div></div>
+
+
+
+
+
+                 <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Chain Lightning      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero's every attack has a <font color="white">30%</font> chance to release a bolt of electricity that leaps between <font color="white">6</font> targets within a <font color="white">650</font>-radius, dealing <font color="white">160</font> Magical Damage with each bounce. </font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+                 <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: True Strike      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero's every attack is empowered with True Strike. </font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+                    </div>
+
+
+                        </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
 </div></div></div></div>
 
 
 
 
-                
-                
-                
-                
+
+
+
+
 
         
           
