@@ -3066,7 +3066,7 @@ position: relative;
     width: 100%;
     display: grid;
     
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: calc(4px + 1vw);
     margin: 0px auto 16px;
     padding: 0vw 10vw
@@ -3083,7 +3083,7 @@ position: relative;
 
 @media(max-width: 1200px) {
     .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_ItemsContainer_3Qyvb {
-        grid-template-columns:1fr 1fr 1fr
+        grid-template-columns:1fr 1fr
     }
 }
 
