@@ -4643,13 +4643,13 @@ font-size: 19px;
     margin-bottom: 24px
 }
 
-.patchnotespage_NoteElement_1gbgx {
+.patchnote_vessel {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
       
 }
-        .patchnotespage_NoteElement2_1gbgx {
+        .recipe_vessel {
     
         text-transform: none;
             text-align: left;
@@ -4723,7 +4723,7 @@ font-size: 19px;
         
        
 
-.patchnotespage_NoteElement_1gbgx .patchnotespage_Dot_1gcyD {
+.patchnote_vessel .patchnote_dot {
     width: 7px;
     height: 7px;
     min-width: 7px;
@@ -4735,7 +4735,7 @@ margin-top: 8px;
     margin-left: 5px;
         
 }
-        .patchnotespage_NoteElement_1gbgx .patchnotespage_small_Dot_1gcyD  {
+        .patchnote_vessel .patchnotespage_small_Dot_1gcyD  {
         width: 7px;
     height: 7px;
     min-width: 7px;
@@ -4749,7 +4749,7 @@ margin-top: 8px;
 	  border: 1.5px solid #FFBF00;
         
         }
-        .patchnotespage_NoteElement_1gbgx .patchnotespage_small_hero_Dot_1gcyD  {
+        .patchnote_vessel .patchnotespage_small_hero_Dot_1gcyD  {
         width: 7px;
     height: 7px;
     min-width: 7px;
@@ -4764,7 +4764,7 @@ margin-top: 8px;
 	  border: 1.5px solid #FFBF00;
         
         }
-        .patchnotespage_NoteElement_1gbgx .patchnotespage_smaller_Dot_1gcyD  {
+        .patchnote_vessel .patchnotespage_smaller_Dot_1gcyD  {
         width: 7px;
     height: 7px;
     min-width: 7px;
@@ -4778,7 +4778,7 @@ margin-top: 8px;
 	  border: 2px solid #EEDC82;
         
         }
-    .patchnotespage_NoteElement_1gbgx .mana_icon {
+    .patchnote_vessel .mana_icon {
      width: 16px;
     height: 16px;
     border-radius: 3px;
@@ -4787,7 +4787,7 @@ margin-top: 8px;
     margin-right: 5px;
     margin-top: 3px
 }    
-        .patchnotespage_NoteElement_1gbgx .cooldown_icon {
+        .patchnote_vessel .cooldown_icon {
      width: 16px;
     height: 16px;
     border-radius: 3px;
@@ -4808,7 +4808,7 @@ margin-top: 8px;
    
  
 }    
-        .patchnotespage_NoteElement_1gbgx .health_icon {
+        .patchnote_vessel .health_icon {
       width: 16px;
     height: 16px;
     border-radius: 3px;
@@ -4819,11 +4819,11 @@ margin-top: 8px;
 }    
        
 
-.patchnotespage_NoteElement_1gbgx .patchnotespage_Dot_1gcyD.patchnotespage_IsHidden_t11N2 {
+.patchnote_vessel .patchnote_dot.patchnotespage_IsHidden_t11N2 {
     opacity: 0
 }
 
-.patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ {
+.patchnote_vessel .patchnote_text {
     font-family: "Radiance";
     text-align: left;
    font-size: 5px;
@@ -4832,7 +4832,7 @@ margin-top: 8px;
    
     
 }
-.patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ10 {
+.patchnote_vessel .patchnote_text10 {
     font-family: "Radiance";
     text-align: center;
    font-size: 12px;
@@ -4841,7 +4841,7 @@ margin-top: 8px;
 
 
 }
-        .patchnotespage_NoteElement_1gbgx .patchnotespage_Note2_eSxyZ {
+        .patchnote_vessel .patchnotespage_Note2_eSxyZ {
    width: 100%;
     
     
@@ -4875,7 +4875,7 @@ color: #fff;
    
     
 }
-        .patchnotespage_NoteElement_1gbgx recipe_text {
+        .patchnote_vessel recipe_text {
     font-family: "Radiance";
     text-align: left;
    font-size: clamp(17px,1.5vw,19px);
@@ -4893,7 +4893,7 @@ color: #fff;
 line-height: 1.3;
 font-weight: 200;
     }
-.patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ .Bold {
+.patchnote_vessel .patchnote_text .Bold {
     color: #fff
 }
 
@@ -5025,7 +5025,7 @@ span.comment_undying {
     margin-left: 8px;
     color: #fff
 }
-        .patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ {
+        .patchnote_vessel .patchnote_text {
     font-size: clamp(17px,1.5vw,19px);
     color: #c9d2de;
     line-height: 1.3;
