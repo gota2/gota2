@@ -5187,20 +5187,7 @@ html:not(.no-js) [data-aos=fade-left] {
 	vertical-align: middle;
 }
 
-.shard-label {
-	/* text-transform: uppercase; */
-	flex-direction: row;
 
-	 border-radius: 5px;
-   box-shadow: 0px 0px 2px black;
-  background-color: rgb(10, 0, 300, 0.1);
-
-}
-
-.shard-label > * {
-	vertical-align: middle;
-
-}
 
 .shard-icon {
 	width: 45px;
@@ -5231,28 +5218,6 @@ html:not(.no-js) [data-aos=fade-left] {
 	background-repeat: no-repeat;
 }
 
-.shard-ability {
-	padding: 20px;
-}
-
-.shard-ability-label {
-	font-family: "Reaver", serif;
-	font-weight: 600;
-	font-size: 16px;
-	color: #EEDC82;
-	font-weight: 600;
-	display: inline-block;
-	margin-top: 1px;
-}
-.scepter-ability-label {
-	font-family: "Reaver", serif;
-	font-weight: 600;
-	font-size: 16px;
-	color: #5D3FD3;
-	font-weight: 600;
-	display: inline-block;
-	margin-top: 1px;
-}
 
 
 .StretchGoalProgressBarTooltip {
