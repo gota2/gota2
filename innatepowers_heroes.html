@@ -26,6 +26,18 @@ border-radius: 3px;
 
 
 }
+        .item_description_container .item_description_header .item_description_mana_container .item_description_cast_range_icon {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/921819364880171030/1214310419481501746/pos_5.png?ex=65f8a5b4&is=65e630b4&hm=94cf1811018c8be93bae63571d7fcd3a2f82d5e8b2f53b7d37d8aa3e4ac24352&' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
         .scepter_recipe {
    background: -webkit-linear-gradient(#6495ED 10%, #1434A4 90%);
     background-clip: text;
@@ -403,7 +415,7 @@ window.addEventListener("scroll", reveal);
 </div>
           <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://i.ibb.co/LhDZgnM/Arsenal-of-the-Demonic-Vessel-Death-Coil-icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Mist Cloud<div class="patch-ability-tag2 scepter">NEW ABILITY</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
 
-              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#ADD8E6"><font color="#C0C0C0">NO TARGET</font> - Abaddon points his sword towards the sky, releasing a mysterious vapor that sends out a Mist Coil to nearby units every <font color="white">2</font> seconds within a <font color="white">600</font>-radius, up to a maximum of <font color="white">4</font> targets. Abaddon cannot attack or cast other abilities during it.  <div>&nbsp;</div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#ADD8E6"><font color="#C0C0C0">TOGGLE</font> - Abaddon points his sword towards the sky, releasing a mysterious vapor that sends out a Mist Coil to nearby units every <font color="white">2</font> seconds within a <font color="white">550</font>-radius, up to a maximum of <font color="white">4</font> targets.<div>&nbsp;</div> Abaddon cannot attack or cast other abilities  and has -<font color="white">20%</font> Movement Speed while toggled on.  <div>&nbsp;</div>
                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icons"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">&nbsp;</font></div>
 
 
@@ -427,16 +439,55 @@ window.addEventListener("scroll", reveal);
 
 
 
-              <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_aphotic_shield.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Aphotic Shield</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe"></span></div>
-                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer applies a strong dispel on cast. Now strong dispels the target when the shield bursts.</div></div>
-                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Barrier Capacity  decreased from 120/150/180/210 to 100. This barrier capacity is increased by 25/40/55/70 for every debuff that is currently affecting the shielded target.</div></div>
-                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Duration decreased from 15s to 10s</div></div>
+               <div class="item_description_container">
+
+
+
+                        <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_aphotic_shield.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Aphotic Shield<div class="patch-ability-tag2 upgrade">ABILITY REWORKED</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090"><font color="#C0C0C0">UNIT TARGET</font> - Abaddon forms a dark energy shield around an allied unit that negates a finite number of debuffs for a duration. The shield bursts when this debuff limit is exceeded, damaging nearby enemy units and dispelling the target from the rest of the negative effects.<div>&nbsp;</div>Dispel Type: Strong <div>&nbsp;</div>
+
+
+
+
+                            DEBUFF LIMIT: <font color="white">4</font><div></div>
+                            BURST RADIUS: <font color="white">675</font><div></div>
+                                BURST DAMAGE: <span style="color: rgb(163, 220, 238);">100<font color="#708090">/</font>175<font color="#708090">/</font>250<font color="#708090">/</font>325</span><div></div>
+
+                           SHIELD DURATION: <font color="white">6<font color="#708090">/</font>7<font color="#708090">/</font>8<font color="#708090">/</font>9</font><div></div>
+
+
+<div>&nbsp;</div>
+
+
+                           <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">125</font></div>
+
+
+
+
+
+                               <div class= "cooldown_display"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">20/18/16/14</font></div></div></div></div>
+
+
+                           </font></font> </font>
+
+
+
+                           <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">550</div></div></div> <div>&nbsp;</div></div></div>
+
+
+
+
+
+
+
+
+
+
 
 
                </div></div>
 
-              </div>
-
+              </div>  </div>
 
 
 
@@ -453,9 +504,9 @@ window.addEventListener("scroll", reveal);
 
 
 
-                                  BONUS DAMAGE: <font color="#E1C16E">6<font color="#708090">/</font>12<font color="#708090">/</font>18<font color="#708090">/</font>24</font><div></div>
-                                MOVEMENT SPEED SLOW: <font color="white">8%<font color="#708090">/</font>16%<font color="#708090">/</font>24%<font color="#708090">/</font>32%</font><div></div>
-                                HEALTH RESTORATION REDUCTION: <font color="white">15%<font color="#708090">/</font>30%<font color="#708090">/</font>45%<font color="#708090">/</font>60%</font><div></div>
+                                  BONUS DAMAGE: <font color="#E1C16E">5<font color="#708090">/</font>10<font color="#708090">/</font>15<font color="#708090">/</font>20</font><div></div>
+                                MOVEMENT SLOW: <font color="white">10%<font color="#708090">/</font>20%<font color="#708090">/</font>30%<font color="#708090">/</font>40%</font><div></div>
+                                HEALTH RESTORATION PENALTY: <font color="white">10%<font color="#708090">/</font>20%<font color="#708090">/</font>30%<font color="#708090">/</font>40%</font><div></div>
                                CURSE DURATION: <font color="white">4</font>
 
 
@@ -575,7 +626,7 @@ window.addEventListener("scroll", reveal);
 
 
 
-                        <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/1089338046538854442/1146197662731870229/Counterspell_Ally_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Counterspell<div class="patch-ability-tag2 upgrade">ABILITY REWORKED</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+                        <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_counterspell_ally.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Counterspell<div class="patch-ability-tag2 upgrade">ABILITY REWORKED</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090"><font color="#C0C0C0">NO TARGET</font> - Anti-Mage forms a magic-shell around himself that reflects every unit-targeted ability back to its caster with bonus damage and a faster projectile speed.<div>&nbsp;</div>
 
 
@@ -606,7 +657,7 @@ window.addEventListener("scroll", reveal);
 
                <div class="shard-label"><div class="scepter-icon"></div><div class="scepter-ability-label">Aghanim's Scepter Upgrade<div class="patch-ability-tag2 upgrade">REWORKED</div><div></div><font color="#CC5500"></font></div>
 </div>
-              <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.discordapp.com/attachments/1089338046538854442/1146197662731870229/Counterspell_Ally_icon.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Counterspell<div class="patch-ability-tag2 scepter">ABILITY UPGRADE</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+              <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_counterspell_ally.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Counterspell<div class="patch-ability-tag2 scepter">ABILITY UPGRADE</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
 
               <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#ADD8E6">Duration increased by <font color="white">1</font> second. Counterspell is now an area of effect ability with a <font color="white">400</font>-radius centered around Anti-Mage.</font>  </div></div>
 
