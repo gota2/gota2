@@ -11,6 +11,15 @@
 
 
 	<style>
+        .physical {
+            color: rgb(255, 0, 0);
+        }
+         .magical {
+            color: rgb(163, 220, 238);
+        }
+         .pure {
+            color: #E1C16E;
+        }
     .cast_range_icon {
      width: 16px;
     height: 16px;
@@ -45,10 +54,11 @@ border-radius: 3px;
   margin-top: 5px;
 
     background-size: contain;
-	background-image: url( 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png' );
+
 border-radius: 3px;
 
 	display: inline-block;
+             background-image: url( 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png' );
 
 
 
@@ -83,6 +93,40 @@ border-radius: 3px;
 border-radius: 3px;
 
 	display: inline-block;
+
+
+
+
+}
+        .universal_icon {
+      width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://cdn.discordapp.com/attachments/921819364880171030/1218942907952660661/171068678882220138.png?ex=6609800c&is=65f70b0c&hm=5d46211e09671b99b69005226c634f7039511f672ff8bfbf355eaf853bffe998&' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+
+}
+        .fluid_icon_heroes {
+           width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+
+border-radius: 3px;
+
+	display: inline-block;
+	background-image: url( 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png' );
+
 
 
 
@@ -2302,7 +2346,7 @@ ARROW PROJECTILE SPEED BONUS: <font color="white">750</font><div></div>
                          </div></div>
              <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="elder_titan"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_elder_titan_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/elder_titan.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">Elder Titan</div><span class="old_recipe"></span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
 
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from Strength to Universal</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from <div class="strength_icon"></div>Strength to <div class="universal_icon"></div>Universal</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence increased from 23 + 1.6 to 23 + 2.7</div></div>
 
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Attack Damage decreased from 28 to 20</div></div>
@@ -2436,20 +2480,29 @@ ARROW PROJECTILE SPEED BONUS: <font color="white">750</font><div></div>
 
               </div> </div>
                  <div class="patchnotespage_PatchNoteHero_99z4V reveal"><div class="enchantress"><a class="patchnotespage_HeroHeader_EYgE0"><div class="patchnotespage_HeroImage_enchantress_ym_hi" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enchantress.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_HeroName_1nuWb">ENCHANTRESS</div><span class="old_recipe">HERO REWORKED</span><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a><div class="patchnotespage_Notes_16viL">
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from Intelligence to Fluid</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Primary Attribute changed from <div class="intelligence_icon"></div>Intelligence to <div class="fluid_icon_heroes"></div>Fluid</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength decreased from 17 + 2.0 to 0 + 0</div></div>
 
 
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base Attack Projectile Speed decreased from 900 to 800</div></div>
-                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#EEDC82"><b>Impetus</b></font> basic ability has been removed.</div></div>
+                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#EEDC82"><b>Impetus</b></font> has been removed from the game</div></div></div>
 
 
-                <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym" style="margin-top: 24px;"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_untouchable.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">UNTOUCHABLE&nbsp;<font color= "#DAA520">INNATE ABILITY</font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+                <div class="shard-label"><div class="innate-icon"></div><div class="innate-ability-label"><div class="innate_text">INNATE ABILITY</div><div></div><font color="#CC5500"></font></div>
+</div>
+               <div class="innate-bg">     <div class="item_description_container">
+               <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_natures_attendants.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Nature's Attendants<div class="patch-ability-tag2 upgrade">ABILITY REWORKED</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
 
-         <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer pieces Debuff Immunity</div></div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Attack Speed Slow decreased from 100/150/200 to 100</div></div>
-                       </div></div>
-             </div>
+                   <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090"><font color="#C0C0C0">PASSIVE</font> - Enchantress is always surrounded by a cloud of wisps that heal her. Each wisp restores <font color="white">4</font> Health per second. Wisp Count: <font color="white">8</font>. The wisps can overheal Enchantress, up to <font color="white">100%</font> of her maximum health.</font> </div></div>
+
+                           <div class="item_description_header"></div>
+
+              </div></div>
+
+
+                    </div>  </div>
+
+
+                    </div><div>&nbsp;</div>
 
 
 
@@ -2487,34 +2540,15 @@ ARROW PROJECTILE SPEED BONUS: <font color="white">750</font><div></div>
 
 
 
-                   <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_natures_attendants.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Nature's Attendants</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe"></span></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Cast Point improved from 0.3s to 0s</div></div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now has a 0.5s delay before the wisps start healing.</div></div>
-                           <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now can be activated while disabled.</div></div>
+                   <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_untouchable.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Untouchable<div class="patch-ability-tag2 returning">BASIC ABILITY</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe"></span></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer pierces Debuff Immunity</div></div>
 
-
-         <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now can overheal Enchantress up to 100% of her maximum health.</div></div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now also grants 4/8/12/16% magic resistance.</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Attack Slow decreased from 100/150/200 to 40/80/120/160</div></div>
 
 
 
 
 
-                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost rescaled from 140 to 80/100/120/140</div></div>
-
-                        <div>&nbsp;</div>
-                      <div class="shard-label"><div class="scepter-icon"></div><div class="scepter-ability-label">Aghanim's Scepter Upgrade<div class="patch-ability-tag upgrade">REWORKED</div><div></div><font color="#CC5500"></font></div>
-</div>
-              <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enchantress_natures_attendants.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Nature's Attendants&nbsp;<font color= "#0096FF"></font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="scepter_recipe">ABILITY UPGRADE</span></div>
-         <div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#ADD8E6">Wisp Amount increased by 10. Search Radius increased by 225. Nature's Attendants wisps now also apply a basic dispel on allied units every time they restore health.</font>  </div></div>
-
-
-
-              </div></div>
-
-
-                    </div></div>
 
                </div></div>
 
@@ -2570,23 +2604,57 @@ ARROW PROJECTILE SPEED BONUS: <font color="white">750</font><div></div>
                     </div><div>&nbsp;</div>
 
 
-                              <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enigma_malefice.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Malefice&nbsp;<font color= "#DAA520"></font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe">ABILITY REWORKED</span></div>
-         <div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No Target. Enigma focuses his powers and starts gazing forward in a 600-range for 4 seconds. Enemy units that try to cast an ability or attack an allied unit in his gaze are stunned for 1.0/1.6/2.2/2.8 seconds and take 85/160/235/310 magical damage.</div></div> <div>&nbsp;</div>
-                         <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost: 85/100/115/130</div></div>
-                         <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 24/21/18/15s</div></div>
+                              <div class="item_description_container">
+
+
+
+                        <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enigma_malefice.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Malefice<div class="patch-ability-tag2 upgrade">ABILITY REWORKED</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090"><font color="#C0C0C0">POINT TARGET</font> - Enigma focuses his powers and starts gazing forward for a duration. Units that cast abilities or try to attack Enigma in his gaze take damage and become stunned for a period of time. Enigma cannot turn away from the chosen direction but can cast abilities during the gaze.<div>&nbsp;</div>
 
 
 
 
-              </div>
+                            GAZE RANGE: <font color="white">600</font><div></div>
+
+                                DAMAGE: <span style="color: rgb(163, 220, 238);">90<font color="#708090">/</font>160<font color="#708090">/</font>230<font color="#708090">/</font>300</span><div></div>
+
+                           STUN DURATION: <font color="white">1.2<font color="#708090">/</font>1.4<font color="#708090">/</font>1.6<font color="#708090">/</font>1.8</font><div></div>
+                          GAZE DURATION: <font color="white">4</font><div></div>
+
+
+<div>&nbsp;</div>
+
+
+                           <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">85/100/115/130</font></div>
 
 
 
-                                  </div>
 
 
-                    </div>
+                               <div class= "cooldown_display"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ"><font color="white">25/22/19/16</font></div></div></div></div>
+
+
+                           </font></font> </font>
+
+
+
+                           <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div></div> </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+               </div></div>
+
+              </div>  </div>
+
 
 
               <div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enigma_demonic_conversion.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Demonic Summoning&nbsp;<font color= "#CC7722"></font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="old_recipe"></span></div>
@@ -2601,12 +2669,12 @@ ARROW PROJECTILE SPEED BONUS: <font color="white">750</font><div></div>
 
 
 
-                  <div>&nbsp;</div>
-                                 <div class="shard-label"><div class="scepter-icon"></div><div class="scepter-ability-label">Aghanim's Scepter Upgrade<div class="patch-ability-tag upgrade">REWORKED</div><div></div><font color="#CC5500"></font></div>
+                    <div>&nbsp;</div>
+          <div class="shard-label"><div class="scepter-icon"></div><div class="scepter-ability-label">Aghanim's Scepter Upgrade<div class="patch-ability-tag2 upgrade">REWORKED</div><div></div><font color="#CC5500"></font></div>
 </div>
-              <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enigma_demonic_conversion.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Demonic Summoning&nbsp;<font color= "#0096FF"></font></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><span class="scepter_recipe">ABILITY UPGRADE</span></div>
-         <div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#ADD8E6">Cooldown decreased by 20 seconds. Demonic Summoning eidolons can now help Enigma channel Black Hole, each adding 0.4 second bonus duration and 40 bonus pure damage to it.</font>  </div></div>
+              <div class="scepter-bg"><div class="patchnotespage_Notes_16viL"><div class="patchnotespage_AbilityNote_3W8ym"><div class="patchnotespage_AbilityIcon_2dkGQ" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/enigma_demonic_conversion.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_AbilityName_3evA1">Demonic Summoning<div class="patch-ability-tag2 scepter">ABILITY UPGRADE</div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div></div>
+
+              <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#ADD8E6">Cooldown decreased by <font color="white">20</font> seconds. Eidolons within a <font color="white">600</font>-radius now become consumed when Enigma casts Black Hole. Each Eidolon consumed empowers the Black Hole by providing +<font color="white">50</font> Damage per second and +<font color="white">25</font> Radius for the duration.</font>  </div></div>
 
 
 
@@ -2628,13 +2696,14 @@ ARROW PROJECTILE SPEED BONUS: <font color="white">750</font><div></div>
 
 
 
-<div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now reduces -15/30/45/60% Cooldown Rate within the effect radius</div></div>
-                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now deals damage proportional to maximum health rather than current health. </div></div>
-                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage per second rescaled from 4/6/8/10% to 3.5/4.0/4.5/5.0%</div></div>
 
-                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage type changed from Magical to Pure</div></div>
+                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now reduces -15/30/45/60% Cooldown Rate within the effect radius</div></div>
+                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage per second rescaled from <span class="magical">4<font color="#708090">/</font>6<font color="#708090">/</font>8<font color="#708090">/</font>10%</span> Current Health to <span class="pure">2<font color="#708090">/</font>3<font color="#708090">/</font>4<font color="#708090">/</font>5%</span> Maximum Health</div></div>
 
-                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown increased from 40/35/40/25s to 50s</div></div>
+
+
+
+                  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 20px; min-width: 20px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown increased from 40/35/30/25s to 40s</div></div>
 
 
 
