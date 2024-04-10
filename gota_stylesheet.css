@@ -68,11 +68,42 @@
 }
 
 
+    @font-face {
+    font-family: 'Radiance';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot');
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.woff') format('woff'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.ttf') format('truetype'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Radiance-Bold';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot');
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.woff') format('woff'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.ttf') format('truetype'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Radiance-SemiBold';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot');
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff') format('woff'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.ttf') format('truetype'),
+         url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body
 {
-   font-family: 'Radiance', Verdana;
+    font-family: 'Radiance';
     background-color: #000000;
     padding: 0;
     margin: 0;
@@ -268,7 +299,7 @@ h1.OrangeGradient, h2.OrangeGradient, h3.OrangeGradient, h4.OrangeGradient
 
 h1.OrangeGradient
 {
-    font-family: 'Radiance', Verdana;
+    font-family: 'Radiance-Bold';
     font-size: 63px;
     letter-spacing: 3.5px;
 
@@ -289,14 +320,14 @@ h1.OrangeGradient
 }
 h2.OrangeGradient
 {
-    font-family: 'Radiance', Verdana;
+    font-family: 'Radiance';
     font-size: 50px;
     letter-spacing: 5px;
 }
 
 h3.OrangeGradient
 {
-    font-family: 'Radiance', Verdana;
+    font-family: 'Radiance';
     font-size: 30px;
     letter-spacing: 0px;
     -webkit-text-stroke: 0.2px;
@@ -306,7 +337,7 @@ h3.OrangeGradient
 
 h4.OrangeGradient
 {
-   font-family: 'Radiance', Verdana;
+    font-family: 'Radiance';
     font-size: 24px;
     letter-spacing: 2.4px;
     -webkit-text-stroke: 0.2px;
@@ -319,7 +350,7 @@ h4.OrangeGradient
 h1.BoldWhite
 {
     display: table;
-  font-family: 'Radiance', Verdana;
+    font-family: 'Radiance-Bold';
     font-weight: normal;
     font-size: 100px;
     text-transform: uppercase;
@@ -334,7 +365,7 @@ h1.BoldWhite
         h2.BoldWhite
 {
     display: table;
-font-family: 'Radiance', Verdana;
+    font-family: 'Radiance-Bold';
     font-weight: bold;
     font-size: 150px;
     text-transform: uppercase;
@@ -350,7 +381,7 @@ font-family: 'Radiance', Verdana;
 h2.OrangeBoxHeader
 {
     display: table;
-   font-family: 'Radiance', Verdana;
+    font-family: 'Radiance';
     font-weight: normal;
     font-size: 30px;
     text-transform: uppercase;
@@ -399,7 +430,7 @@ h2.OrangeBoxHeader b
 
 .BoxLink a h4.OrangeGradient
 {
-   font-family: 'Radiance', Verdana;
+    font-family: 'Radiance-SemiBold';
     font-size: 18px;
     letter-spacing: 0.5px;
     padding-left: 2px;
@@ -721,7 +752,7 @@ em:hover del
            filter: drop-shadow(10px 0px 60px yellow) drop-shadow(10px 0px 60px orange);
     text-shadow: 0px 0px 0.1px greenyellow;
     text-transform: uppercase;
- font-family: 'Radiance', Verdana;
+    font-family: 'Radiance-SemiBold';
     letter-spacing: 8px;
     font-size: 40px;
 
@@ -730,7 +761,7 @@ em:hover del
     color: #e3e3e3;
     text-shadow: 0px 0px 15px #C12C9A;
     text-transform: uppercase;
- font-family: 'Radiance', Verdana;
+    font-family: 'Radiance-SemiBold';
     letter-spacing: 8px;
     font-size: 40px;
 }
@@ -739,7 +770,7 @@ em:hover del
     color: #e3e3e3;
     text-shadow: 0px 0px 15px #C12C9A;
     text-transform: uppercase;
-   font-family: 'Radiance', Verdana;
+    font-family: 'Radiance-SemiBold';
     letter-spacing: 8px;
     font-size: 16px;
 }
@@ -855,7 +886,7 @@ a {
 {
 	color: #ffffff;
 	font-weight: bold;
-	font-family: 'Radiance', Verdana;
+	font-family: 'Radiance-SemiBold';
 	letter-spacing: 4px;
 	font-size: 60px;
 	text-transform: uppercase;
@@ -870,7 +901,7 @@ a {
 }
 * {
     box-sizing: border-box;
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance","Noto Sans",sans-serif
 }
 
 a {
@@ -1261,7 +1292,29 @@ a {
     -webkit-mask-image: linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%)
 }
 
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.svg#ywftsvg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
 
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.svg#ywftsvg") format("svg");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.svg#ywftsvg") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
 
 @font-face {
     font-family: "Goudy Trajan";
@@ -1843,7 +1896,7 @@ font-weight: bolder;
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_AnchorNavigation_3bFf7 .new_frontiers_AnchorLink_359v2 {
     cursor: pointer;
     font-size: 15px;
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
@@ -2326,7 +2379,7 @@ font-weight: bolder;
 }
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureCapsule_2-p0- .new_frontiers_Text_mAKiu .item_description {
-  font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     text-align: center;
     font-size: clamp(17px,2vw,20px);
     line-height: 1.4;
@@ -2386,7 +2439,7 @@ font-weight: bolder;
 }
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureCapsule_3-p0- .new_frontiers_Text_mAKiu .item_description {
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     text-align: center;
     font-size: clamp(17px,2vw,20px);
     line-height: 1.4;
@@ -2434,7 +2487,7 @@ font-weight: bolder;
 }
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureCapsule_2-p0- .new_frontiers_Text_mAKiu .item_description {
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     text-align: center;
     font-size: clamp(17px,2vw,20px);
     line-height: 1.4;
@@ -2640,20 +2693,20 @@ position: relative;
 }
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureRow_18idE .new_frontiers_Text_mAKiu .item_description {
-    font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     font-size: 18px;
     line-height: 1.5;
     color: #a2acb8;
     text-align: left
 }
         .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureRow_18idE .new_frontiers_Text_mAKiu .new_frontiers_Description2_a6GNe {
-    font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     font-size: 18px;
     line-height: 1.5;
     color: #880808;
     text-align: left
 }
-s
+
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR .new_frontiers_FeatureRow_18idE .new_frontiers_SmallFeatureCapsule_38P9N {
     display: flex;
     flex-direction: column;
@@ -3647,7 +3700,7 @@ s
     font-size: 20px;
     font-weight: bold;
     text-align: left;
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",serif;
     letter-spacing: 0px;
     text-transform: none;
     border: none;
@@ -3662,7 +3715,7 @@ s
     font-size: 18px;
     font-weight: bold;
     text-align: left;
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",serif;
     letter-spacing: 0px;
     text-transform: none;
     border: none;
@@ -3795,7 +3848,7 @@ font-size: 19px;
     font-size: 18px;
     font-weight: bold;
     text-align: left;
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",serif;
     letter-spacing: 0px;
     text-transform: none;
     border: none;
@@ -3810,7 +3863,7 @@ font-size: 19px;
     font-size: 18px;
     font-weight: bold;
     text-align: left;
-  font-family: 'Radiance', Verdana;
+    font-family: "Radiance",serif;
     letter-spacing: 0px;
     text-transform: none;
     border: none;
@@ -4786,7 +4839,7 @@ margin-top: 8px;
 }
 
 .patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ {
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance";
     text-align: left;
    font-size: 5px;
     color: rgba(187,187,187,0.9333333333);
@@ -4795,7 +4848,7 @@ margin-top: 8px;
 
 }
 .patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ10 {
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance";
     text-align: center;
    font-size: 12px;
     color: rgba(187,187,187,0.9333333333);
@@ -4838,7 +4891,7 @@ color: #fff;
 
 }
         .patchnotespage_NoteElement_1gbgx recipe_text {
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance";
     text-align: left;
    font-size: clamp(17px,1.5vw,19px);
     color: rgba(187,187,187,0.9333333333);
@@ -4848,7 +4901,7 @@ color: #fff;
 }
 
  .cost_text{
-       font-family: 'Radiance', Verdana;
+        font-family: "Radiance";
     text-align: left;
    font-size: 18px;
     color: #c9d2de;
@@ -4988,11 +5041,10 @@ span.comment_undying {
     color: #fff
 }
         .patchnotespage_NoteElement_1gbgx .patchnotespage_Note_eSxyZ {
-    color: #808080;
-  font-size: 18px;
-  line-height: 26px;
-  font-family: 'Radiance', Verdana;
-  -webkit-text-stroke: 0.2px;
+    font-size: clamp(17px,1.5vw,19px);
+    color: #c9d2de;
+    line-height: 1.3;
+    font-weight: 200;
 }
 
 
@@ -5004,7 +5056,7 @@ color: #cacaff;
     font-size: 18px;
     font-weight: bold;
     text-align: left;
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",serif;
     letter-spacing: 0px;
     text-transform: none;
     border: none;
@@ -5187,7 +5239,7 @@ html:not(.no-js) [data-aos=fade-left] {
     bottom: 0px;
     left: -32px;
     text-transform: uppercase;
-   font-family: 'Radiance', Verdana;
+    font-family: 'Radiance','arial',sans-serif;
     color: #FFFFFF;
     z-index: 99;
     cursor: default
@@ -5219,7 +5271,7 @@ html:not(.no-js) [data-aos=fade-left] {
 
 .StretchGoalDescTextCentered {
     color: #c5c3c3;
-font-family: 'Radiance', Verdana;
+    font-family: 'Radiance','arial',sans-serif;
     font-size: 16px;
     opacity: 1.0;
     text-transform: none;
@@ -5313,7 +5365,7 @@ background-color: rgba(0, 0, 0, 0.7);
 .StretchGoalDescTitleText {
     color: #ece6e0;
     text-transform: uppercase;
-    font-family: 'Radiance', Verdana;
+    font-family: 'Radiance','arial',sans-serif;
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 1.0
@@ -5322,7 +5374,7 @@ background-color: rgba(0, 0, 0, 0.7);
 .StretchGoalDescText {
     padding-top: 15px;
     color: #808080;
-    font-family: 'Radiance', Verdana;
+    font-family: 'Radiance','arial',sans-serif;
     font-size: 16px;
     opacity: 1.0;
     text-transform: none
@@ -5863,7 +5915,7 @@ background-color: rgba(0, 0, 0, 0.7);
     color: #f0dac3;
     font-size: 28px;
     line-height: 170%;
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     text-shadow: 0px 1px 4px rgba(0,0,0,.4);
     text-transform: uppercase;
     font-weight: 600;
@@ -6608,8 +6660,29 @@ a {
     -webkit-mask-image: linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%)
 }
 
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.svg#ywftsvg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
 
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.svg#ywftsvg") format("svg");
+    font-weight: 900;
+    font-style: normal
+}
 
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.svg#ywftsvg") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
 
 @font-face {
     font-family: "Goudy Trajan";
@@ -7207,7 +7280,29 @@ a {
     -webkit-mask-image: linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%)
 }
 
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.svg#ywftsvg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
 
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.svg#ywftsvg") format("svg");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Radiance";
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.svg#ywftsvg") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
 
 @font-face {
     font-family: "Goudy Trajan";
@@ -7818,7 +7913,7 @@ a {
 }
 
 .international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_FeatureCapsule_1Xw2N .international2023_Text_353Dl .international2023_Description_2hxLW,.international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_SmallRewardsCapsule_2hp9Q .international2023_Text_353Dl .international2023_Description_2hxLW,.international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_FeatureCapsule_1Xw2N .international2023_RewardsText_1S7Z_ .international2023_Description_2hxLW,.international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_SmallRewardsCapsule_2hp9Q .international2023_RewardsText_1S7Z_ .international2023_Description_2hxLW {
-    font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     text-align: center;
     font-size: clamp(17px,2vw,20px);
     line-height: 1.4;
@@ -8142,7 +8237,7 @@ a {
 }
 
 .international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_FeatureRow_2C5mZ .international2023_Text_353Dl .international2023_Description_2hxLW,.international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_FeatureRow_2C5mZ .international2023_FeatureCapsule_1Xw2N .international2023_RewardsText_1S7Z_ .international2023_Description_2hxLW,.international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_FeatureCapsule_1Xw2N .international2023_FeatureRow_2C5mZ .international2023_RewardsText_1S7Z_ .international2023_Description_2hxLW,.international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_FeatureRow_2C5mZ .international2023_SmallRewardsCapsule_2hp9Q .international2023_RewardsText_1S7Z_ .international2023_Description_2hxLW,.international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_SmallRewardsCapsule_2hp9Q .international2023_FeatureRow_2C5mZ .international2023_RewardsText_1S7Z_ .international2023_Description_2hxLW {
-   font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     font-size: 18px;
     line-height: 1.5;
     color: #a2acb8;
@@ -8286,7 +8381,7 @@ a {
 }
 
 .international2023_International2023Page_wtEKn .international2023_WebsiteSection_1VcEN .international2023_ComingSoonCapsule_23EWM .international2023_Contents_223vq .international2023_Description_2hxLW {
-    font-family: 'Radiance', Verdana;
+    font-family: "Radiance",sans-serif;
     font-size: 24px;
     line-height: 1.5;
     color: #a2acb8
