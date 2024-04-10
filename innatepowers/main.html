@@ -1,0 +1,965 @@
+<html><head>
+
+
+
+
+
+
+ <link href="https://gota2classic.com/gota_stylesheet.css" rel="stylesheet">
+
+		 <script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+    </script>
+
+
+	<style>
+        .item_description_container .item_description_header .item_description_mana_container .item_description_cast_range_icon {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+	background-image: url( 'https://i.postimg.cc/nVqsNtRz/pos-5.png' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+               .patch-ability-tag {
+	display: inline-block;
+	padding: 2px 2px;
+	background-color: #333;
+	text-transform: uppercase;
+
+	font-size: 18px;
+
+
+	color: white;
+	border-radius: 2px;
+
+}
+     .patch-ability-tag.recipe {
+	background-color: #00008B;
+}
+
+.patch-ability-tag.upgrade {
+	background-color: #8B4000;
+}
+        .patch-ability-tag.addition {
+	background-color: #355E3B;
+}
+        .patch-ability-tag.returning {
+	background-color: #8B8000;
+}
+        .patch-ability-tag.adjust {
+	background-color: #36454F;
+}
+        .patch-ability-tag.renamed {
+	background-color: #5C4033;
+}
+            .patch-ability-tag.renamed2 {
+	background-color: #702963;
+}
+        .dispel_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://i.ibb.co/2kT9N4d/gota-dispel-icon.webp' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+        .general_dash {
+            margin-top: 10px;
+             margin-bottom: 10px;
+ width: 100%;
+    height: 0.5px;
+   border-top: 1px solid rgba(225, 193, 110, 0.4);
+
+}
+
+    .range_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://i.postimg.cc/nj84RPsF/Ranged-icon.webp' );
+border-radius: 3px;
+
+	display: inline-block;
+        filter: invert(50%);
+
+
+
+}
+    .melee_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://i.postimg.cc/v1x7vsZ2/Melee-icon.webp' );
+border-radius: 3px;
+
+	display: inline-block;
+        filter: invert(50%);
+
+
+
+}
+
+   .cast_range_icon {
+     width: 16px;
+    height: 16px;
+        margin-right: 5px;
+  margin-top: 5px;
+
+    background-size: contain;
+	background-image: url( 'https://i.postimg.cc/nVqsNtRz/pos-5.png' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+
+        .dispel_icon {
+     width: 16px;
+    height: 16px;
+
+
+    background-size: contain;
+	background-image: url( 'https://i.ibb.co/2kT9N4d/gota-dispel-icon.webp' );
+border-radius: 3px;
+
+	display: inline-block;
+
+
+
+}
+         .fluid_icon {
+     width: 75px;
+    height: 75px;
+
+
+    background-size: contain;
+	background-image: url( 'https://i.ibb.co/LdbDbFg/gota-fluid.png' );
+border-radius: 3px;
+transform: translateY(20px);
+	display: inline-block;
+
+
+
+}
+    </style>
+
+
+
+</head><body>
+
+     <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0"> -->
+    <div class="Container" id="Header">
+    <div class="Inner">
+
+
+    	<a id="HeaderLogo" href="https://gota2classic.com">&nbsp;</a>
+        <a class="HeaderPage " href="https://gota2classic.com/innatepowers"><font color="#CC5500">MAIN PAGE</font></a>
+    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_general">GENERAL UPDATES</a>
+    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_items">ITEM UPDATES</a>
+    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_heroes">HERO UPDATES</a>
+
+    	<div style="clear: both;"></div>
+    </div>
+    	<div style="clear: both;"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0"> -->
+
+
+
+
+
+
+
+
+
+  <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/955153789583757362/1010192783279140924/punished_ben.png">
+</head>
+<body style="width: fit-content">
+  <div class="app_DotaRoot_2cvxx">
+    <div class="patchnote_page_background" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg');">
+
+
+
+
+
+
+        <div class="app_DotaRoot_2cvxx"><div id="NewFrontiersPage" class="new_frontiers_NewFrontiersPage_3zRrq">
+            <div class="new_frontiers_HeaderSection_2i8ci"><div class="new_frontiers_TheContainer_1VShU"><div class="new_frontiers_The_1OuH3"></div><div class="new_frontiers_Dash_3rbCS2"></div></div><div class="new_frontiers_TitleContainer_1ib3u"><div class="gota_title">GOTA</div><div class="new_frontiers_TheContainer_1VShU"></div></div><div class="new_frontiers_Subtitle_Mb1X_">INNATE POWERS GAMEPLAY UPDATE</div><div class="new_frontiers_TitleContainer_1ib3u"><div class="new_frontiers_TheContainer_1VShU"><div class="new_frontiers_Dash_3rbCS"></div><div class="new_frontiers_The_1OuH3">1.00</div><div class="new_frontiers_Dash_3rbCS"></div></div></div></div>
+
+        	<div id="Map" class="new_frontiers_WebsiteSection_3o_tR2 new_frontiers_NewMap_29qME"><h1><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div></h1><div class="new_frontiers_Introduction_2wDk9"></div></div>
+            <div class="Container" id="BG3">
+        <div class="InnerTitle reveal">
+            <h3 class="OrangeGradient">PREAMBLE</h3>&nbsp;
+
+            <p>This patch is more than ambitious. To help you digest every change, the patchnote page is separated into four segments, visible at the top:</p>&nbsp;
+            <p>Main Page - General Updates - Item Updates - Hero Updates.</p>&nbsp;
+            <p>You are currently reading the main page, which also contains the highlights section just below this text.</p>
+        </div>
+    </div>
+            <div id="Map" class="new_frontiers_WebsiteSection_3o_tR2 new_frontiers_NewMap_29qME"><h1><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div></h1><div class="new_frontiers_Introduction_2wDk9"></div></div>
+
+	<div id="MajorGameplay" class="new_frontiers_WebsiteSection_3o_tR new_frontiers_Main_3wT0k"><div class="augupdate22_Aug2023Page_VM6IJ reveal"><div class="augupdate22_Container_omYvI2" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2020/returning_features_bg.png&quot;);"><div class="augupdate22_Inset_2Xhpl"><div class="augupdate22_SingleRow_37-Uk"><div class="augupdate22_XLText_2gejB"><div>&nbsp;</div><div>&nbsp;</div><div class="augupdate22_XLTitle2_2YOZN"><h23><font color="">UPDATE HIGHLIGHTS</font></h23></div><div>&nbsp;</div><div>&nbsp;</div><div class="augupdate22_XLBody_3FODG"><font color="#E1C16E"></font></div></div></div>
+
+
+
+        </div>
+        </div>
+        </div>  <div class="new_frontiers_SectionDivider_preview_28Lu52"></div>
+        <div class="augupdate22_Aug2023Page_VM6IJ"><div class="augupdate22_Container_omYvI" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg&quot;);"><div class="augupdate22_Inset_2Xhpl"><div class="augupdate22_SingleRow_37-Uk reveal"><div class="augupdate22_XLText_2gejB"><div class="augupdate22_XLTitle_2YOZN"><h1>GENERAL CHANGES</h1></div><div class="augupdate22_XLBody_3FODG">Something not mentioned here is that the map has also been reworked, but that is a given in any good patch.</div></div></div>
+
+            <div class="new_frontiers_FeatureCapsule_3-p0- reveal"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">Side Shops Return</div></div><div class="item_description">Quirt and Sithil return to business after a long hiatus; however, due to the hard times, their stock amount is even more limited than before, only selling components that are not more expensive than 400 gold.<div>&nbsp;</div>Make sure to pay a visit to them on the side lanes between the Radiant and Dire tier 1 towers, where they previously conducted business.</div></div><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2022/backgrounds/candyworks_bg.png"></div>
+
+            <div class="new_frontiers_FeatureCapsule_3-p0- reveal"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">Rune System Reworked</div></div><div class="item_description">Runes have been reworked to include two separate rune classes: Power Runes and Utility Runes.<div>&nbsp;</div>Power Runes grant effects that either make your hero deal more damage or increase your survivability, while Utility Runes help you manage your economy game, making sure you do not fall behind.</div></div><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//dawnbreaker/patch/patch_general.png"></div>
+            <div class="new_frontiers_FeatureCapsule_3-p0- reveal"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">ROOT UPDATES</div></div><div class="item_description">Roots have been standardized into two types:<div>&nbsp;</div><font color="white">Basic Root:</font> Prevents the target from moving, casting mobility abilities, and grants True Sight over it for the duration. <div></div><font color="white">Strong Root:</font> Prevents the target from moving, attacking, casting abilities, and grants True Sight over it for the duration.<div>&nbsp;</div>Additionally, both types are now immediately removed from forced movement. (e.g. Force Staff)</div></div><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/gameplay/overlay_gameplay_top.png"></div></div></div></div>
+
+
+
+
+
+
+
+
+
+             <div class="new_frontiers_SectionDivider_preview_28Lu5"></div>
+
+            <div class="augupdate22_Aug2023Page_VM6IJ"><div class="augupdate22_Container_omYvI" style="background-image: url(&quot;;);"><div class="augupdate22_Inset_2Xhpl"><div class="augupdate22_SingleRow_37-Uk reveal"><div class="augupdate22_XLText_2gejB"><div class="augupdate22_XLTitle_2YOZN"><h1>HERO changes</h1></div><div class="augupdate22_XLBody_3FODG">The hero class has undergone quite a number of exciting changes.</div></div></div><div class="new_frontiers_FeatureCapsule_2-p0- reveal"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">New Hero Class:<div class="fluid_icon"></div>Fluid</div></div><div class="item_description">These heroes allow the players to build them however they want, depending on their playstyle, by having a fluid primary attribute. The primary attribute is determined by which attribute the hero has the most of. For example, a hero like Pangolier, who gains more agility than strength, can be turned into a strength hero by buying items that give strength.</div></div><img class="new_frontiers_Image_1XlWc" src="https://i.postimg.cc/FFgx4sjB/bg-02-removebg.png"></div>
+
+
+
+                <div class="new_frontiers_FeatureCapsule_2-p0- reveal"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">INNATE ABILITIES</div></div><div class="item_description">Every hero has an innate ability now.<div>&nbsp;</div>These passive and active abilities differ from being a useful tool early on to being a game-changing late-game ability to abuse. They also differ in leveling: some can be leveled, while others cannot.<div>&nbsp;</div> A few of these innate abilities will be familiar, for example, Invoker's Invoke or Earth Spirit's Stone Remnants; however, others, like Chaotic Luck or Black Grimoire, will probably not be.</div></div><img class="new_frontiers_Image_1XlWc" src="https://i.postimg.cc/2ywdF2kD/bg-05-removebg.png"></div>
+
+
+
+                 <div class="new_frontiers_FeatureCapsule_2-p0- reveal"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k">OLD KING RETURNS</div></div><div class="item_description">King Leoric is back from his ceremony, ready to replace Wraith King and extend his reach once again.<div>&nbsp;</div>With a kit of reworked abilities and a new innate ability to help him fit in, he surely won't have any problem dealing with heroes who oppose him.<div>&nbsp;</div>Welcome back, King Leoric.</div></div><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/wraithkingarcana/tombstone.png"></div>
+
+                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/balance_heroes.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">HERO CLASS BENEFITS</font></div></div><div class="item_description">Heroes now gain class specific perks, depending on their primary attribute. Strength heroes gain bonus damage block per strength, Agility heroes gain bonus movement speed per agility, and Intelligence heroes gain cooldown reduction per intelligence, while Universal heroes enjoy the perks of every class without any downsides. </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc" src="https://i.postimg.cc/qq0X39dw/creep-hero-scaling.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">CREEP-HERO SCALING </font></div></div><div class="item_description">Creep-Heroes are now even more similar to heroes. They are now treated by every ability in the game as heroes, and are capable of leveling up. They level-up when their owner levels up and gain 4 bonus attack damage and 0.8 bonus armor with each level.</div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/header_void.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Universal Hero Pool Reworked</font></div></div><div class="item_description">The entire universal hero roster has been changed, and their number has been decreased from 32 available heroes to only a select few. These heroes are Void Spirit, Enigma, Faceless Void, Chaos Knight, Keeper of the Light, IO, Elder Titan, and Weaver.</div></div></div>
+
+
+
+
+
+                </div>
+
+                </div></div></div>
+             <div class="new_frontiers_SectionDivider_preview_28Lu5"></div>
+            <div class="augupdate22_Aug2023Page_VM6IJ"><div class="augupdate22_Container_omYvI" style="background-image: url(&quot;&quot;);"><div class="augupdate22_Inset_2Xhpl"><div class="augupdate22_SingleRow_37-Uk"><div class="augupdate22_XLText_2gejB reveal"><div class="augupdate22_XLTitle_2YOZN"><h1>INNATE ABILITIES</h1></div><div class="augupdate22_XLBody_3FODG">As mentioned in the previous segment, every hero has an innate ability now. This section will show some examples.</div></div>
+
+
+
+
+
+
+                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1133022317597962240/Pale_Augur_Decay_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">ROTTING BODY</font></div></div><div class="item_description"><font color="#708090">Undying's body is constantly rotting away, losing <font color="white">5</font> Health per second. Undying's every attack spreads this rot to enemy units, applying a -<font color="white">15%</font> Movement Slow and dealing <font color="white">15</font> Magical Damage per second. Lasts <font color="white">4</font> seconds.</font><div>&nbsp;</div>  <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#50C878
+">Yes</font></div></div>
+                    </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1126254119091445830/Darkness_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">DARKNESS COMES </font></div></div><div class="item_description"><font color="#708090">Night Stalker shifts the day-night cycle, starting the cycle with night first, as well as drawing out the night sooner than expected, making the daytime <font color="white">30</font> seconds shorter. Each subsequent day is even shorter by an additional <font color="white">30</font> seconds, eventually leading to a permanent night.</font></div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/zuus_thundergods_wrath.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">THUNDERGOD'S WRATH</font></div></div><div class="item_description"><font color="#708090">When activated, Zeus strikes every enemy hero, no matter where they may be, with the current level of Lightning Bolt, dealing damage, stunning them, and providing True Sight over them.</font><div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost: <font color="white">300</font></div></div>
+                   <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: <font color="white">160</font></div></div></div></div></div>
+
+
+
+
+
+                </div>
+                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/1097644327871721633/1163565575985967234/Vigil_Signet_Warcry_icon.webp?ex=654009e3&is=652d94e3&hm=5a6a4ba1e913e8143ecf0ad594e220dc6643fbcc9a9a53749695b40fc70c9652&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Rouge Knight</font></div></div><div class="item_description"><font color="#708090">Sven gains +<font color="white">2</font> Armor for every nearby enemy hero. Radius: <font color="white">1200</font>.</font></div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921820785704833044/1161035574707232918/Primal_Paean_Primal_Roar_icon.webp?ex=6536d5a4&is=652460a4&hm=a9fe9c77284d941a90a73be29db09f12c4dc314d5759547efd94c33c7deab57d&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Beast Companion </font></div></div><div class="item_description"><font color="#708090">Beastmaster chooses a non-ancient savage beast of any level to take his side in the battles to come.<div>&nbsp;</div>Beastmaster loses <font color="white">300</font> health when the beast dies.</font><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cast_range_icon"></div><div class="patchnotespage_Note_eSxyZ">Cast Range: 600</div></div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 60s</div></div> </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921819364880171030/1136358778284015636/Bladeform_Legacy_Omnislash_Origins_icon.webp"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">PARRY</font></div></div><div class="item_description"><font color="#708090">Juggernaut has a <font color="white">15%</font> chance to block attacks within a <font color="white">400</font>-range and counterattack the attacker.</font></div></div></div>
+
+
+
+
+
+                </div>
+                <div class="new_frontiers_FeatureRow_18idE"><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/marci_sidekick.png"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Sidekick</font></div></div><div class="item_description"><font color="#708090">Marci's loyalty helps ensure survival, imbuing a chosen allied hero with +<font color="white">10</font> Attack Damage, and healing this allied hero by <font color="white">50%</font> of the damage dealt to enemy units by her.<div>&nbsp;</div>Sidekick is removed when the chosen allied hero and Marci drift <font color="white">2400</font>-units apart from each other.</font><div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#D2042D
+
+                    ">No</font></div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cast_range_icon"></div><div class="patchnotespage_Note_eSxyZ">Cast Range: <font color="white">1200</font></div></div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost: <font color="white">25</font></div></div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: <font color="white">60</font></div></div></div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/1097644327871721633/1161045984915226624/Fists_of_Axe_Unleashed_Culling_Blade_icon.webp?ex=6536df55&is=65246a55&hm=1ba1b7828b063ebf32625239d646fefc0963c88b61edc00fda3c5a45015608a8&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Battleforged Skin </font></div></div><div class="item_description"><font color="#708090">Axe's red-blooded body prevents enemy heroes from lifestealing off of him.</font> </div></div></div><div class="new_frontiers_SmallFeatureCapsule_38P9N reveal"><img class="new_frontiers_Image_1XlWc2" src="https://cdn.discordapp.com/attachments/921819364880171030/1161044437737156642/Chaos_Arbiter_Chaos_Strike_icon.webp?ex=6536dde5&is=652468e5&hm=55567ca4bacc60fa0b8e2ada028899e20b36f4ddd58e838ec9d57b7afe92deae&"><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_HeaderContainer_1rokR"><div class="new_frontiers_Headline_1z-7k"><font color= "#DAA520">Chaotic Luck</font></div></div><div class="item_description"><font color="#708090">Chaos Knight's chance to proc his abilities and items is set to a flat <font color="white">50%</font> for <font color="white">6</font> seconds.</font><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="dispel_icon"></div><div class="patchnotespage_Note_eSxyZ">Dispellable: <font color="#D2042D
+
+">No</font></div></div> <div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown: 30s</div></div></div></div></div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                </div> </div> </div> </div>
+
+
+             <div class="new_frontiers_SectionDivider_preview_28Lu5"></div>
+
+
+        <div class="augupdate22_Aug2023Page_VM6IJ"><div class="augupdate22_Container_omYvI" style="background-image: url(&quot;&quot;);"><div class="augupdate22_Inset_2Xhpl"><div class="augupdate22_SingleRow_37-Uk reveal"><div class="augupdate22_XLText_2gejB"><div class="augupdate22_XLTitle_2YOZN"><h1>ITEM CHANGES</h1></div><div class="augupdate22_XLBody_3FODG">Introducing <font color="green">26</font> New Items and <font color="orange">70</font> Reworked Items. There are also a few old ones brought back in a different manner. This segment will show some examples.</div></div></div><div class="new_frontiers_ItemsContainer_3Qyvb">
+
+
+
+
+
+
+                <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/lunar_crest.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Lunar Crest</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">2800</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tiara_of_selemene.png"><font color="lightblue">Tiara of Selemene<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/energy_booster.png">Energy Booster<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">250</font> Mana</div></div>
+
+
+
+
+
+                        <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Glow    </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">UNIT TARGET</font> - Equipped Hero grants an allied unit +<font color="white">10%</font> Magic Amplification, +<font color="white">5%</font> Magic Resistance, and +<font color="white">10%</font> Movement Speed for <font color="white">8</font> seconds. Enemy units facing towards the allied unit gain a -<font color="white">15%</font> Magic Damage debuff for <font color="white">2</font> seconds. The effects are doubled during nighttime.</font></div></div>
+
+
+
+
+</font></div><div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#50C878">Yes</font></div></div><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">1000</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">16</div></div></div></div>
+
+
+                       </div>
+
+                  <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Lunar Blessing      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero gains +<font color="white">3</font> Mana Regeneration and +<font color="white">400</font> Vision during nighttime.</font></div></div><div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div></div></div>
+
+
+                    </div></div>
+</div>
+</div>
+</div>
+
+
+
+
+                     <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://i.postimg.cc/wMyHDbct/gota-guardian-charm.webp');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Guardian Charm</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1200</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+
+
+
+
+
+                   <div class="item_basic">
+
+
+
+
+                        <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Guardian Aura    </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero emits a protective aura that grants +<font color="white">1</font> Health Regeneration and +<font color="white">1</font> Armor to nearby allied units for every <font color="white">10%</font> Health they are missing. Radius: <font color="white">1200</font>.</font></div></div>
+</font></div></div>
+                       </div>
+
+                     </div>
+                       </div></div>
+
+
+
+                <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/penta_edged_sword.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Diabolic Blade</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">2800</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/broadsword.png"><font color="lightblue">Broadsword<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vitality_booster.png">Vitality Booster<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">20</font> Attack Damage</div></div>
+                          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">250</font> Health</div></div>
+                        <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Devil's Curse      </b></font></h4><font color="#708090">
+
+
+                            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">UNIT TARGET</font> - Equipped Hero applies a dark curse on the target unit that prevents the cursed target's allies from going within a <font color="white">600</font>-radius of their cursed ally for <font color="white">5</font> seconds. Allied units that are already within the radius are pushed outside.</font></div></div>
+
+
+
+                            <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">750</div></div><div class="item_description_mana_container"><div class="item_description_mana_icon"></div><div class="item_description_mana_text">25</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">17</div></div></div></div>
+
+
+                       </div>
+
+                        </div></div></div></div>
+
+
+
+
+                 <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://i.ibb.co/qY1BRtv/gota-gungnir.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Gungnir</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">4900</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/maelstrom.png"><font color="lightblue">Maelstrom<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/javelin.png">Javelin<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/broadsword.png">Broadsword<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+
+
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">50</font> Attack Damage</div></div>
+
+
+
+
+
+                 <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Chain Lightning      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero's every attack has a <font color="white">30%</font> chance to release a bolt of electricity that leaps between <font color="white">6</font> targets within a <font color="white">650</font>-radius, dealing <font color="white">160</font> Magical Damage with each bounce. </font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+                 <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: True Strike      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero's every attack is empowered with True Strike. </font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+                    </div>
+
+
+                        </div></div>
+
+
+            <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/iron_talon.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Iron Talon</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1400</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag returning">ITEM RETURNED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                       <div class="item_recipe">
+
+
+
+               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/quelling_blade.png"><font color="lightblue">Quelling Blade<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_health.png">Ring of Health<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">10</font> Attack Damage</div></div>
+                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">6</font> Health Regeneration</div></div>
+                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Quell      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">UNIT TARGET</font> - Equipped Hero culls the life source of a neutral or enemy creep, instantly removing <font color="white">30%</font> of its current health.<div>&nbsp;</div> Can also be cast on a tree to cut it down, in which case the cooldown is set to <font color="white">4</font> seconds.</font></div></div>
+
+
+                       <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">350</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">15</div></div></div></div>
+
+
+                       </div></div></div></div></div>
+
+
+
+
+
+ <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/trident.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Trident</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">5325</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/kaya.png"><font color="lightblue">Kaya<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/aether_lens.png">Aether Lens<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+
+
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">20</font> Intelligence</div></div>
+                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">300</font> Mana</div></div>
+                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">100%</font> Mana Regeneration</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">250</font> Cast Range</div></div>
+
+
+
+     <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Magic Lightning      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero's every unit-target ability creates bolt of electricity that leaps between <font color="white">8</font> targets within a <font color="white">650</font>-radius, dealing <font color="white">100</font> Magical Damage with each bounce.</font></div></div>
+
+                       <div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+
+                        </div>
+
+                 <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Magic Empower      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero's next ability cast is empowered, gaining a buff for <font color="white">4</font> seconds that makes the first tick of the ability deal +<font color="white">75</font> Magic Damage when coming in contact with an enemy unit.</font></div></div>
+
+                       <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">4</div></div></div></div>
+
+
+                       </div>
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                        </div></div>
+
+
+            <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_tarrasque.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Ring of Tarrasque</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1200</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag upgrade">ITEM REWORKED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+
+
+
+
+                    <div class="item_basic">
+
+                        <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Intense Heartbeat      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero gains bonus health regeneration equal to <font color="white">2.5%</font> Maximum Health when attacked by an enemy hero. Lasts <font color="white">5</font> seconds.  </font></div></div><div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">10</div></div></div></div>
+
+
+                       </div></div>
+
+
+                        </div></div></div>
+
+            <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/falcon_blade.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Falcon Blade</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">2450</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag upgrade">ITEM REWORKED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/claymore.png"><font color="lightblue">Claymore<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/void_stone.png">Void Stone<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">25</font> Attack Damage</div></div>
+                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">2</font> Mana Regeneration</div></div>
+
+
+                        <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Mind Reverberate      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero's every attack deals bonus physical damage equal to <font color="white">25%</font> of the target's intelligence.</font></div></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+
+                       </div>
+
+                        </div></div></div>
+
+           <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/greater_crit.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Daedalus</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">5400</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag upgrade">ITEM REWORKED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/lesser_crit.png"><font color="lightblue">Crystalys<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dragon_lance.png">Dragon Lance<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">200</font> <div class="range_icon"></div>Attack Range</div></div>
+ <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">15</font> Strength</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">60</font> Attack Damage</div></div>
+
+
+
+
+
+                   <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Critical Strike      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero's every attack has a <font color="white">25%</font> chance to deal <font color="white">250%</font> damage.</font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+              <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Pierce      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero's every attack has a <font color="white">40%</font> chance to deal +<font color="white">100</font> Physical Damage while piercing through the target's evasion.</font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+                    </div>
+
+
+                        </div></div>
+            <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/revenants_brooch.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Revenant's Brooch</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">5200</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag upgrade">ITEM REWORKED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/relic.png"><font color="lightblue">Sacred Relic<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mind_breaker.png">Magical Blade</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+
+
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">100</font> Magic Attack Damage</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">50%</font> Magic Amplification</div></div>
+
+
+
+
+
+                       <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="FCF55F"><b>Passive: Revenant's Pierce     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero's every magic damage instance has a <font color="white">50%</font> chance to pierce the target's magic resistance. </font></div></div>
+
+
+
+</font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+                 <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Everlasting      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero loses the magical brooch upon death. Revenant's Brooch cannot be destroyed while it is on the ground.</font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+                    </div>
+
+
+                        </div></div>
+
+
+             <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/monkey_king_bar.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Monkey King Bar</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">5200</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag upgrade">ITEM REWORKED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/relic.png"><font color="lightblue">Sacred Relic<img class="recipe_item" src="https://i.ibb.co/wSKW8hm/gota-bone-totem.jpg">Bone Totem<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+ <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">50</font> <div class="melee_icon"></div>Attack Range</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">75</font> Attack Damage</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">5</font> Armor</div></div>
+
+
+
+
+
+                    <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Extend Reach      </b></font></h4><font color="#708090">
+
+
+                            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">NO TARGET</font> - Equipped Hero gains +<font color="white">200</font> <div class="melee_icon"></div>Attack Range for <font color="white">5</font> seconds.</font></div></div>
+
+
+
+                            <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#D2042D">No</font></div></div><div class="item_description_mana_container"><div class="item_description_mana_icon"></div><div class="item_description_mana_text">25</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">20</div></div></div></div>
+
+
+                       </div>
+
+                        </div>
+                            <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Jingu Attacks      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero's every attack has a <font color="white">20%</font> chance to deal additional <font color="white">40</font> Pure Damage with +<font color="white">40%</font> Lifesteal.</font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+
+
+
+                    </div>
+
+
+                        </div></div>
+
+
+
+
+
+            <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phylactery.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Phylactery</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">3000</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag upgrade">ITEM REWORKED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
+                   <div class="item_recipe">
+
+
+                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/point_booster.png"><font color="lightblue">Point Booster<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pers.png">Perseverence<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="item_basic">
+
+
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">6</font> Health Regeneration</div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">2</font> Mana Regeneration</div></div>
+
+
+
+
+                       <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Soul Trap     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">UNIT TARGET</font> - Equipped Hero traps the target's soul, causing the unit to be silenced and to take +<font color="white">15%</font> Magic Damage for <font color="white">5</font> seconds.</font></div></div>
+
+
+
+</font></div><div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#50C878">Yes</font></div></div><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">900</div></div><div class="item_description_mana_container"><div class="item_description_mana_icon"></div><div class="item_description_mana_text">75</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">20</div></div></div></div>
+
+
+                       </div>
+
+
+                 <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Soul Collector      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero collects the souls of slain enemy heroes, gaining +<font color="white">50</font> Health and +<font color="white">50</font> Mana for every nearby enemy hero dying in a <font color="white">1200</font>-radius. Equipped Hero loses <font color="white">2</font> souls for every death. Initial Soul Count: <font color="white">4</font>.</font></div></div></font></div><div class="item_description_header"></div></div>
+
+
+                       </div>
+
+
+                    </div>
+
+
+                        </div></div>
+
+
+
+
+
+
+</div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      <div class="new_frontiers_SectionDivider_preview_28Lu5"></div>
+
+
+                        <div class="augupdate22_Aug2023Page_VM6IJ"><div class="augupdate22_Container_omYvI" style="background-image: url(&quot;&quot;);"><div class="augupdate22_Inset_2Xhpl"><div class="augupdate22_SingleRow_37-Uk reveal"><div class="augupdate22_XLText_2gejB"><div class="augupdate22_XLTitle_2YOZN"><h1>THE GRAVEYARD</h1></div><div class="augupdate22_XLBody_3FODG">Not everything can stay in the game forever. This segment will show some that did not escape the culling blade this patch.</div></div></div></div>
+                        <div class="new_frontiers_MapFeatures_174Fx"><div class="new_frontiers_MapFeatureContainer_6Maqg reveal"><video class="new_frontiers_Video_2A1iY2" autoplay="" preload="none" loop="" poster="https://i.postimg.cc/pX5Xjyq0/talent-segment.png"> </video><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_TitleContainer_1ib3u"></div><div class="new_frontiers_Dash_3rbCS"></div><div class="item_description">The very first concept removed as a design choice was the talent system.<div>&nbsp;</div> The two main problems with the talent system in particular are that it takes every creative quirk that you could give to a hero, as well as being the greatest offender when it comes to power creep.<div>&nbsp;</div> You don't want boring talents that just give +20 damage or -2 second cooldown, but if you make creative talents, then you are just throwing away creative ideas that could be implemented as a base mechanic for the hero. Not to mention that the number of creative talents that fit a specific hero is very scarce, so making 8 talents like that for each hero is pretty much impossible.<div>&nbsp;</div>Basically, the trade-off here is that players get heroes with more interesting hero toolkits and less power crept numbers in exchange for the talent system. It should not be too bad of a trade.</div></div></div></div>
+
+
+                      <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+
+                          <div class="new_frontiers_Introduction_2wDk9 reveal">But that is not all.<div>&nbsp;</div> Neutral Items have also been removed.</div>
+                          <div class="new_frontiers_MapFeatures_174Fx"><div class="new_frontiers_MapFeatureContainer_6Maqg reveal"><video class="new_frontiers_Video_2A1iY2" autoplay="" preload="none" loop="" poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//new_frontiers/neutral_item_tokens.png"> </video><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_TitleContainer_1ib3u"></div><div class="new_frontiers_Dash_3rbCS"></div><div class="item_description">Neutral Items also suffer from the same problems as talents but with an added spin - they are kind of just pointless.<div>&nbsp;</div>With talents, at least they are interesting but neutral items.. not so much.<div>&nbsp;</div>Even now, with the tokens change, it is still just pointless RNG and power creep wrapped up in one package. </div></div></div></div>
+
+                          <div class="new_frontiers_Introduction_2wDk9 reveal">The following structures have also been removed:</div><div>&nbsp;</div>
+                           <div class="new_frontiers_Introduction_2wDk92 reveal"><b>Outposts</b></div>
+                          <div class="new_frontiers_MapFeatures_174Fx"><div class="new_frontiers_MapFeatureContainer_6Maqg reveal"><video class="new_frontiers_Video_2A1iY2" autoplay="" preload="none" loop="" poster="https://i.postimg.cc/PJPf2qh5/outpost-segment.png"> </video><div>&nbsp;</div><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_TitleContainer_1ib3u"></div><div class="new_frontiers_Dash_3rbCS"></div><div class="item_description"><div>&nbsp;</div>When Outposts were introduced, they used to give tons of experience, which, understandably, was not very enjoyable to play around.<div>&nbsp;</div>A huge part of the charm of DotA is that it gives you creative freedom and allows you to play the game however you want to.<div>&nbsp;</div>With their sole purpose of granting experience stripped, Outposts simply became glorified teleport spots, which is something that is not necessary on the current map; therefore, they are removed.</div></div></div></div>
+                           <div class="new_frontiers_Introduction_2wDk92 reveal"><b>Tormentors</b></div>
+                          <div class="new_frontiers_MapFeatures_174Fx"><div class="new_frontiers_MapFeatureContainer_6Maqg reveal"><video class="new_frontiers_Video_2A1iY2" autoplay="" preload="none" loop="" poster="https://i.postimg.cc/13pmW2xw/tormentor-segment.png"> </video><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_TitleContainer_1ib3u"></div><div class="new_frontiers_Dash_3rbCS"></div><div class="item_description"><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>Tormentors are honestly just not memorable.<div>&nbsp;</div> While they definitely have a decent impact on the game, they just feel redundant and are a chore to take down.<div>&nbsp;</div>They are probably the least necessary structure in the whole game, and as a result, they are removed.</div></div></div></div>
+                          <div class="new_frontiers_Introduction_2wDk92 reveal"><b>Watchers</b></div>
+                          <div class="new_frontiers_MapFeatures_174Fx"><div class="new_frontiers_MapFeatureContainer_6Maqg reveal"><video class="new_frontiers_Video_2A1iY2" autoplay="" preload="none" loop="" poster="https://i.postimg.cc/5yT4GMNq/Watcher-Neutral-model.webp"> </video><div class="new_frontiers_Text_mAKiu"><div class="new_frontiers_TitleContainer_1ib3u"></div><div class="new_frontiers_Dash_3rbCS"></div><div class="item_description"><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>The services of the small free observer wards, also known as Watchers, are no longer necessary with the map scaled back to a decent degree.<div>&nbsp;</div>They will be remembered. </div></div></div></div>
+
+                          <div class="new_frontiers_Introduction_2wDk9 reveal">The following Items have also been removed:</div>
+
+
+
+
+
+
+                              <div class="new_frontiers_ItemsContainer2_3Qyvb">
+
+
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blood_grenade.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Blood Grenade</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blight_stone.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Blight Stone</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/fluffy_hat.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Fluffy Hat</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/quarterstaff.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Quarter Staff</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/cornucopia.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Cornucopia</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/helm_of_the_overlord.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Helm of The Overlord</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://i.postimg.cc/VkysW1hz/gota-aghanims-blessing.webp"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Aghanim's Blessings</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wind_waker.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Wind Waker</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+
+
+
+                                  <div class="new_frontiers_GameItemDetails_3NBnk reveal"><div class="new_frontiers_Header_38P_P"><img class="new_frontiers_ItemImage_2QypG" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/meteor_hammer.png"><div class="new_frontiers_HeaderText_48biG"><div class="new_frontiers_ItemName_2P0Ww">Meteor Hammer</div></div></div><div class="new_frontiers_Body_31D4Q">
+
+
+
+                            </div> </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+
+                                  <div class="new_frontiers_Introduction_2wDk9 reveal">But most importantly..</div><div>&nbsp;</div>
+
+                                 <div class="new_frontiers_MapFeatures_174Fx"><div class="new_frontiers_MapFeatureContainer_6Maqg reveal"><video class="new_frontiers_Video_2A1iY2" autoplay="" preload="none" loop="" poster="https://i.postimg.cc/kXPhNgCJ/skeleton-king-removebg-preview.png"></video><div class="new_frontiers_Text2_mAKiu"><div class="new_frontiers_TitleContainer_1ib3u"></div><div class="new_frontiers_Dash_3rbCS"></div><div class="item_description"><div class=".augupdate22_XLTitle_2YOZN"<h1><font color="">FAREWELL,</font> <font color="#AFE1AF"><div></div>WRAITH KING.</font></h1></div></div></div></div></div>
+
+
+
+                                 </div>
+                                 <div class="new_frontiers_ButtonsSection_1gTHT reveal" ><div class="new_frontiers_StandardButton_end_13-RH " ><div class="new_frontiers_ButtonText_1AJXE" ><a class="" href="https://gota2classic.com/innatepowers_general">NEXT UP: PATCH BEGINNING - GENERAL UPDATES</div></div></div>
+                                 <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                            </div>
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
