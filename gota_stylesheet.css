@@ -1,4 +1,10 @@
-
+.active_tab {
+            color: #CC5500;
+}
+.inactive_tab
+{
+    color: #E1C16E;
+}
 
 .gallery li {
 	list-style-type: none;
@@ -8524,7 +8530,7 @@ a {
     display: table;
     float: left;
     height: 76px;
-    color: #E1C16E;
+   
     letter-spacing: 2.4px;
     font-size: 20px;
     text-transform: uppercase;
