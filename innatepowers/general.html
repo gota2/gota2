@@ -103,6 +103,15 @@ window.addEventListener("scroll", reveal);
             border-radius: 10px;
             box-shadow: 0px 0px 1px black;
         }
+      
+      
+      .empty {
+        padding: 4px;
+      }
+      .empty_big {
+        padding: 50px;
+      }
+      
         .patch-ability-tag {
 	display: inline-block;
 	padding: 2px 2px;
@@ -116,7 +125,60 @@ window.addEventListener("scroll", reveal);
 	border-radius: 2px;
 
 }
+      
+      
+       .patch-ability-tag.upgraded_items_info {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin: auto;
+  font-family: "Reaver", serif;
+  background: -webkit-linear-gradient(left, #E1C16E, lightyellow, #E1C16E);
+    background-clip: border-box;
+  background-clip: border-box;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+      
+info
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    
+    
+}
+info text
+{
+    opacity: 1;
+    background-image: url('https://gota2classic.com/assets/info_bg.png');
+   color: white;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'Radiance', Verdana;
+  -webkit-text-stroke: 0.2px;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out;
+  -webkit-transition: opacity 0s ease-in-out;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid black;
+  position: absolute;
+  left: 0px;
+  right: 0px;
 
+}
+info:hover text
+{
+    visibility: visible;
+}
 .patch-ability-tag.upgrade {
 	background-color: #8B4000;
 }
@@ -677,10 +739,10 @@ font-size: 22px;
 
 
     	<a id="HeaderLogo" href="https://www.dota2.com/700/"></a>
-        <a class="HeaderPage " href="https://gota2classic.com/innatepowers">MAIN PAGE</a>
-    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_general"><font color="#CC5500">	GENERAL UPDATES</font></a>
-    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_items">ITEM UPDATES</a>
-    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_heroes">HERO UPDATES</a>
+        <a class="HeaderPage inactive_tab" href="https://gota2classic.com/innatepowers">MAIN PAGE</a>
+    	<a class="HeaderPage active_tab" href="https://gota2classic.com/innatepowers/general">GENERAL UPDATES</a>
+    	<a class="HeaderPage inactive_tab" href="https://gota2classic.com/innatepowers/items">ITEM UPDATES</a>
+    	<a class="HeaderPage inactive_tab" href="https://gota2classic.com/innatepowers/heroes">HERO UPDATES</a>
 
     	<div style="clear: both;"></div>
     </div>
@@ -731,19 +793,19 @@ font-size: 22px;
               <div class="patchnote_page_background" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg');">
           <div class="patchnotespage_Body_11CXi">
 
-        <div>&nbsp;</div>    <div>&nbsp;</div>  <div>&nbsp;</div>  <div>&nbsp;</div>  <div>&nbsp;</div>  <div>&nbsp;</div>  <div>&nbsp;</div>
+         <div class="empty_big"></div>     <div class="empty_big"></div>   <div class="empty"></div>   <div class="empty"></div>   <div class="empty"></div>   <div class="empty"></div>   <div class="empty"></div>
 
 
 <div class="">
 
-            <center><h3 class="header_text ">GENERAL UPDATES</h3></center><div>&nbsp;</div>
+            <center><h3 class="header_text ">GENERAL UPDATES</h3></center> <div class="empty"></div> <div class="empty_big"></div> <div class="empty_big"></div> <div class="empty_big"></div>
 
 
-        </div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;
+        </div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div><div><div class="empty"></div>
 
 <div class="patchnotespage_Notes_16viL reveal"><img class="new_frontiers_Image3_1XlWc" src="https://gota2classic.com/assets/general_map.png">
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">MAP UPDATES</span></div></div>
-   <div>&nbsp;</div><div>&nbsp;</div> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag returning_items">MAP REWORKED </div></div><div class="patchnotespage_Note_eSxyZ" class="patch-ability-tag basic_items" style="font-size: 25px;
+    <div class="empty"></div> <div class="empty"></div> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag returning_items">MAP REWORKED </div></div><div class="patchnotespage_Note_eSxyZ" class="patch-ability-tag basic_items" style="font-size: 25px;
   line-height: 30px;
   letter-spacing: 3px;
   font-weight: 600;
@@ -757,7 +819,7 @@ margin: auto;
     background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  ">&nbsp;&nbsp;To see every change, it is recommended to load-up the game.</div></div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+  "><div class="empty"></div><div class="empty"></div>To see every change, it is recommended to load-up the game.</div></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div>
                 <div class="wrapper_map"><div class="first patch-ability-tag basic_items">BEFORE</div><div class="second patch-ability-tag basic_items">AFTER</div></div>
 
  <div id="comparison">
@@ -766,10 +828,10 @@ margin: auto;
   </figure>
   <input  type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
 </div>
- <div>&nbsp;</div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag new_items">RADIANT SAFELANE </div></div><div>&nbsp;</div>
+  <div class="empty"></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag new_items">RADIANT SAFELANE </div></div> <div class="empty"></div>
 
-              <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+               <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div>
 
 
 
@@ -796,10 +858,10 @@ margin: auto;
   </figure>
   <input type="range" min="0" max="100" value="50" id="slider2" oninput="moveDivisor2()">
 </div>
- <div>&nbsp;</div>
-            <h3 class="OrangeGradient"><font color="#008000">RADIANT PRIMARY JUNGLE</font></h3>
+  <div class="empty"></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag new_items">RADIANT PRIMARY JUNGLE </div></div> <div class="empty"></div>
 
-     <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+      <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div>
 
 
 
@@ -822,10 +884,10 @@ margin: auto;
   </figure>
   <input type="range" min="0" max="100" value="50" id="slider3" oninput="moveDivisor3()">
 </div>
- <div>&nbsp;</div>
-            <h3 class="OrangeGradient"><font color="#008000">RADIANT ROSHAN PIT</font></h3>
+  <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag new_items">RADIANT ROSHAN PIT </div></div> <div class="empty"></div>
 
-     <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+      <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div>
               <div class="wrapper_map"><div class="first patch-ability-tag basic_items">BEFORE</div><div class="second patch-ability-tag basic_items">AFTER</div></div>
 
  <div id="comparison4">
@@ -834,10 +896,10 @@ margin: auto;
   </figure>
   <input type="range" min="0" max="100" value="50" id="slider4" oninput="moveDivisor4()">
 </div>
- <div>&nbsp;</div>
-            <h3 class="OrangeGradient"><font color="#CC5500">DIRE SAFELANE</font></h3>
+  <div class="empty"></div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag dire_items">DIRE SAFELANE </div></div> <div class="empty"></div>
 
-     <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+      <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div>
             <div class="wrapper_map"><div class="first patch-ability-tag basic_items">BEFORE</div><div class="second patch-ability-tag basic_items">AFTER</div></div>
 
  <div id="comparison5">
@@ -846,9 +908,9 @@ margin: auto;
   </figure>
   <input type="range" min="0" max="100" value="50" id="slider5" oninput="moveDivisor5()">
 </div>
- <div>&nbsp;</div>
-           <div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag dire_items">DIRE PRIMARY JUNGLE </div></div><div>&nbsp;</div>
-     <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+  <div class="empty"></div>
+           <div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag dire_items">DIRE PRIMARY JUNGLE </div></div> <div class="empty"></div>
+      <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div>
               <div class="wrapper_map"><div class="first patch-ability-tag basic_items">BEFORE</div><div class="second patch-ability-tag basic_items">AFTER</div></div>
 
  <div id="comparison6">
@@ -857,10 +919,10 @@ margin: auto;
   </figure>
   <input type="range" min="0" max="100" value="50" id="slider6" oninput="moveDivisor6()">
 </div>
- <div>&nbsp;</div>
-            <h3 class="OrangeGradient"><font color="#CC5500">DIRE ROSHAN PIT</font></h3>
+  <div class="empty"></div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag dire_items">DIRE ROSHAN PIT </div></div> <div class="empty"></div>
 
-     <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+      <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div> <div class="empty"></div>
         <div class="patchnotespage_PatchNotesList_2bYtA"><div class="patchnotespage_PatchNoteHero_99z4V"><div class="general_notes"><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_UpdateSubtitle_1zdBQ"></div></div></a>
 
 
@@ -871,7 +933,7 @@ margin: auto;
 
 
 
-<div>&nbsp;</div></div>
+ <div class="empty"></div></div>
               <div class="patchnotespage_Notes_16viL reveal">
     <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/patch/neutrals_header.png">
 
@@ -880,13 +942,13 @@ margin: auto;
 
 
                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">RADIANT AURA</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
-                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Aura. The Radiant Ancient imbues every allied hero under its control with +3 Health Regeneration and +1 Mana Regeneration while traversing their native woods in-between the lanes.</div></div>&nbsp;
+                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Aura. The Radiant Ancient imbues every allied hero under its control with +3 Health Regeneration and +1 Mana Regeneration while traversing their native woods in-between the lanes.</div></div><div class="empty"></div>
                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">DIRE AURA</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
-                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Aura. The Dire Ancient imbues every allied hero under its control with +8 Attack Damage and +2 Armor while traversing their own dead woods in-between the lanes.</div></div>&nbsp;
+                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Aura. The Dire Ancient imbues every allied hero under its control with +8 Attack Damage and +2 Armor while traversing their own dead woods in-between the lanes.</div></div><div class="empty"></div>
               <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MAP AURAS</font> <div class="patch-ability-tag removed">REMOVED</div></span></div></div></div><div class="general_dash"></div>
-                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Well Wishes, Mighty Mines, Stalwart Statues, and Skeleton Strength jungle auras have been removed.</div></div>&nbsp;
+                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Well Wishes, Mighty Mines, Stalwart Statues, and Skeleton Strength jungle auras have been removed.</div></div><div class="empty"></div>
                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MISCELLANEOUS</font></span></div></div></div><div class="general_dash"></div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral Camps were relocated, and new paths have been added to discover while navigating inside the forests.</div></div>&nbsp;
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral Camps were relocated, and new paths have been added to discover while navigating inside the forests.</div></div><div class="empty"></div>
 
 
 
@@ -896,10 +958,11 @@ margin: auto;
     <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/international2020/tribute_image.png">
 
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">ECONOMY UPDATES</span></div></div>
-         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">PASSIVE GOLD</font></span></div></div></div><div class="general_dash"></div>
-           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base GPM increased from 90 to 100. This amount no longer increases as the game progresses.<em><del>Previously increased up to 150 per minute.<div>&nbsp;</div> </del></em> </div></div>&nbsp;
+         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">PASSIVE GOLD</font></span></div></div></div><div class="general_dash"></div> <div class="empty"></div>
+           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Base GPM increased from 90 to 100. This amount no longer increases as the game progresses.<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Previously increased up to 150 per minute.</text></info>
+</div></div><div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">RELIABLE & UNRELIABLE GOLD</font></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following events now grant reliable gold:</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following events now grant reliable gold:</div></div> <div class="empty"></div>
                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan Death</div></div>
                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero Death</div></div>
 
@@ -907,11 +970,11 @@ margin: auto;
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Alchemist: Greevil's Greed</div></div>
                              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Hunter: Track</div></div>
                                          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hand of Midas: Transmute</div></div>
-            <div>&nbsp;</div>
-                             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following events now grant unreliable gold:</div></div><div>&nbsp;</div>
+             <div class="empty"></div>
+                             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The following events now grant unreliable gold:</div></div> <div class="empty"></div>
                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes</div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Passive GPM</div></div>
-                &nbsp;
+                <div class="empty"></div>
 
 
 
@@ -924,11 +987,20 @@ margin: auto;
 
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">SHOP UPDATES</span></div></div>
            <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">SIDE SHOPS</font> <div class="patch-ability-tag returning">RETURNING</div></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Side Shops have returned to their original location near the side lanes but their inventory is rather limited:</div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Side Shops have returned to their original location near the side lanes but their inventory is rather limited; selling items that cost at most 450 gold:</div></div>
                                  <div class="item_recipe">
 
 
-                       <div class="patchnotespage_NoteElement10_1gbgx"><div class="recipe_text"><img class="recipe_item"  style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/quelling_blade.png">&nbsp;&nbsp;Quelling Blade<div></div><img class="recipe_item"  style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_protection.png">&nbsp;&nbsp;Ring of Protection<div></div><img class="recipe_item" style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_venom.png">&nbsp;&nbsp;Orb of Venom<div></div><div></div><img class="recipe_item" style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_regen.png">&nbsp;&nbsp;Ring of Regen<div></div><img class="recipe_item" style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sobi_mask.png">&nbsp;&nbsp;Sage's Mask<div></div><img class="recipe_item" style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/magic_stick.png">&nbsp;&nbsp;Magic Stick<div></div><img class="recipe_item" style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/fluffy_hat.png">&nbsp;&nbsp;Fluffy Hat<div></div><img class="recipe_item" style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wind_lace.png">&nbsp;&nbsp;Wind Lace<div></div></font></div></div>
+                       <div class="patchnotespage_NoteElement10_1gbgx"><div class="recipe_text"><img class="recipe_item"  style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/quelling_blade.png">  Quelling Blade<div class="empty"></div>
+                         <img class="recipe_item"  style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_protection.png">  Ring of Protection<div class="empty"></div>
+                         <img class="recipe_item" style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_venom.png">  Orb of Venom<div class="empty"></div><img class="recipe_item" style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_regen.png">  Ring of Regen<div class="empty"></div>
+                         <img class="recipe_item" style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sobi_mask.png">  Sage's Mask<div class="empty"></div><img class="recipe_item" style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/magic_stick.png">  Magic Stick<div class="empty"></div><img class="recipe_item" style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wind_lace.png">  Wind Lace<div class="empty"></div><img class="recipe_item" style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/stout_shield.png">  Stout Shield<div class="empty"></div>
+                         <img class="recipe_item" style="transform: translateY(6px)" src="https://gota2classic.com/assets/items_vitality_orb.png">  Vitality Orb<div class="empty"></div>
+                         <img class="recipe_item" style="transform: translateY(6px)" src="https://gota2classic.com/assets/items_sorcerers_orb.png">  Sorcerer's Orb<div class="empty"></div>
+                         <img class="recipe_item" style="transform: translateY(6px)" src="https://gota2classic.com/assets/items_ring_of_rejuvenation.png">  Ring of Rejuvenation<div class="empty"></div>
+                         <img class="recipe_item" style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/occult_bracelet.png">  Arcane Bracelet<div class="empty"></div>
+                         
+                         </font></div></div>
 
 
 
@@ -938,22 +1010,22 @@ margin: auto;
                     </div>
 
 
-          &nbsp;
+          <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">SECRET SHOPS</font></span></div></div></div><div class="general_dash"></div>
-                          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Secret Shops can no longer afford to sell the following artifact:</div></div>
+                          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Secret Shops no longer sell the following artifact:</div></div>
 
 <div class="item_recipe">
 
 
-                       <div class="patchnotespage_NoteElement10_1gbgx"><div class="recipe_text"><img class="recipe_item" style="transform: translateY(7px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/talisman_of_evasion.png"><font color="lightblue">&nbsp;&nbsp;Talisman of Evasion</font></div></div>
+                       <div class="patchnotespage_NoteElement10_1gbgx"><div class="recipe_text"><img class="recipe_item" style="transform: translateY(6px)" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/talisman_of_evasion.png"><font color="lightblue">  Talisman of Evasion</font></div></div>
 
 
 
 
 
 
-                    </div>  &nbsp;
-                                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Secret Shops now also offer a service that was unheard of before. They now sell the recipe for every item in the game.</div></div>&nbsp;
+                    </div>  <div class="empty"></div>
+                                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Secret Shops now also sell the recipe for every item in the game.</div></div><div class="empty"></div>
 
 
 
@@ -966,69 +1038,25 @@ margin: auto;
     <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//dawnbreaker/patch/patch_general.png">
 
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">Rune UPDATES</span></div></div>
-      <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">RUNE SYSTEM</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
+      <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">RUNES</font> </span></div></div></div><div class="general_dash"></div>
 
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">There are now 3 categories that each Rune belongs to:</div></div><div>&nbsp;</div>
+            
 
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Offensive Power Runes</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Defensive Power Runes</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Utility Runes</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">OFFENSIVE & DEFENSIVE POWER RUNES</font></span></div></div></div><div class="general_dash"></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Offensive Power Runes and Defensive Power Runes spawn at the previous power Rune spots, on both sides of the river every four minutes, starting at minute 4.  </div></div>&nbsp;
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Both Offensive and Defensive Power Runes spawn at this interval, and if an Offensive Power Rune spawns on the top-side, then a Defensive Power Rune will spawn on the bot-side. </div></div>&nbsp;
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Offensive and Defensive Power Runes refill three Bottle charges. </div></div>
-         <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">List of Offensive Power Runes:</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Double Damage Rune</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Damage Amplification Rune  <div class="patch-ability-tag2 addition">NEW</div></div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">List of Defensive Power Runes:</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Armor Rune   <div class="patch-ability-tag addition">NEW</div></div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Resistance Rune   <div class="patch-ability-tag addition">NEW</div></div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">UTILITY RUNES</font></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Utility Runes spawn in the main jungle of both sides every two minutes, starting at minute 2. </div></div>&nbsp;
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">The first Utility Rune that spawns after the horn, and every third will always be a Bounty Rune. </div></div>&nbsp;
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Utility Runes only refill two Bottle charges. </div></div>
-         <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">List of Utility Runes:</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes: <div class="patch-ability-tag upgrade">REWORKED</div></div></div> <div class="empty"></div>
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Rune</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Illusion Rune</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Regeneration Rune</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Haste Rune</div></div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Arcane Rune</div></div>        <div>&nbsp;</div>
-
-            <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">RUNE LIST</font></span></div></div></div><div class="general_dash"></div>
-
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Amplification Rune: <div class="patch-ability-tag addition">NEW</div></div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Grants +25% Magic Amplification for 40 seconds.</div></div><div>&nbsp;</div>
-
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Armor Rune: <div class="patch-ability-tag addition">NEW</div></div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Grants +20 Armor for 40 seconds.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Resistance Rune: <div class="patch-ability-tag addition">NEW</div></div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Grants +40% Magic Resistance for 40 seconds.</div></div><div>&nbsp;</div>
-
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes: <div class="patch-ability-tag upgrade">REWORKED</div></div></div><div>&nbsp;</div>
-
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes now grant 75 gold and experience to the hero who picks them up. The gold and experience reward is increased by 15 every two minutes.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Bounty Runes now grant 75 gold and experience to the hero who picks them up. The gold and experience reward is increased by 15 every two minutes.</div></div> <div class="empty"></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Water Runes: <div class="patch-ability-tag upgrade">REWORKED</div></div></div>
-            <div>&nbsp;</div>
+             <div class="empty"></div>
 
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Water Runes no longer spawn naturally. They can only be acquired through channeling Lotus Pools.</div></div>
 
-            <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Shield Rune: <div class="patch-ability-tag adjusted">REMOVED</div>  </div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Shield Rune has been removed from the game.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wisdom Rune: <div class="patch-ability-tag adjusted">REMOVED</div></div></div> <div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wisdom Rune has been removed from the game.</div></div><div>&nbsp;</div>
+             <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Shield Rune: <div class="patch-ability-tag adjusted">REMOVED</div>  </div></div>  <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Shield Rune has been removed from the game.</div></div> <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wisdom Rune: <div class="patch-ability-tag adjusted">REMOVED</div></div></div>  <div class="empty"></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Wisdom Rune has been removed from the game.</div></div> <div class="empty"></div>
             </div>
-                   <div class="patchnotespage_Notes_16viL reveal">
-    <img class="new_frontiers_Image3_1XlWc reveal" src="https://gota2classic.com/assets/general_projectile.png">
-
-
-        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">PROJECTILE UPDATES</span></div></div>
-           <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">PROJECTILE BLOCKING</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Projectile Blocking has been expanded upon. Projectiles now interract with particular objects on the map in a new but somewhat similar fashion to Mars's Arena of Blood. Certain objects have been given a new property, which allows them to block a limited amount of attack projectiles (This amount can be unlimited too!). </div></div>
-    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These objects cannot be directly attacked or have a health bar shown on top of them, but when attack projectiles are flying towards their target, they obstruct them. Examples of Hero abilities that create such objects: Sprout (Nature's Prophet), Ice Shards (Tusk), Earth Wall (Invoker). </div></div>
+                   
                   <div class="patchnotespage_Notes_16viL reveal">
     <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/patch/aghs_header.png">
 
@@ -1050,29 +1078,29 @@ margin: auto;
 
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">CREEP UPDATES</span></div></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">NEUTRAL CREEP SCALING</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral Creeps now gain a level every 4 minutes. When they level up, they gain +4 Attack Damage and +0.8 Armor. Their levels can be viewed at the same location as hero levels.</div></div><div>&nbsp;</div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When a Neutral Creep is dominated, it instead levels up every time its owner levels up.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Neutral Creeps now gain a level every 4 minutes. When they level up, they gain +4 Attack Damage and +0.8 Armor. Their levels can be viewed at the same location as hero levels.</div></div> <div class="empty"></div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">When a Neutral Creep is dominated, it instead levels up every time its owner levels up.</div></div> <div class="empty"></div>
 
                <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">ANCIENT CREEPS</font></span></div></div></div><div class="general_dash"></div>
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ancient Creeps now have 100% Magic Resistance.</div></div>
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Small Ancient Creep Levels increased from 3 to 8.</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Big Ancient Creep Levels increased from 6 to 10.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Big Ancient Creep Levels increased from 6 to 10.</div></div> <div class="empty"></div>
 
 
                <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MEGA CREEPS</font></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mega Creeps now spawn with +4 Attack Damage and +0.8 Armor per consecutive wave. </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mega Creeps now spawn with +4 Attack Damage and +0.8 Armor per consecutive wave. </div></div> <div class="empty"></div>
 
    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">FLAGBEARER CREEPS</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Flagbearer Creeps now only spawn on the mid-lane and grant 200% of the experience of a melee creep when killed.</div></div>
-            <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Inspirational Aura now grants +15% Movement Speed in a 1200-radius to allied units instead of +3 Health Regeneration.</div></div><div>&nbsp;</div>
+             <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Inspirational Aura now grants +15% Movement Speed in a 1200-radius to allied units instead of +3 Health Regeneration.</div></div> <div class="empty"></div>
 
 
     <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MISCELLANEOUS</font></span></div></div></div><div class="general_dash"></div>
 
           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lane Creeps no longer gain +15 Movement Speed during nighttime.</div></div>
 
-             <div>&nbsp;</div></div>
+              <div class="empty"></div></div>
            <div class="patchnotespage_Notes_16viL reveal">
     <img class="new_frontiers_Image3_1XlWc reveal" src="https://gota2classic.com/assets/general_roshan.png">
 
@@ -1082,19 +1110,19 @@ margin: auto;
 
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan now has Debuff Immunity.</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan Base Health increased from 6000 to 9000</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan Base Health Regeneration increased from 20 to 30</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan Base Health Regeneration increased from 20 to 30</div></div> <div class="empty"></div>
 
                      <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">ROSHAN REWARDS</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Killing Roshan now upgrades the next three waves to Mega Creep waves with catapults.</div></div> <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan now drops the same rewards on both sides:</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Killing Roshan now upgrades the next three waves to Mega Creep waves with catapults.</div></div>  <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan now drops the same rewards on both sides:</div></div>  <div class="empty"></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">First Death: Aegis of the Immortal + Aghanim's Shard</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Second Death: Aegis of the Immortal + Slice of Cheese<em><del>Explained in detail on the Item Updates page.</del></em> + 2X Aghanim's Shards</div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Second Death: Aegis of the Immortal + Slice of Cheese<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Explained in detail on the Item Updates page.</text></info> + 2X Aghanim's Shards</div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Third Death: Aegis of the Immortal + Cheese + 3X Aghanim's Shards</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Fourth Death: Aegis of the Immortal + Block of Cheese + Aghanim's Tome of Mastery<em><del>Explained in detail on the Item Updates page.</del></em></div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Fourth Death: Aegis of the Immortal + Block of Cheese + Aghanim's Tome of Mastery<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Explained in detail on the Item Updates page.</text></info></div></div> <div class="empty"></div>
                <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MISCELLANEOUS</font></span></div></div></div><div class="general_dash"></div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan no longer uses Twin Gates to travel between his pits. He now uses an underground cave system, which is inaccessible by heroes, to travel to the other pit. How he dug this cave system and gets to the other side so quickly will remain a trade secret.</div></div>&nbsp;
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan Respawn Interval decreased from 8-11 minutes to 8-10 minutes.</div></div><div>&nbsp;</div></div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan no longer uses Twin Gates to travel between his pits. He now uses an underground cave system, which is inaccessible by heroes, to travel to the other pit. How he dug this cave system and gets to the other side so quickly will remain a trade secret.</div></div><div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Roshan Respawn Interval decreased from 8-11 minutes to 8-10 minutes.</div></div> <div class="empty"></div></div>
         <div class="patchnotespage_Notes_16viL reveal">
     <img class="new_frontiers_Image3_1XlWc reveal" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/gameplay/overlay_heroes_top.png">
 
@@ -1104,39 +1132,36 @@ margin: auto;
 
         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">HERO CLASS UPDATES</span></div></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">TALENT SYSTEM</font> <div class="patch-ability-tag adjusted">REMOVED</div></span></div></div></div><div class="general_dash"></div>
-<div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Talents have been removed from the game. Explained in detail in the "Graveyard" section on the Main Page.</div></div> <div>&nbsp;</div>
+<div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Talents have been removed from the game. Explained in detail in the "Graveyard" section on the Main Page.</div></div>  <div class="empty"></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">HERO CLASS PERKS</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes now gain class specific benefits depending on their primary attribute.</div></div>
-              <div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength heroes now gain +0.35 Damage Block per Strength.<em><del>The chance to block is 50% and works on ranged heroes too.<div>&nbsp;</div> </del></em> </div></div><div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility heroes now gain +0.07% Movement Speed per Agility. </div></div><div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence heroes now gain +0.06% Cooldown Reduction per Intelligence. </div></div>
-              <div>&nbsp;</div>
+               <div class="empty"></div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength heroes now gain +0.1% Magic Resistance per Strength. </div></div> <div class="empty"></div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Agility heroes now gain +0.07% Movement Speed per Agility. </div></div> <div class="empty"></div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Intelligence heroes now gain +0.1% Magic Amplification per Intelligence. </div></div>
+               <div class="empty"></div>
               <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">INNATE ABILITIES</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Every Hero in the game now has an innate ability.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These passive and active abilities differ from being a useful tool early on to being a game-changing late-game ability to abuse. They also differ in leveling: some can be leveled, while others cannot. A few of these innate abilities will be familiar, for example, Invoker's Invoke or Earth Spirit's Stone Remnants; however, others, like Chaotic Luck or Black Grimoire, will probably not be.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Every Hero in the game now has an innate ability.</div></div> <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">These passive and active abilities differ from being a useful tool early on to being a game-changing late-game ability to abuse. A few of these innate abilities will be familiar, for example, Invoker's Invoke or Earth Spirit's Stone Remnants; however, others, like Chaotic Luck or Black Grimoire, will probably not be.</div></div> <div class="empty"></div>
 
-               <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">FLUID HEROES</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
-
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">
-New Hero Class. These heroes allow the players to build them however they want, depending on their playstyle, by having a fluid primary attribute. The primary attribute is determined by which attribute the hero has the most of. For example, a hero like Pangolier, who gains more agility than strength, can be turned into a strength hero by buying items that give strength.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Fluid Heroes gain the specific hero class perk according to their primary attribute at the time.</div></div><div>&nbsp;</div>
+               
 
                <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">UNIVERSAL HEROES</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero Pool reduced from 34 to 8. These heroes are now Void Spirit, Enigma, Faceless Void, Chaos Knight, Keeper of the Light, IO, Elder Titan, and Weaver.</div></div><div>&nbsp;</div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hero Pool reduced from 34 to 8. These heroes are now Void Spirit, Enigma, Faceless Void, Chaos Knight, Keeper of the Light, IO, Elder Titan, and Weaver.</div></div> <div class="empty"></div>
 
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Heroes now fully benefit from every attribute's bonus perks, such as damage block per strength, movement speed per agility, and cooldown reduction per intelligence.</div></div><div>&nbsp;</div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Heroes fully benefit from every attribute's hero class perks.</div></div> <div class="empty"></div>
 
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Universal Hero damage gain per stat reduced from 0.7 to 0.5.</div></div>
-               <div>&nbsp;</div>
+                <div class="empty"></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">CREEP-HEROES</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Creep-Heroes are now even more similar to heroes. They are now treated by every ability in the game as heroes, and are capable of leveling up. They level-up when their owner levels up and gain 4 bonus attack damage and 0.8 bonus armor with each level.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes and summons affected by this: Brewmaster (Elemental Spirits), Lone Druid (Spirit Bear<em><del>Spirit Bear already had a similar scaling rule.<div>&nbsp;</div> </del></em>), Visage (Familiars), and Warlock (Chaotic Golem). </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Creep-Heroes are now even more similar to heroes. They are now treated by every ability in the game as heroes, and are capable of leveling up. They level-up when their owner levels up and gain 4 bonus attack damage and 0.8 bonus armor with each level.</div></div> <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes and summons affected by this: Brewmaster (Elemental Spirits), Lone Druid (Spirit Bear<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Spirit Bear already had a similar scaling rule.</text></info>), Visage (Familiars), and Warlock (Chaotic Golem). </div></div> <div class="empty"></div>
 
 <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MISCELLANEOUS</font></span></div></div></div><div class="general_dash"></div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes no longer gain +30 Movement Speed during night-time.</div></div>
+          
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes no longer gain +30 Movement Speed during nighttime.</div></div>
 
                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes no longer get a free Teleport Scroll upon death.</div></div>
 
@@ -1144,7 +1169,8 @@ New Hero Class. These heroes allow the players to build them however they want, 
 
                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Melee Heroes no longer have Innate Damage Block. </div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes Maximum Level decreased from 30 to 25</div></div>
-                <div>&nbsp;</div>
+          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Heroes Minimum Movement Speed Cap decreased from 100 to 0</div></div>
+                 <div class="empty"></div>
 
               </div>
            <div class="patchnotespage_Notes_16viL reveal">
@@ -1154,14 +1180,14 @@ New Hero Class. These heroes allow the players to build them however they want, 
 
 
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">HERO KILL GOLD FORMULA</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="old_recipe">OLD&nbsp;&nbsp;</font> HeroBounty = 125 + (DeadHeroLevel x 8) + StreakGold </div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="new_recipe">NEW&nbsp;&nbsp;</font> HeroBounty = 2 x [ 2 x (DeadHeroLevel + 0.01 x DeadHeroNetworth)] + StreakGold </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="old_recipe">OLD</font>   HeroBounty = 125 + (DeadHeroLevel x 8) + StreakGold </div></div> <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="new_recipe">NEW</font>  HeroBounty = 2 x [ 2 x (DeadHeroLevel + 0.01 x DeadHeroNetworth)] + StreakGold </div></div> <div class="empty"></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">AOE ASSIST GOLD FORMULA</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="old_recipe">OLD&nbsp;&nbsp;</font> AssistGold = (30 + VictimNetWorth x 0.038) x NetWorthDifferenceFactor / NumberOfHeroes </div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="new_recipe">NEW&nbsp;&nbsp;</font> AssistGold = [(HeroBounty - StreakGold) / 2] / NumberOfHeroes </div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="old_recipe">OLD</font>   AssistGold = (30 + VictimNetWorth x 0.038) x NetWorthDifferenceFactor / NumberOfHeroes </div></div> <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font class="new_recipe">NEW</font>   AssistGold = [(HeroBounty - StreakGold) / 2] / NumberOfHeroes </div></div> <div class="empty"></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">FIRST BLOOD</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">First Blood no longer awards the killer with +135 Gold.</div></div><div>&nbsp;</div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">First Blood now imbues the killer with a permanent bloodlust, causing that particular hero to gain +10 Attack Damage for the entire duration of the game.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">First Blood no longer awards the killer with +135 Gold.</div></div> <div class="empty"></div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">First Blood now imbues the killer with a permanent bloodlust, causing that particular hero to gain +10 Attack Damage for the entire duration of the game.</div></div> <div class="empty"></div>
                  </div>
 
 
@@ -1171,37 +1197,37 @@ New Hero Class. These heroes allow the players to build them however they want, 
 
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">STRUCTURE UPDATES</span></div></div>
                 <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MOMENTUM SURGE</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Buff. Lane Creeps now gain this buff upon the destruction of an enemy tower. Grants +10% Movement Speed and +40 Attack Speed for 10 seconds.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Buff. Lane Creeps now gain this buff upon the destruction of an enemy tower. Grants +10% Movement Speed and +40 Attack Speed for 10 seconds.</div></div> <div class="empty"></div>
      <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">GLYPH OF FORTIFICATION</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants Multishot ability during the duration.</div></div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants invincibility to allied creeps during the duration.</div></div><div>&nbsp;</div>
-                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now grants 100% Damage Reduction to allied structures for 20 seconds. The damage reduction gradually decreases over the duration.</div></div><div>&nbsp;</div>
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants invincibility to allied creeps during the duration.</div></div> <div class="empty"></div>
+                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now grants 100% Damage Reduction to allied structures for 20 seconds. The damage reduction gradually decreases over the duration.</div></div> <div class="empty"></div>
 
 
 
 
                <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">TWIN GATES</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-<div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Twin Gates were moved to the location where the Tormentors used to be. </div></div><div>&nbsp;</div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Twin Gates do not require to be channeled anymore; the teleporting is instant; however, they place a dispellable debuff on the teleported units that silences and mutes them for 4 seconds. Twin Gates cannot be used while the user is silenced, preventing instant teleports back.</div></div><div>&nbsp;</div>
+<div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Twin Gates were moved to the location where the Tormentors used to be. </div></div> <div class="empty"></div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Twin Gates do not require to be channeled anymore; the teleporting is instant; however, they place a dispellable debuff on the teleported units that silences and mutes them for 4 seconds. Twin Gates cannot be used while the user is silenced, preventing instant teleports back.</div></div> <div class="empty"></div>
 
 
                <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">LOTUS POOLS</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-<div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools were moved to the center of the primary jungles.</div></div><div>&nbsp;</div>
+<div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools were moved to the center of the primary jungles.</div></div> <div class="empty"></div>
 
 
-                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools now spawn a Healing Lotus every 2 minutes on the ground around the structure, ready to be picked up.</div></div><div>&nbsp;</div>
- <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools can now be channeled to instantly restore 50 health and 100 mana. Once channeled, they dry up and go on cooldown for 3 minutes. While it is on cooldown, the Healing Lotus spawning is delayed and temporarily stopped. If the channeler has a Bottle, then it will be filled with a Water Rune.</div></div><div>&nbsp;</div></div>
+                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools now spawn a Healing Lotus every 2 minutes on the ground around the structure, ready to be picked up.</div></div> <div class="empty"></div>
+ <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lotus Pools can now be channeled to instantly restore 50 health and 100 mana. Once channeled, they dry up and go on cooldown for 3 minutes. While it is on cooldown, the Healing Lotus spawning is delayed and temporarily stopped. If the channeler has a Bottle, then it will be filled with a Water Rune.</div></div> <div class="empty"></div></div>
 
 
 <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">TORMENTORS</font> <div class="patch-ability-tag adjusted">REMOVED</div></span></div></div></div><div class="general_dash"></div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tormentors have been removed from the game. Explained in detail in the "Graveyard" section on the Main Page.</div></div><div>&nbsp;</div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Tormentors have been removed from the game. Explained in detail in the "Graveyard" section on the Main Page.</div></div> <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">OUTPOSTS</font> <div class="patch-ability-tag adjusted">REMOVED</div></span></div></div></div><div class="general_dash"></div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Outposts have been removed from the game. Explained in detail in the "Graveyard" section on the Main Page.</div></div><div>&nbsp;</div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Outposts have been removed from the game. Explained in detail in the "Graveyard" section on the Main Page.</div></div> <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">WATCHERS</font> <div class="patch-ability-tag adjusted">REMOVED</div></span></div></div></div><div class="general_dash"></div>
-              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Watchers have been removed from the game. Explained in detail in the "Graveyard" section on the Main Page.</div></div><div>&nbsp;</div>
+              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Watchers have been removed from the game. Explained in detail in the "Graveyard" section on the Main Page.</div></div> <div class="empty"></div>
                     <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">TOWER PROTECTION AURA</font></span></div></div></div><div class="general_dash"></div>
 
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants +1/3 Health Regeneration. </div></div><div>&nbsp;</div>
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants +1/3 Health Regeneration. </div></div> <div class="empty"></div>
 
 
             </div>
@@ -1222,11 +1248,11 @@ New Hero Class. These heroes allow the players to build them however they want, 
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">DOMINATED DAMAGE</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
 
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">
-New Damage Type. Creeps set under control permanently by Helm of The Dominator or a summon hero like Chen now gain this damage type. Units with this damage type deal 200% damage to heroes, 100% to creeps and 50% to structures.</div></div><div>&nbsp;</div>
+New Damage Type. Creeps set under control permanently by Helm of The Dominator or a summon hero like Chen now gain this damage type. Units with this damage type deal 200% damage to heroes, 100% to creeps and 50% to structures.</div></div> <div class="empty"></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">PURE DAMAGE</font></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pure Damage now pierces Magic Immunity.<em><del>Due to the Debuff Immunity/Magic Immunity reworks.<div>&nbsp;</div> </del></em></div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pure Damage now pierces Magic Immunity.<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Due to the Debuff Immunity reworks.</text></info></div></div> <div class="empty"></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">REFLECTED DAMAGE</font></span></div></div></div><div class="general_dash"></div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Reflected Damage now pierces Magic Immunity.<em><del>Due to the Debuff Immunity/Magic Immunity reworks.<div>&nbsp;</div> </del></em></div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Reflected Damage now pierces Magic Immunity.<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Due to the Debuff Immunity reworks.</text></info></div></div> <div class="empty"></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MISCELLANEOUS</font></span></div></div></div><div class="general_dash"></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Runty Damage Penalty against Fortified Armor Type increased 30% to 50%.</div></div>
             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Pierce Damage Penalty against Fortified Armor Type increased from 65% to 75%.</div></div>
@@ -1238,7 +1264,7 @@ New Damage Type. Creeps set under control permanently by Helm of The Dominator o
 
 
 
-             <div>&nbsp;</div>
+              <div class="empty"></div>
 
             <div class="patchnotespage_Notes_16viL reveal">
 
@@ -1246,17 +1272,17 @@ New Damage Type. Creeps set under control permanently by Helm of The Dominator o
 
              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">ATTRIBUTE UPDATES</span></div></div>
        <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">GENERAL ATTRIBUTE PERKS</font></span></div></div></div><div class="general_dash"></div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Attributes now grant +20% base effects when they are the primary attribute of the hero.  </div></div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Attributes now grant +10% base effects to Universal Heroes. </div></div>&nbsp;
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Attributes now have a primary attribute bonus. Heroes gain 20% more from the properties of their primary attribute. Universal Heroes gain 10% more from each attribute.<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Hero Class Perks are not increased.</text></info>  </div></div>
+                <div class="empty"></div>
   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">STRENGTH</font></span></div></div></div><div class="general_dash"></div>
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Health per strength decreased from +22 to +18</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Health per strength decreased from +22 to +18</div></div>  <div class="empty"></div>
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">AGILITY</font></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Armor per agility decreased from +0.167 to +0.143</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Armor per agility decreased from +0.167 to +0.143</div></div>  <div class="empty"></div>
           <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">INTELLIGENCE</font></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants +0.1% Magic Resistance per Intelligence.</div></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana per intelligence decreased from +12 to +9</div></div> <div>&nbsp;</div></div>
-            <div>&nbsp;</div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer grants +0.1% Magic Resistance per intelligence.</div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana per intelligence decreased from +12 to +9</div></div>  <div class="empty"></div></div>
+             <div class="empty"></div>  <div class="empty"></div>
 
 
 
@@ -1271,10 +1297,9 @@ New Damage Type. Creeps set under control permanently by Helm of The Dominator o
        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">MECHANIC UPDATES</span></div></div>
 
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">PSEUDO-CHANNEL</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
-                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Mechanic. Pseudo-Channel is similar to a normal channel but allows movement while channeling with some penalty.</div></div><div>&nbsp;</div>
-                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">PARALYZE</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
-                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Mechanic. Paralyze disallows the target from moving or attacking, as well as casting most abilities and using most items. Abilities and items without a cast point can still be activated.</div></div><div>&nbsp;</div>
-                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">ATTACK SLOW IMMUNITY</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Mechanic. Attack Slow Immunity prevents attack speed slows from taking effect.  </div></div><div>&nbsp;</div>
+                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Mechanic. Pseudo-Channel is similar to a normal channel but allows movement while channeling with some penalty.</div></div> <div class="empty"></div>
+                   
+                  
 
 
 
@@ -1283,54 +1308,50 @@ New Damage Type. Creeps set under control permanently by Helm of The Dominator o
 
 
 <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MAGIC LIFESTEAL</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Lifesteal has been replaced with Magic Lifesteal. Magic Lifesteal does not restore health from pure and physical ability damage.</div></div><div>&nbsp;</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Lifesteal now has a 400-range buffer. When dealing magic damage outside of this range, it no longer restores health.</div></div><div>&nbsp;</div>
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Lifesteal has been replaced with Magic Lifesteal. Magic Lifesteal restores health proportional to the magic damage dealt rather than spell damage.</div></div> <div class="empty"></div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Magic Lifesteal now has a range buffer, restoring less health the further away the target is. Maximum range is at 1200-units, no health is restored past this range. </div></div> <div class="empty"></div>
 
 
 
 
 
             <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">LIFESTEAL</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lifesteal no longer has a creep penalty.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lifesteal now has a 400-range buffer. When dealing attack damage outside of this range, it no longer restores health.</div></div><div>&nbsp;</div>
+                    <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lifesteal no longer has a creep penalty.</div></div> <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Lifesteal now has a range buffer, restoring less health the further away the target is. Maximum range is at 1200-units, no health is restored past this range.</div></div> <div class="empty"></div>
 
 
 
 <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">HEX</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hex now has two types:</div></div>
-        <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Basic Hex. Transforms a unit into a frog, applying Silence, Mute, Disarm, and a 50% Movement Speed Slow for the duration.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strong Hex. Transforms a unit into a sheep, applying Silence, Mute, Disarm, Break, and a 75% Movement Speed Slow for the duration.</div></div><div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Hex now has two versions:</div></div>
+       <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><b>Basic Hex.</b> Transforms a unit into a frog, applying Silence, Mute, Disarm, and a 50% Movement Speed Slow for the duration.</div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><b>Strong Hex.</b> Transforms a unit into a sheep, applying Silence, Mute, Disarm, Break, and a 75% Movement Speed Slow for the duration.</div></div>   <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">ROOT</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Root now has two types:</div></div>
-        <div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Basic Root. Prevents the target from moving, casting mobility abilities, and grants True Sight over it for the duration.</div></div><div>&nbsp;</div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strong Root. Prevents the target from moving, attacking, casting abilities, and grants True Sight over it for the duration.</div></div><div>&nbsp;</div>
-      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Root effects are now removed from forced movement.<em><del>Examples of forced movement: Force (Force Staff), Dispose (Marci), Meat Hook (Pudge).<div>&nbsp;</div> </del></em></div></div> <div>&nbsp;</div>
+       <div class="empty"></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><b>Basic Root.</b> Prevents the target from moving, casting mobility abilities, and grants True Sight over it for the duration.</div></div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_small_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><b>Strong Root.</b> Prevents the target from moving, attacking, casting abilities, and grants True Sight over it for the duration.</div></div>   <div class="empty"></div>
+      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Root properties are now removed from forced movement.<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Examples of forced movement: Force (Force Staff), Dispose (Marci), Meat Hook (Pudge).</text></info></div></div>    <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MAGIC AMPLIFICATION</font></span></div></div></div><div class="general_dash"></div>
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Amplification has been replaced with Magic Amplification. Magic Amplification does not increase pure and physical ability damage.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Spell Amplification has been replaced with Magic Amplification. Magic Amplification buffs magic damage rather than spell damage.</div></div> <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">UPHILL MISS CHANCE</font></span></div></div></div><div class="general_dash"></div>
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Uphill Miss Chance is now dependent on the level difference between the two units, allowing a maximum of 75% Miss Chance when there is a three-level difference.</div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Uphill Miss Chance is now dependent on the level difference between the two units, allowing a maximum of 75% Miss Chance when there is a three-level difference.</div></div> <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">Evasion</font></span></div></div></div><div class="general_dash"></div>
 
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Evasion no longer provides a chance to evade attacks during stuns and roots.<em><del>Blind effects can still make the attacker miss those attacks.</del></em></div></div><div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Evasion no longer provides a chance to evade attacks during stuns and roots.<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Blind effects can still make the attacker miss those attacks.</text></info></div></div> <div class="empty"></div>
 
-                                      <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">BREAK</font></span></div></div></div><div class="general_dash"></div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Break no longer affects Ultimate-Type Abilities.</div></div> <div>&nbsp;</div>
-                        <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">BANISH & HIDE</font></span></div></div></div><div class="general_dash"></div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Banish/Hide now prevents health and mana regeneration.</div></div> <div>&nbsp;</div>
+                                      
+                        
                               <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">BACKPACK</font></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Backpack Items are no longer visible to enemy units.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Backpack Items are no longer visible to enemy units.</div></div>  <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">AURA EFFECTS</font></span></div></div></div><div class="general_dash"></div>
-            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Aura Effects no longer have a linger duration.</div></div> <div>&nbsp;</div>
+            <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Aura Effects no longer have a linger duration.</div></div>  <div class="empty"></div>
                    <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">EXPERIENCE</font></span></div></div></div><div class="general_dash"></div>
-             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Experience Acquisition Range decreased from 1500 to 1200</div></div><div>&nbsp;</div>
-                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MOVEMENT SLOW RESISTANCE</font> <div class="patch-ability-tag renamed">RENAMED</div></span></div></div></div><div class="general_dash"></div>
-        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Slow Resistance has been renamed to Movement Slow Resistance.</div></div> <div>&nbsp;</div>
+             <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Experience Acquisition Range decreased from 1500 to 1200</div></div> <div class="empty"></div>
+                   
 
-                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">ATTACK DAMAGE MITIGATION</font> <div class="patch-ability-tag renamed">RENAMED</div></span></div></div></div><div class="general_dash"></div>
-        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage Block has been renamed to Attack Damage Mitigation.</div></div> <div>&nbsp;</div>
+                   
 
 
 
@@ -1344,18 +1365,31 @@ New Damage Type. Creeps set under control permanently by Helm of The Dominator o
 
 
         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">DEBUFF IMMUNITY</font> <div class="patch-ability-tag upgrade">REWORKED</div></span></div></div></div><div class="general_dash"></div>
-       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Immunity no longer grants Magic Resistance, Pure Damage Immunity, and Reflected Damage Immunity.<div>&nbsp;</div></div></div>
-     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Immunity is now the same mechanic as Debuff Resistance.<em><del>Status Resistance has been renamed to Debuff Resistance.<div>&nbsp;</div> </del></em> It is equal to 100% Debuff Resistance. When an ability is cast on you while you are affected by Debuff Immunity, the ability will still deal damage, but the debuff simply expires without ever affecting you. This also means that Debuff Immunity piercing abilities now also pierce Debuff Resistance.<div>&nbsp;</div></div></div>
-                   <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">MAGIC IMMUNITY</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
+                 
+       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Immunity no longer grants Magic Resistance, Pure Damage Immunity, and Reflected Damage Immunity. <div class="empty"></div></div></div>
+     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Debuff Immunity is now the same mechanic as Debuff Resistance/Status Resistance. It is equal to 100% Debuff Resistance. When an ability is cast on you while you are affected by Debuff Immunity, the ability will still deal damage, but the debuff simply expires without ever affecting you.<div class="empty"></div></div></div>
+                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Abilities can no longer piece Debuff Immunity.<div class="empty"></div></div></div>
+                     
+               <div class="patchnotespage_Notes_16viL reveal">
+    <img class="new_frontiers_Image3_1XlWc reveal" src="https://gota2classic.com/assets/main_generalchanges_roots.png">
+       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note2_eSxyZ"><span class="Bold">ABILITY UPDATES</span></div></div>
 
-                   <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New State. Magic Immunity is Debuff Immunity combined with 100% Magic Resistance. In this state, you are immune to magical damage and debuffs. Note that you still take damage from abilities with physical, pure, and reflected damage type.<div>&nbsp;</div></div></div>
+
+
+        <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#FFBF00">DISABLE TYPE</font> <div class="patch-ability-tag addition">NEW</div></span></div></div></div><div class="general_dash"></div>
+                 
+       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">New Ability Property. Abilities now have a new property, replacing the arbitrary rules regarding Debuff Immunity piercing: Disable Type. Every disable in the game - stun, root, banish, or taunt - is now either a Soft Disable or a Hard Disable.<div class="empty"></div></div></div>
+     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><b>Soft Disable:</b> These abilities work how previous disables worked; affected by status effect manipulating sources; whether this meant increasing or decreasing the disable duration.<div class="empty"></div></div></div>
+                 <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><b>Hard Disable:</b> These abilities have an absolute duration that cannot be increased or decreased; they are unaffected by status effect manipulating sources.<div class="empty"></div></div></div>
+                 
+                
 
 
 
-
-             </div></div></div></div></div></div></div></div>
-                <div class="new_frontiers_ButtonsSection_1gTHT reveal" ><div class="new_frontiers_StandardButton_end_13-RH " ><div class="new_frontiers_ButtonText_1AJXE" ><a class="" href="https://gota2classic.com/innatepowers_items">NEXT UP: ITEM UPDATES</div></div></div>
-                               <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;
+</div></div></div></div></div></div>
+             </div>  </div><div class="empty_big"></div></div>
+                <div class="new_frontiers_ButtonsSection_1gTHT"><div class="new_frontiers_StandardButton_end_13-RH"><div class="new_frontiers_ButtonText_1AJXE" ><a class="" href="https://gota2classic.com/innatepowers_items">NEXT UP: ITEM UPDATES</div></div></div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div>
+                                
 
 <script>
 var divisor = document.getElementById("divisor"),

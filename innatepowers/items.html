@@ -68,6 +68,59 @@ border-radius: 3px;
 
 
 }
+      .patch-ability-tag.upgraded_items_info {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin: auto;
+  font-family: "Reaver", serif;
+  background: -webkit-linear-gradient(left, #E1C16E, lightyellow, #E1C16E);
+    background-clip: border-box;
+  background-clip: border-box;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+      
+info
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    
+    
+}
+info text
+{
+    opacity: 1;
+    background-image: url('https://gota2classic.com/assets/info_bg.png');
+   color: white;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'Radiance', Verdana;
+  -webkit-text-stroke: 0.2px;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out;
+  -webkit-transition: opacity 0s ease-in-out;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid black;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+
+}
+info:hover text
+{
+    visibility: visible;
+}
+    
      .patch-ability-tag.recipe {
 	background-color: #00008B;
 }
@@ -273,6 +326,12 @@ border-radius: 3px;
 
 
 }
+     .item_border {
+  border-top: 0.1rem solid orange;
+  border-bottom: 0.1rem solid black;
+  border-right: 0.1rem solid black;
+  border-left: 0.1rem solid orange;
+}
      .item_fluff {
 	font-size: 19px;
   line-height: 19px;
@@ -338,11 +397,10 @@ window.addEventListener("scroll", reveal);
 
 
     	<a id="HeaderLogo" href="https://www.dota2.com/700/"></a>
-               <a class="HeaderPage " href="https://gota2classic.com/innatepowers">MAIN PAGE</a>
-    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_general">GENERAL UPDATES</a>
-        <a class="HeaderPage " href="https://gota2classic.com/innatepowers_items"><font color="#CC5500">ITEM UPDATES</font></a>
-    	<a class="HeaderPage " href="https://gota2classic.com/innatepowers_heroes">HERO UPDATES</a>
-
+               <a class="HeaderPage inactive_tab" href="https://gota2classic.com/innatepowers">MAIN PAGE</a>
+    	<a class="HeaderPage inactive_tab" href="https://gota2classic.com/innatepowers/general">GENERAL UPDATES</a>
+    	<a class="HeaderPage active_tab" href="https://gota2classic.com/innatepowers/items">ITEM UPDATES</a>
+    	<a class="HeaderPage inactive_tab" href="https://gota2classic.com/innatepowers/heroes">HERO UPDATES</a>
     	<div style="clear: both;"></div>
     </div>
     	<div style="clear: both;"></div>
@@ -676,47 +734,7 @@ window.addEventListener("scroll", reveal);
                        </div>
 
                         </div></div></div></div></div>
-             <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ironwood_tree.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Ironwood Tree</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">600</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag returning">ITEM RETURNED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
-                   <div class="item_recipe">
-
-
-
-               <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png"><font color="lightblue">Iron Branch<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png">Iron Branch<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png">Iron Branch<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
-
-
-
-
-                    </div>
-
-
-
-
-
-
-                         <div class="item_basic">
-                              <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">5</font> All Attributes</div></div>
-
-
-                         <div class="item_ability">
-
-                             <div class="item_description_container">
-
-                                 <div class="item_description body_item">
-
-                                     <h4><font color="#FFBF00"><b>Active: Plant Tree      </b></font></h4>
-
-                                     <font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">UNIT TARGET</font> - Equipped Hero plants a happy little tree for <font color="white">20</font> seconds.</font>
-
-                 </div>                        </div></div>
-
-
-                             <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">800</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">15</div></div></div></div>
-
-
-                       </div>
-
-
-                        </div></div></div>
+          
 
             <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/iron_talon.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Iron Talon</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1400</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag returning">ITEM RETURNED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
                        <div class="item_recipe">
@@ -772,7 +790,7 @@ window.addEventListener("scroll", reveal);
                    <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Stance Switch      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">NO TARGET</font> - Equipped Hero switches between Strength Stance, Agility Stance, and Intelligence Stance. <div>&nbsp;</div>
 
 
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength Stance provides +<font color="white">12</font> Strength and +<font color="white">10%</font> Magic Resistance.<div></div>Agility Stance provides +<font color="white">12</font> Agility and +<font color="white">20</font> Attack Speed.<div></div>Intelligence Stance provides +<font color="white">12</font> Intelligence and +<font color="white">8%</font> Magic Amplification.</font></div></div></font></div></div></div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Strength Stance provides +<font color="white">12</font> Strength and +<font color="white">10%</font> Debuff Resistance.<div></div>Agility Stance provides +<font color="white">12</font> Agility and +<font color="white">25</font> Attack Speed.<div></div>Intelligence Stance provides +<font color="white">12</font> Intelligence and +<font color="white">20%</font> Mana Cost Reduction.</font></div></div></font></div></div></div></div>
 
 
                        </div>
@@ -885,7 +903,7 @@ window.addEventListener("scroll", reveal);
 
                    <div class="item_basic">
 
-                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">15</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">15</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
 
                      </div>
                        </div></div>
@@ -933,7 +951,7 @@ window.addEventListener("scroll", reveal);
 
                    <div class="item_basic">
 
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">40</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">40</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
 
                      </div>
                        </div></div>
@@ -1067,7 +1085,7 @@ window.addEventListener("scroll", reveal);
                          <div class="item_basic">
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">6</font> Agility</div></div>
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">25</font> Movement Speed</div></div>
-                         <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Swiftness     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero becomes more efficent in combat, reducing -<font color="white">0.1</font>s Base Attack Time between attacks.</font></div></div>
+                         <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Swiftness     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero becomes more efficent in combat, gaining -<font color="white">0.1</font>s Base Attack Time.</font></div></div>
 
                              <div class="item_description_header"></div></div>
 
@@ -1142,46 +1160,7 @@ window.addEventListener("scroll", reveal);
 
 
                         </div></div>
-            <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://gota2classic.com/assets/items_hunters_net.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Hunter's Net</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1350</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag addition">NEW ITEM</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
-                   <div class="item_recipe">
-
-
-                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="http://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ironwood_tree.png"><font color="lightblue">Ironwood Tree<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/chainmail.png">Chainmail<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
-
-
-
-
-
-
-                    </div>
-
-
-
-                    <div class="item_basic">
-
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">5</font> All Attributes</div></div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">5</font> Armor</div></div>
-
-
-
-
-                       <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Ensnare     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">UNIT TARGET</font> - Equipped Hero throws a net trap that roots the target for <font color="white">1.75</font> seconds.<div>&nbsp;</div>Root Type: Basic.</font></div></div>
-
-
-
-</font></div><div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_mana_text"><font color="#A9A9A9">Dispellable:</font> <font color="#50C878">Yes</font></div></div><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">550</div></div><div class="item_description_mana_container"><div class="item_description_mana_icon"></div><div class="item_description_mana_text">25</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">20</div></div></div></div>
-
-
-                       </div>
-
-
-
-
-
-                    </div>
-
-
-                        </div></div>
+        
 
 
 
@@ -2587,7 +2566,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
                     <div class="item_basic">
                         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">ATTRIBUTES</font></span></div></div></div><div class="general_dash"></div>
                           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer provides +35 Attack Speed</div></div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now also provides +<span class="magical">20</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now also provides +<span class="magical">20</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Mana Regeneration decreased from +1.25 to +1.0</div></div>
 
 <div>&nbsp;</div>
@@ -2626,61 +2605,32 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
                        </div>
 
                  </div></div></div></div>
-       <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hand_of_midas.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Hand of Midas</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Note_eSxyZ">1800</div><img class="gold_icon" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/gold.png"><div class="patch-ability-tag upgrade">ITEM REWORKED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
-                   <div class="item_recipe">
-
-
-                       <div class="patchnotespage_NoteElement2_1gbgx"><div class="recipe_text"><img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gloves_of_haste.png"><font color="lightblue">Gloves of Haste<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ironwood_tree.png">Ironwood Tree<img class="recipe_item" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/recipe.png">Recipe</font></div></div>
-
-
-
+    
+    
+       <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hand_of_midas.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Hand of Midas</div><div class="patchnotespage_ItemTitle_2kpOY"><span class=""></span></div></div></div>
+                   <div class="item_basic">
+      <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Transmute  <div class="patch-ability-tag upgrade">ABILITY REWORKED</div>   </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero additionally gains +<font color="white">5</font> Gold for every unit killed.</font></div></div>
 
 
 
-                    </div>
-
-
-
-                    <div class="item_basic">
-
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">5</font> All Attributes</div></div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">25</font> Attack Speed</div></div>
-
-
-
-
-                     <div class="item_ability">
-
-                             <div class="item_description_container">
-
-                                 <div class="item_description body_item">
-
-                                     <h4><font color="#FFBF00"><b>Active: Goldwood Tree      </b></font></h4>
-
-                                     <font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">UNIT TARGET</font> - Equipped Hero plants a happy little tree for <font color="white">20</font> seconds that provides +<font color="white">10</font> Gold to the hero that cuts it down.</font>
-
-                                         </div></div>
-
-
-                             <div class="item_description_header"><div class="item_description_mana_container"><div class="item_description_cast_range_icon"></div><div class="item_description_mana_text">800</div></div><div class="item_description_cooldown"><div class="item_description_cooldown_icon" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png&quot;);"></div><div class="item_description_cooldown_text">15</div></div></div></div>
+</font></div><div class="item_description_header"></div></div>
 
 
                        </div>
 
 
-                        </div>
 
 
-                 <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Transmute      </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#708090">Equipped Hero additionally gains +<font color="white">5</font> Gold for every unit killed.</font></div></div></font></div><div class="item_description_header"></div></div>
 
 
-                       </div>
 
 
-                    </div>
 
 
-                        </div></div>
+
+
+                        </div></div></div>
+    
 
                 <div class="patchnotespage_Notes_16viL reveal"><div class="patchnotespage_PatchNoteItem_32hr0" style="padding-bottom: 0px;"><div class="patchnotespage_ItemHeader_3Luq5"><div class="patchnotespage_ItemImage_2LRUz" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots.png');"></div><div class="patchnotespage_RightSection_Jyw3S"><div class="patchnotespage_ItemName_1MKhq">Boots of Travel</div><div class="patchnotespage_NoteElement_1gbgx"><div class="patch-ability-tag renamed">RECIPE REWORKED</div></div><div class="patchnotespage_ItemTitle_2kpOY"></div></div></div>
                    <div class="item_recipe">
@@ -2705,9 +2655,9 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
                 <div class="item_basic">
 <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">GROUP TELEPORT - ACTIVE ABILITY</font></span>  </div></div></div><div class="general_dash"></div>
-
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now teleports every nearby allied unit alongside you to the destination. Radius: 300</div></div>
-                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ability renamed from Teleport to Group Teleport</div></div>
+ <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Ability renamed from Teleport to Group Teleport</div></div>
+                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now teleports nearby allies in a 300-radius alongside you to the destination</div></div>
+                    
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="mana_icon"></div><div class="patchnotespage_Note_eSxyZ">Mana Cost decreased from 75 to 0</div></div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="cooldown_icon"></div><div class="patchnotespage_Note_eSxyZ">Cooldown increased from 40s to 50s</div></div> <div>&nbsp;</div>
 
@@ -2970,7 +2920,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
 
 
-                      <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Endurance     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">NO TARGET</font> - Equipped Hero starts banging the durable drum, consuming a charge in the process that grants +<font color="white">50%</font> Movement Speed Slow Resistance and +<font color="white">25%</font> Debuff Resistance to nearby allied units in a <font color="white">1200</font>-radius for <font color="white">8</font> seconds. Initial Charge Amount: <font color="white">8</font>. </font></div></div>
+                      <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FFBF00"><b>Active: Endurance     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"><font color="#C0C0C0">NO TARGET</font> - Equipped Hero starts banging the durable drum, consuming a charge in the process that grants +<font color="white">50%</font> Slow Resistance and +<font color="white">25%</font> Debuff Resistance to nearby allied units in a <font color="white">1200</font>-radius for <font color="white">8</font> seconds. Initial Charge Amount: <font color="white">8</font>. </font></div></div>
 
 
 
@@ -3075,7 +3025,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
                         </div>  <div>&nbsp;</div>
                          <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">ENERGY CHARGE - ACTIVE ABILITY</font>  </span></div></div></div><div class="general_dash"></div>
-                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now dispels the target when cast with maximum charges. Dispel Type: Basic</div></div>
+                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now basic dispels the target when cast with maximum charges</div></div>
                                                  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Charge Amount Gained per ability cast increased from 1 to 2</div></div>
                       <div>&nbsp;</div>
                         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">ATTRIBUTES</font></span></div></div></div><div class="general_dash"></div>
@@ -3431,7 +3381,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
                     <div class="item_basic">
                         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">FORCE - ACTIVE ABILITY</font></span></div></div></div><div class="general_dash"></div>
                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now cannot be removed by any dispel type</div></div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="cast_range_icon"></div><div class="patchnotespage_Note_eSxyZ">Cast Range increased from 550/750 to 800<em><del>Previously had a different Cast Range for allied units and enemy units.<div>&nbsp;</div> </del></em></div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="cast_range_icon"></div><div class="patchnotespage_Note_eSxyZ">Cast Range increased from 550/750 to 800<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Previously had a different cast range for allies and enemies.</text></info></div></div>
                         <div>&nbsp;</div>
                         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">ATTRIBUTES</font></span></div></div></div><div class="general_dash"></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer provides +175 Health</div></div>
@@ -3557,7 +3507,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
                     <div class="item_basic">
 
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">50</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">50</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">20%</font> Magic Lifesteal</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">450</font> Projectile Speed</div></div>
 
@@ -3625,7 +3575,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
 
                     <div class="item_basic">
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">15</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">15</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">150</font> Health</div></div>
 
 
@@ -3665,7 +3615,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
                     <div class="item_basic">
 
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">20</font> Intelligence</div></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">40</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">40</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">8</font> Health Regeneration</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">4</font> Mana Regeneration</div></div>
 
@@ -3821,7 +3771,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
                     <div class="item_basic">
  <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">25</font> Intelligence</div></div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">30</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">30</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">4</font> Mana Regeneration</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">30</font> Movement Speed</div></div>
 
@@ -4585,7 +4535,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
                     <div class="item_basic">
                         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">UNHOLY STRENGTH - ACTIVE ABILITY</font></span></div></div></div><div class="general_dash"></div>
-                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer provides +35% Movement Speed Slow Resistance</div></div>
+                       <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer provides +35% Slow Resistance</div></div>
                          <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now provides +20% Debuff Resistance</div></div>
 
 
@@ -4863,9 +4813,10 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
                     <div class="item_basic">
                         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">BURN - ACTIVE ABILITY</font></span></div></div></div><div class="general_dash"></div>
+                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage type changed from Magical to Pure</div></div>
                           <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now causes no blind effects on the burning enemies</div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Illusions now have no damage per second penalty</div></div>
-                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage per second changed from <span class="magical">60</span> to <span class="pure">40</span></div></div>
+                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Damage per second changed from 60 to 40</div></div>
 
                         <div>&nbsp;</div>
                         <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">ATTRIBUTES</font></span></div></div></div><div class="general_dash"></div>
@@ -5100,8 +5051,8 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
 
                 <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">SUPPRESS - ACTIVE ABILITY</font></span></div></div></div><div class="general_dash"></div>
                      <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer applies to all units in a 350-radius around the target</div></div>
-                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer provides Movement Slow Immunity during the duration</div></div>
-               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now continuously dispels the target during the duration. Dispel Type: Basic</div></div>
+                <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">No longer provides Slow Immunity during the duration</div></div>
+               <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Now continuously basic dispels the target during the duration</div></div>
 
            <div>&nbsp;</div>
                <div class="patchnotespage_PatchNoteGenerics_3780o" style="margin-bottom: 0px;"><div class="patchnotespage_NoteElement_1gbgx"><div style="width: 0px; min-width: 0px;"></div><div class="patchnotespage_Note_eSxyZ"><span class="Bold"><font color="#E1C16E">MANA BREAK - PASSIVE ABILITY</font></span></div></div></div><div class="general_dash"></div>
@@ -5143,7 +5094,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
                     <div class="item_basic">
 
 
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">100</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">100</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">50%</font> Magic Amplification</div></div>
 
 
@@ -5188,7 +5139,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
                     <div class="item_basic">
 
                         <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">40</font> Attack Damage</div></div>
-                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">40</span> Attack Damage<em><del>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</del></em></div></div>
+                        <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <span class="magical">40</span> Attack Damage<info><span class="patch-ability-tag upgraded_items_info">🛈</span><text>Magic Attack Damage. Seperate Magic Damage instance that is applied on attack and benefits from Magic Amplification.</text></info></div></div>
 
 
 
@@ -5379,7 +5330,7 @@ The thrown dust stays on the ground for <font color="white">8</font> seconds, in
                          <div class="item_basic">
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">16</font> Agility</div></div>
                     <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">+ <font color="white">10%</font> Movement Speed</div></div>
-                         <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Swift Blade     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero becomes more efficent in combat, reducing -<font color="white">0.1</font>s Base Attack Time between attacks.</font></div></div>
+                         <div class="item_ability"> <div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_hidden_Dot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ"></div></div> <div class="item_description_container"><div class="item_description body_item"><h4><font color="#FCF55F"><b>Passive: Swift Blade     </b></font></h4><font color="#708090"><div class="patchnotespage_NoteElement_1gbgx"><div class="patchnotespage_sDot_1gcyD"></div><div class="patchnotespage_Note_eSxyZ">Equipped Hero becomes more efficent in combat, gaining -<font color="white">0.1</font>s Base Attack Time.</font></div></div>
 
                              <div class="item_description_header"></div></div>
 
