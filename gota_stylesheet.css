@@ -1661,7 +1661,7 @@ color: WHITE;
     scroll-behavior: smooth;
     color: #748090;
     font-size: 17px;
-    letter-spacing: .5px
+    
 }
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_PageContainer_-ppoQ.new_frontiers_Hidden_IlO9w {
@@ -4868,34 +4868,19 @@ margin-top: 10px;
 
 }
         .patchnotespage_NoteElement_1gbgx .patchnotespage_Note2_eSxyZ {
-   width: 100%;
-
-
-    font-size: 50px;
-    padding-top: 406px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #CC5500;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0px;
-
-    display: table;
-
-    font-weight: normal;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2.2px;
-    padding: 11px 19px 11px 19px;
-    color: #FFFFFF;
-
-
-color: #fff;
-    text-shadow: 0 0 12px #D84A0C80, 0 2px 4px #00000090;
-    margin-bottom: 24px;
-    background: #D84A0C;
-    background: linear-gradient(90deg, #D84A0C90 0%, #D84A0C00 75%);
-    border-left: 1px solid rgb(255, 80, 5);
+  font-size: 48px;
+  color: #ebf1f5;
+  background-color: #4169E1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  -webkit-text-stroke: 0.1px;
 
 
 
