@@ -4661,22 +4661,7 @@ font-size: 19px;
 }
 
 
-        .patchnotespage_NoteElement2_1gbgx {
-
-        text-transform: none;
-            text-align: left;
-
-            font-family: "Reaver",serif;
-   font-weight: bold;
-
-       background: -webkit-linear-gradient(blue, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-
-    font-size: clamp(14px,1.2vw,20px);
-
-}
+        
         .patchnotespage_NoteElement10_1gbgx {
 
         text-transform: none;
