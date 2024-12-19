@@ -3752,7 +3752,8 @@ position: relative;
  .item_description_container .item_description_header .item_description_cooldown .item_description_cooldown_text {
     margin-left: 8px;
     color: #fff;
-font-size: 19px;
+font-size: 16px;
+	 -webkit-text-stroke: 0.2px;
 
 }
 
@@ -3775,7 +3776,8 @@ font-size: 19px;
  .item_description_container .item_description_header .item_description_mana_container .item_description_mana_text {
     margin-left: 8px;
     color: #fff;
-     font-size: 19px;
+     font-size: 16px;
+	 -webkit-text-stroke: 0.2px;
 }
 
  .item_description_container .item_description_header .item_description_health_container {
