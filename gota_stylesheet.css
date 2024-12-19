@@ -3707,21 +3707,7 @@ position: relative;
     padding: 0px 12px 12px 12px
 }
 
- .item_description_container .item_description h4 {
-   color: #FFBF00;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Radiance",serif;
-    letter-spacing: 0px;
-    text-transform: none;
-    border: none;
-     border-radius: 5px;
-    margin: 12px -12px 12px -12px;
-    padding: 8px 12px;
-     box-shadow: 0px 0px 2px black;
-     background-image: linear-gradient(to right, rgba(225, 193, 110, 0.1), rgba(225, 193, 110, 0))
-}
+
         .item_description_container .item_description h5 {
      color: #FCF55F;
     font-size: 18px;
