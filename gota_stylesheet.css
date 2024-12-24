@@ -1,5 +1,5 @@
 .active_tab {
-            color: #CC5500;
+            color: #ADD8E6;
 }
 .inactive_tab
 {
@@ -2217,8 +2217,10 @@ font-weight: bolder;
     font-family: "Reaver",serif;
     font-weight: 700;
     text-align: center;
-    padding-top: 2vw;
-    margin: 0px
+    
+    margin: 0px;
+	color: #ADD8E6;
+	
 }
         .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR h12 {
   color: #CC5500;
