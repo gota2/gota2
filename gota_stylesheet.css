@@ -1,9 +1,9 @@
 .active_tab {
-            color: #4682B4;
+            color: #CC5500;
 }
 .inactive_tab
 {
-    color: #ADD8E6;
+    color: #E1C16E;
 }
 
 .gallery li {
@@ -97,7 +97,7 @@
 }
 
 @font-face {
-    font-family: 'Radiance-SemiBold';
+   
     src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot');
     src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot?#iefix') format('embedded-opentype'),
          url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff') format('woff'),
@@ -833,8 +833,6 @@ em:hover del
     letter-spacing: 9px;
     text-align: center;
 }
-
-
 
 #BG41 h2
 {
@@ -1723,7 +1721,7 @@ color: WHITE;
     padding: calc(0px + 10vw) 0px;
 
 
-    background-image: url("https://gota2classic.com/assets/bg3.png");
+    background-image: url("https://gota2classic.com/assets/bg2.png");
     background-size: cover;
     background-color: #000;
     min-height: 50vw;
@@ -2180,7 +2178,7 @@ font-weight: bolder;
     background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg");
     background-color: #151618;
     box-shadow: inset 0px 32px 64px rgba(0,0,0,.5);
-        border-top: 10px solid grey;
+        border-top: 10px solid #E1C16E;
 
 }
         .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR2 {
@@ -2213,16 +2211,14 @@ font-weight: bolder;
 }
 
 .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR h2 {
- text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: clamp(14px,2.2vw,44px);
-  font-family: "Reaver",serif;
-  font-weight: 700;
-  text-align: center;
-  
-  margin: 0px;
-  -webkit-text-stroke: 1px black;
-	color: #ADD8E6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: clamp(20px,2.6vw,44px);
+    font-family: "Reaver",serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2vw;
+    margin: 0px
 }
         .new_frontiers_NewFrontiersPage_3zRrq .new_frontiers_WebsiteSection_3o_tR h12 {
   color: #CC5500;
@@ -3711,21 +3707,7 @@ position: relative;
     padding: 0px 12px 12px 12px
 }
 
- .item_description_container .item_description h4 {
-   color: #FFBF00;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Radiance",serif;
-    letter-spacing: 0px;
-    text-transform: none;
-    border: none;
-     border-radius: 5px;
-    margin: 12px -12px 12px -12px;
-    padding: 8px 12px;
-     box-shadow: 0px 0px 2px black;
-     background-image: linear-gradient(to right, rgba(225, 193, 110, 0.1), rgba(225, 193, 110, 0))
-}
+
         .item_description_container .item_description h5 {
      color: #FCF55F;
     font-size: 18px;
@@ -3770,7 +3752,8 @@ position: relative;
  .item_description_container .item_description_header .item_description_cooldown .item_description_cooldown_text {
     margin-left: 8px;
     color: #fff;
-font-size: 19px;
+font-size: 16px;
+	 -webkit-text-stroke: 0.2px;
 
 }
 
@@ -3793,7 +3776,8 @@ font-size: 19px;
  .item_description_container .item_description_header .item_description_mana_container .item_description_mana_text {
     margin-left: 8px;
     color: #fff;
-     font-size: 19px;
+     font-size: 16px;
+	 -webkit-text-stroke: 0.2px;
 }
 
  .item_description_container .item_description_header .item_description_health_container {
@@ -4679,22 +4663,7 @@ font-size: 19px;
 }
 
 
-        .patchnotespage_NoteElement2_1gbgx {
-
-        text-transform: none;
-            text-align: left;
-
-            font-family: "Reaver",serif;
-   font-weight: bold;
-
-       background: -webkit-linear-gradient(blue, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-
-    font-size: clamp(14px,1.2vw,20px);
-
-}
+        
         .patchnotespage_NoteElement10_1gbgx {
 
         text-transform: none;
@@ -4730,9 +4699,8 @@ font-size: 19px;
 
 
 
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-        align-items: center;
+   
+       
 }
         .item_dash {
  width: 100%;
@@ -5090,6 +5058,7 @@ color: #cacaff;
     display: flex;
     flex-direction: column;
     padding-left: 18px;
+    
 
 
 
@@ -5102,8 +5071,8 @@ color: #cacaff;
 
     display: flex;
     flex-direction: column;
-    padding: 18px;
-    padding-bottom: 15px;
+    padding-left: 18px;
+    
 
              align-content: center;
 
