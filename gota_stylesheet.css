@@ -4570,7 +4570,7 @@ font-size: 19px;
 .patchnotespage_PatchNoteItem_32hr0 .patchnotespage_ItemHeader_3Luq5 .patchnotespage_RightSection_Jyw3S .patchnotespage_ItemName_1MKhq {
     font-size: clamp(16px, 2vw, 20px);
     font-weight: 600;
-    color: orange;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-family: "Reaver", serif
