@@ -4424,10 +4424,11 @@ font-size: 16px;
 .patchnotespage_PatchNoteHero_99z4V .patchnotespage_HeroHeader_EYgE0 .patchnotespage_RightSection_Jyw3S .patchnotespage_HeroName_1nuWb {
     font-size: clamp(26px, 12vw, 34px);
     font-weight: 600;
-    color: orange;
+    color: #4682B4;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: "Reaver", serif
+    font-family: "Reaver", serif;
+	-webkit-text-stroke: 0.2px;
 }
 
 .patchnotespage_PatchNoteHero_99z4V .patchnotespage_HeroHeader_EYgE0 .patchnotespage_RightSection_Jyw3S .patchnotespage_UpdateSubtitle_1zdBQ {
